@@ -1,0 +1,1911 @@
+================================================
+Question: What regulates the production of neprilysin?
+Aggregated counts; 
+enzyme	enzyme	2.0
+somatostatin	somatostatin	2.0
+Correct Choice: 	somatostatin
+Best Choice: 	enzyme
+================================================
+Question: What kind of glial cell is able to phagocyte b-amyloid?
+Aggregated counts; 
+neprilysin	neprilysin	2.0
+Correct Choice: 	microglia
+Best Choice: 	neprilysin
+================================================
+Question: What is the major protease produced by microglia responsible for degrading A?
+Aggregated counts; 
+Correct Choice: 	extracellular
+Best Choice: 	null
+================================================
+Question: What substance exhibited a similar effect on  IDE secretion as achieved by somatostatin?
+Aggregated counts; 
+analogue	analogue	1.0
+octreotide	octreotide	4.0
+Correct Choice: 	octreotide
+Best Choice: 	octreotide
+================================================
+Question: What are the sst receptors that are expressed on rat astrocytes?
+Aggregated counts; 
+somatostatin	somatostatin	1.0
+SSTR-1, SSTR-2 and SSTR-4	SSTR-1, SSTR-2 and SSTR-4	1.0
+Nov 9, 2013 10:45:25 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Nov 9, 2013 10:45:25 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Correct Choice: 	SSTR-1, SSTR-2 and SSTR-4
+Best Choice: 	somatostatinNov 9, 2013 10:45:25 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Nov 9, 2013 10:45:25 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Nov 9, 2013 10:45:25 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Nov 9, 2013 10:45:25 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+
+================================================
+Question: What method was used to inhibit the expression of IDE?
+Aggregated counts; 
+siRNA	siRNA	1.0
+microglia	microglia	1.0
+Western blot	Western blot	2.0
+positive modulation	positive modulation	1.0
+Correct Choice: 	siRNA
+Best Choice: 	Western blot
+================================================
+Correct: 1/10=10.0%
+c@1 score:0.11000000000000001
+################### DocId: QA4MRE-2012_BIOMEDICAL_GS.xml_3###########################
+******Entered into process of NoiseFilter
+Total sentences: 84
+Sentence no. 1 processed
+Sentence no. 2 processed
+Nov 9, 2013 10:45:25 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 3 processed
+Sentence no. 4 processed
+Nov 9, 2013 10:45:26 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 5 processed
+Nov 9, 2013 10:45:26 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 6 processed
+Sentence no. 7 processed
+Sentence no. 8 processed
+Sentence no. 9 processed
+Sentence no. 10 processed
+Sentence no. 11 processed
+Sentence no. 12 processed
+Sentence no. 13 processed
+Sentence no. 14 processed
+Sentence no. 15 processed
+Sentence no. 16 processed
+Sentence no. 17 processed
+Sentence no. 18 processed
+Sentence no. 19 processed
+Sentence no. 20 processed
+Sentence no. 21 processed
+Nov 9, 2013 10:45:35 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 22 processed
+Sentence no. 23 processed
+Sentence no. 24 processed
+Sentence no. 25 processed
+Sentence no. 26 processed
+Sentence no. 27 processed
+Sentence no. 28 processed
+Sentence no. 29 processed
+Sentence no. 30 processed
+Sentence no. 31 processed
+Sentence no. 32 processed
+Sentence no. 33 processed
+Sentence no. 34 processed
+Sentence no. 35 processed
+Sentence no. 36 processed
+Sentence no. 37 processed
+Sentence no. 38 processed
+Sentence no. 39 processed
+Sentence no. 40 processed
+Sentence no. 41 processed
+Sentence no. 42 processed
+Sentence no. 43 processed
+Sentence no. 44 processed
+Sentence no. 45 processed
+Sentence no. 46 processed
+Sentence no. 47 processed
+Sentence no. 48 processed
+Sentence no. 49 processed
+Sentence no. 50 processed
+Sentence no. 51 processed
+Sentence no. 52 processed
+Nov 9, 2013 10:45:53 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 53 processed
+Sentence no. 54 processed
+Sentence no. 55 processed
+Sentence no. 56 processed
+Sentence no. 57 processed
+Sentence no. 58 processed
+Sentence no. 59 processed
+Sentence no. 60 processed
+Sentence no. 61 processed
+Sentence no. 62 processed
+Sentence no. 63 processed
+Sentence no. 64 processed
+Sentence no. 65 processed
+Sentence no. 66 processed
+Sentence no. 67 processed
+Sentence no. 68 processed
+Sentence no. 69 processed
+Sentence no. 70 processed
+Nov 9, 2013 10:45:57 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 71 processed
+Sentence no. 72 processed
+Sentence no. 73 processed
+Sentence no. 74 processed
+Sentence no. 75 processed
+Sentence no. 76 processed
+Sentence no. 77 processed
+Sentence no. 78 processed
+Sentence no. 79 processed
+Nov 9, 2013 10:46:00 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 80 processed
+Nov 9, 2013 10:46:00 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 81 processed
+Nov 9, 2013 10:46:00 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 82 processed
+Nov 9, 2013 10:46:00 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 83 processed
+Sentence no. 84 processed
+Answer no. 0 processed
+Answer no. 1 processed
+Answer no. 2 processed
+Answer no. 3 processed
+Answer no. 4 processed
+Answer no. 0 processed
+Answer no. 1 processed
+Answer no. 2 processed
+Answer no. 3 processed
+Answer no. 4 processed
+Answer no. 0 processed
+Answer no. 1 processed
+Answer no. 2 processed
+Answer no. 3 processed
+Answer no. 4 processed
+Answer no. 0 processed
+Answer no. 1 processed
+Answer no. 2 processed
+Answer no. 3 processed
+Answer no. 4 processed
+Answer no. 0 processed
+Answer no. 1 processed
+Answer no. 2 processed
+Answer no. 3 processed
+Answer no. 4 processed
+Answer no. 0 processed
+Answer no. 1 processed
+Answer no. 2 processed
+Answer no. 3 processed
+Answer no. 4 processed
+Answer no. 0 processed
+Answer no. 1 processed
+Answer no. 2 processed
+Answer no. 3 processed
+Answer no. 4 processed
+Answer no. 0 processed
+Answer no. 1 processed
+Answer no. 2 processed
+Answer no. 3 processed
+Answer no. 4 processed
+Answer no. 0 processed
+Answer no. 1 processed
+Answer no. 2 processed
+Answer no. 3 processed
+Answer no. 4 processed
+Answer no. 0 processed
+Answer no. 1 processed
+Answer no. 2 processed
+Answer no. 3 processed
+Answer no. 4 processed
+Total Questions: 10
+Question no. 1 processed
+Question no. 2 processed
+Question no. 3 processed
+Question no. 4 processed
+Question no. 5 processed
+Question no. 6 processed
+Question no. 7 processed
+Question no. 8 processed
+Question no. 9 processed
+Question no. 10 processed
+org.apache.solr.client.solrj.SolrServerException: Server at http://ur.lti.cs.cmu.edu:8983/solr/qa4mre was not found (404).
+	at org.apache.solr.client.solrj.impl.HttpSolrServer.request(HttpSolrServer.java:402)
+	at org.apache.solr.client.solrj.impl.HttpSolrServer.request(HttpSolrServer.java:221)
+	at edu.cmu.lti.oaqa.core.provider.solr.SolrWrapper.indexDocument(SolrWrapper.java:192)
+	at edu.cmu.lti.deiis.hw5.indexers.SolrIndexer.process(SolrIndexer.java:133)
+	at org.apache.uima.analysis_component.JCasAnnotator_ImplBase.process(JCasAnnotator_ImplBase.java:48)
+	at org.apache.uima.analysis_engine.impl.PrimitiveAnalysisEngine_impl.callAnalysisComponentProcess(PrimitiveAnalysisEngine_impl.java:375)
+	at org.apache.uima.analysis_engine.impl.PrimitiveAnalysisEngine_impl.processAndOutputNewCASes(PrimitiveAnalysisEngine_impl.java:296)
+	at org.apache.uima.analysis_engine.asb.impl.ASB_impl$AggregateCasIterator.processUntilNextOutputCas(ASB_impl.java:567)
+	at org.apache.uima.analysis_engine.asb.impl.ASB_impl$AggregateCasIterator.<init>(ASB_impl.java:409)
+	at org.apache.uima.analysis_engine.asb.impl.ASB_impl.process(ASB_impl.java:342)
+	at org.apache.uima.analysis_engine.impl.AggregateAnalysisEngine_impl.processAndOutputNewCASes(AggregateAnalysisEngine_impl.java:267)
+	at org.apache.uima.analysis_engine.impl.AnalysisEngineImplBase.process(AnalysisEngineImplBase.java:267)
+	at org.apache.uima.collection.impl.cpm.engine.ProcessingUnit.processNext(ProcessingUnit.java:897)
+	at org.apache.uima.collection.impl.cpm.engine.ProcessingUnit.run(ProcessingUnit.java:577)
+========================================================
+Question: What cell type in AD brains shows mitochondrial defects?
+0.28384405	Accumulation of amyloid-beta in AD brains is thought to underlie neuronal dysfunction and memory loss, being centrally implicated in AD pathogenesis.
+0.28384405	Mitochondrial abnormalities have been found both in neurons and astrocytes [35?37], suggesting that both neurons and astrocytes might be damaged by free radicals in the AD brain.
+=========================================================
+========================================================
+Question: In which anatomical structure in the brain does amyloid-beta aggregate?
+0.060954183	Increased oxidative stress levels have been found in the brains of patients with AD in Sweden and early in Tg2576 APP transgenic mice [12, 13].
+0.060954183	Accumulation of amyloid-beta in AD brains is thought to underlie neuronal dysfunction and memory loss, being centrally implicated in AD pathogenesis.
+0.060954183	Studies of postmortem brains from AD patients and transgenic mouse models of AD suggest that oxidative damage, induced by amyloid-beta, is associated with mitochondria early in AD progression.
+0.060954183	The brain is vulnerable to oxidative stress owing to its high lipid content, its relatively high oxygen metabolism, and its low levels of antioxidant defenses [26].
+0.060954183	Mitochondrial abnormalities have been found both in neurons and astrocytes [35?37], suggesting that both neurons and astrocytes might be damaged by free radicals in the AD brain.
+0.060954183	Oxidative stress was also reported in the mitochondria of other tissues different to the brain such as platelets and fibroblasts from AD patients [29, 30].
+0.053334914	Moreover, previous to mitochondrial accumulation of amyloid-beta showed in AD patient and AD transgenic mouse brain, the toxic amyloid-beta species has to be accumulated in the cytosol of the cells.
+0.04571564	Moreover, we summarize evidence from AD postmortem brain as well as animal AD models showing that amyloid-beta triggers mitochondrial dysfunction through a number of pathways such as impairment of oxidative phosphorylation, elevation of reactive oxygen species production, alteration of mitochondrial dynamics, and interaction with mitochondrial proteins.
+=========================================================
+========================================================
+Question: How many persons worldwide are estimated to have a medical condition related to neurodegeneration?
+=========================================================
+========================================================
+Question: Which protein is able to block nitric oxide creation?
+0.04973717	Although mitochondria have the ability to produce proteins, the vast majority of proteins that function within the mitochondria, including those involved in DNA transcription, translation, and repair, are encoded by nuclear DNA and are transported into the mitochondria from the cytosol.
+0.04568651	Both proteins are known to localize to mitochondrial membranes, block thetransport of nuclear-encoded mitochondrial proteins to mitochondria, interact with mitochondrial proteins, disrupt the electron transport chain, increase reactive oxygen species production, cause mitochondrial damage, and prevent neurons from functioning normally.
+0.04568651	Amyloid-beta and APP protein are known to localize to mitochondrial membranes, block the transport of nuclear-encoded mitochondrial proteins to mitochondria, interact with mitochondrial proteins, disrupt the electron transport chain, increase reactive oxygen species (ROS) production, cause mitochondrial damage, and prevent neurons from functioning normally.
+0.043961864	The remaining genes encode transfer (22 genes) and ribosomal (2 genes) RNA allowing the mitochondria to generate their own proteins.
+0.043520026	Mitochondria were found to be the target both for amyloid precursor protein (APP) that accumulates in the mitochondrial import channels and for amyloid-beta that interacts with several proteins inside mitochondria and leads to mitochondrial dysfunction [30].
+0.035169493	Intermembrane space contains proapoptotic proteins like cytochrome c, Smac/Diablo, EndoG, and Htra2/Omi.
+0.035169493	Complexes I, III, and IV are located in inner mitochondrial membrane as integral proteins, whereas complex II is attached to the inner surface of this membrane.
+0.035169493	H2O2 and superoxide radicals, released from the mitochondrial matrix and from the inner and outer mitochondrial membranes, might be carried to the cytoplasm and, ultimately, might lead to the oxidation of cytoplasmic proteins [26].
+0.030773308	The recent emphasis on the intracellular biology of amyloid-beta and its precursor protein (APP) has led researchers to consider the possibility that mitochondria-associated and mitochondrial amyloid-beta may directly cause neurotoxicity.
+0.030457674	In previous studies with choroid plexus homogenates with different cases with AD in the different stages (I/0, III-IV, and V-VI), we demonstrated that in AD patients, amyloid-beta peptide also accumulates in choroid plexus [15], there is an oxidation of carboxymethyl-lysine (CML), and N-carboxyethyl-lysine (CEL) may result in impaired protein interactions, protein folding, and protein kinase activity; abnormal function of endothelial and vascular smooth muscle cells; impaired HDL-cholesterol metabolism in the choroid plexus in advanced stages of AD [16].2.
+=========================================================
+========================================================
+Question: Which is the best-characterized factor that increases chances of getting AD?
+0.07473229	The most widely recognized is AD, which is among the principal debilitating conditions of the current century.
+0.07473229	mtDNA defects have also been linked to an increased incidence of AD [32].
+0.07396579	Studies of postmortem brains from AD patients and transgenic mouse models of AD suggest that oxidative damage, induced by amyloid-beta, is associated with mitochondria early in AD progression.
+0.06039281	Oxidative stress plays a critical role in the pathogenesis of AD and is intimately linked to aging, the best established risk factor for AD.
+0.06039281	Accumulation of amyloid-beta in AD brains is thought to underlie neuronal dysfunction and memory loss, being centrally implicated in AD pathogenesis.
+0.06039281	One of the most interesting events in AD is that mitochondrial oxidative stress occurs early in AD progression, before the onset of amyloid-beta pathology [27, 28].
+0.053380206	Biochemical and morphological alterations of mitochondria may play an important role in the pathogenesis of Alzheimer?s disease (AD).
+0.053380206	The histological hallmark lesions of AD are characterized by senile plaques and cerebrovascular deposits.
+0.053380206	Energy deficiency and mitochondrial dysfunction have been recognized as a prominent, early event in AD.
+0.053380206	Figure 2: APP processing in nondemented healthy individuals and AD patients.
+=========================================================
+========================================================
+Question: With which particular protein does amyloid-beta interact?
+1.2768477	Amyloid-Beta in the Cytosol
+0.95763576	New Insights in the Amyloid-Beta Interaction with Mitochondria
+0.95763576	In this paper, we will outline current knowledge of the intracellular localization of amyloid-beta.
+0.79802984	Particularly, mitochondrial dysfunction is a hallmark of amyloid-beta-induced neuronal toxicity in Alzheimer?s disease.
+0.7900092	The recent emphasis on the intracellular biology of amyloid-beta and its precursor protein (APP) has led researchers to consider the possibility that mitochondria-associated and mitochondrial amyloid-beta may directly cause neurotoxicity.
+0.7900092	Moreover, previous to mitochondrial accumulation of amyloid-beta showed in AD patient and AD transgenic mouse brain, the toxic amyloid-beta species has to be accumulated in the cytosol of the cells.
+0.6771507	These findings are further in line with the recently proposed hypothesis of an intracellular amyloid-beta toxicity cascade which suggests that the toxic amyloid-beta species intervening in molecular and biochemical abnormalities may be intracellular soluble aggregates instead of extracellular, insoluble plaques.
+0.63842386	The extracellular amyloid plaques mainly composed of amyloid-beta and intracellular neurofibrillary tangles built up of hyperphosphorylated tau, although the molecular mechanisms underlying the disease are still unknown and there is still no cure.
+0.63842386	Accumulation of amyloid-beta in AD brains is thought to underlie neuronal dysfunction and memory loss, being centrally implicated in AD pathogenesis.
+0.63842386	Studies of postmortem brains from AD patients and transgenic mouse models of AD suggest that oxidative damage, induced by amyloid-beta, is associated with mitochondria early in AD progression.
+=========================================================
+========================================================
+Question: The aggregation of which peptide has been widely observed in brains of Alzheimer patients?
+0.124109074	These findings are further in line with the recently proposed hypothesis of an intracellular amyloid-beta toxicity cascade which suggests that the toxic amyloid-beta species intervening in molecular and biochemical abnormalities may be intracellular soluble aggregates instead of extracellular, insoluble plaques.
+0.11754773	Further cleavage of this C-terminal fragment by ?-secretase generates the nonamyloidogenic peptide (P3) and APP intracellular domain (ACID).
+0.071695246	Increased oxidative stress levels have been found in the brains of patients with AD in Sweden and early in Tg2576 APP transgenic mice [12, 13].
+0.071695246	Accumulation of amyloid-beta in AD brains is thought to underlie neuronal dysfunction and memory loss, being centrally implicated in AD pathogenesis.
+0.071695246	Studies of postmortem brains from AD patients and transgenic mouse models of AD suggest that oxidative damage, induced by amyloid-beta, is associated with mitochondria early in AD progression.
+0.071695246	The brain is vulnerable to oxidative stress owing to its high lipid content, its relatively high oxygen metabolism, and its low levels of antioxidant defenses [26].
+0.071695246	Mitochondrial abnormalities have been found both in neurons and astrocytes [35?37], suggesting that both neurons and astrocytes might be damaged by free radicals in the AD brain.
+0.071695246	Oxidative stress was also reported in the mitochondria of other tissues different to the brain such as platelets and fibroblasts from AD patients [29, 30].
+0.06273334	Moreover, previous to mitochondrial accumulation of amyloid-beta showed in AD patient and AD transgenic mouse brain, the toxic amyloid-beta species has to be accumulated in the cytosol of the cells.
+0.058773864	In previous studies with choroid plexus homogenates with different cases with AD in the different stages (I/0, III-IV, and V-VI), we demonstrated that in AD patients, amyloid-beta peptide also accumulates in choroid plexus [15], there is an oxidation of carboxymethyl-lysine (CML), and N-carboxyethyl-lysine (CEL) may result in impaired protein interactions, protein folding, and protein kinase activity; abnormal function of endothelial and vascular smooth muscle cells; impaired HDL-cholesterol metabolism in the choroid plexus in advanced stages of AD [16].2.
+=========================================================
+========================================================
+Question: What specific animal model can be used to study the role of amyloid-beta in apoptosis of choroid Plexus cells?
+0.99975526	In this paper, we will outline current knowledge of the intracellular localization of amyloid-beta.
+0.9458332	Moreover, previous to mitochondrial accumulation of amyloid-beta showed in AD patient and AD transgenic mouse brain, the toxic amyloid-beta species has to be accumulated in the cytosol of the cells.
+0.89707136	The extracellular amyloid plaques mainly composed of amyloid-beta and intracellular neurofibrillary tangles built up of hyperphosphorylated tau, although the molecular mechanisms underlying the disease are still unknown and there is still no cure.
+0.89707136	Accumulation of amyloid-beta in AD brains is thought to underlie neuronal dysfunction and memory loss, being centrally implicated in AD pathogenesis.
+0.89707136	Studies of postmortem brains from AD patients and transgenic mouse models of AD suggest that oxidative damage, induced by amyloid-beta, is associated with mitochondria early in AD progression.
+0.89707136	The aberrant signalling of these receptors in AD triggered an abnormal accumulation of amyloid-beta into cytosol-inducing cellular stress underlies to neuronal dysfunction and dementia.
+0.84572953	Recent scientific research has identified multiple mechanisms of amyloid-beta interaction with mitochondria at different mitochondrial compartments: the outer mitochondrial membrane, intermembrane space, inner mitochondrial membrane, and the matrix.
+0.8074925	The recent emphasis on the intracellular biology of amyloid-beta and its precursor protein (APP) has led researchers to consider the possibility that mitochondria-associated and mitochondrial amyloid-beta may directly cause neurotoxicity.
+0.7684512	Multiple lines of evidence support APP and amyloid-beta as contributing factors to mitochondrial dysfunction in AD: both APP and amyloid-beta are present in mitochondrial membrane and interact with mitochondrial proteins, block mitochondrial import channels, impair mitochondrial transport, disrupt the electron transfer chain, increase ROS levels, and cause mitochondrial damage.324968.
+0.75873065	Several lines of evidence suggest that APP and amyloid-beta are factors contributing to mitochondrial dysfunction in AD (Figure 2).
+=========================================================
+========================================================
+Question: Where does amyloid-beta assemble into oligomeric structures?
+0.97822917	Amyloid-Beta in the Cytosol
+0.7336719	New Insights in the Amyloid-Beta Interaction with Mitochondria
+0.7336719	In this paper, we will outline current knowledge of the intracellular localization of amyloid-beta.
+0.6113932	Particularly, mitochondrial dysfunction is a hallmark of amyloid-beta-induced neuronal toxicity in Alzheimer?s disease.
+0.6052484	The recent emphasis on the intracellular biology of amyloid-beta and its precursor protein (APP) has led researchers to consider the possibility that mitochondria-associated and mitochondrial amyloid-beta may directly cause neurotoxicity.
+0.6052484	Moreover, previous to mitochondrial accumulation of amyloid-beta showed in AD patient and AD transgenic mouse brain, the toxic amyloid-beta species has to be accumulated in the cytosol of the cells.
+0.51878434	These findings are further in line with the recently proposed hypothesis of an intracellular amyloid-beta toxicity cascade which suggests that the toxic amyloid-beta species intervening in molecular and biochemical abnormalities may be intracellular soluble aggregates instead of extracellular, insoluble plaques.
+0.48911458	The extracellular amyloid plaques mainly composed of amyloid-beta and intracellular neurofibrillary tangles built up of hyperphosphorylated tau, although the molecular mechanisms underlying the disease are still unknown and there is still no cure.
+0.48911458	Accumulation of amyloid-beta in AD brains is thought to underlie neuronal dysfunction and memory loss, being centrally implicated in AD pathogenesis.
+0.48911458	Studies of postmortem brains from AD patients and transgenic mouse models of AD suggest that oxidative damage, induced by amyloid-beta, is associated with mitochondria early in AD progression.
+=========================================================
+========================================================
+Question: When does oxidative stress happen in AD patients?
+3.2638576	Oxidative stress was also reported in the mitochondria of other tissues different to the brain such as platelets and fibroblasts from AD patients [29, 30].
+0.98982614	Increased oxidative stress levels have been found in the brains of patients with AD in Sweden and early in Tg2576 APP transgenic mice [12, 13].
+0.98982614	Oxidative stress plays a critical role in the pathogenesis of AD and is intimately linked to aging, the best established risk factor for AD.
+0.98982614	The brain is vulnerable to oxidative stress owing to its high lipid content, its relatively high oxygen metabolism, and its low levels of antioxidant defenses [26].
+0.98982614	One of the most interesting events in AD is that mitochondrial oxidative stress occurs early in AD progression, before the onset of amyloid-beta pathology [27, 28].
+0.80262834	Figure 2: APP processing in nondemented healthy individuals and AD patients.
+0.7423696	Many lines of evidence suggest that oxidative stress is one of the earliest changes and plays an important role in the pathological process in AD, and more recently, energy deficiency and mitochondrial dysfunction have been recognized as a prominent, early event in AD [1?11].
+0.64210266	Studies of postmortem brains from AD patients and transgenic mouse models of AD suggest that oxidative damage, induced by amyloid-beta, is associated with mitochondria early in AD progression.
+0.5618398	Moreover, previous to mitochondrial accumulation of amyloid-beta showed in AD patient and AD transgenic mouse brain, the toxic amyloid-beta species has to be accumulated in the cytosol of the cells.
+0.5618398	There are many studies proposing that megalin- and/or RAGE-dependent signalling are involved in the regulation of amyloid-beta clearance and probably may contribute to amyloid pathology and cognitive dysfunction observed in the AD patients and AD mouse model.4.
+=========================================================
+Question: What cell type in AD brains shows mitochondrial defects?
+astrocytes	0
+epithelial	0
+fibroblasts	0
+membrane	0
+cytosol	0
+astrocytes	2
+epithelial	0
+fibroblasts	0
+membrane	0
+cytosol	0
+================================================
+Question: In which anatomical structure in the brain does amyloid-beta aggregate?
+receptor	0
+tissues	0
+choroid plexus	0
+fibroblasts	0
+mitochondrial	0
+receptor	0
+tissues	0
+choroid plexus	0
+fibroblasts	0
+mitochondrial	0
+receptor	0
+tissues	0
+choroid plexus	0
+fibroblasts	0
+mitochondrial	0
+receptor	0
+tissues	0
+choroid plexus	0
+fibroblasts	0
+mitochondrial	0
+receptor	0
+tissues	0
+choroid plexus	0
+fibroblasts	0
+mitochondrial	0
+================================================
+Question: How many persons worldwide are estimated to have a medical condition related to neurodegeneration?
+================================================
+Question: Which protein is able to block nitric oxide creation?
+amyloid	0
+gelsolin	0
+NO	0
+mitochondrial proteins	0
+cytotoxicity	0
+amyloid	0
+gelsolin	0
+NO	0
+mitochondrial proteins	2
+cytotoxicity	0
+amyloid	0
+gelsolin	0
+NO	0
+mitochondrial proteins	2
+cytotoxicity	0
+amyloid	0
+gelsolin	0
+NO	0
+mitochondrial proteins	0
+cytotoxicity	0
+amyloid	3
+gelsolin	0
+NO	0
+mitochondrial proteins	0
+cytotoxicity	0
+================================================
+Question: Which is the best-characterized factor that increases chances of getting AD?
+damage	0
+Swedish	0
+pathogenesis	0
+age	0
+stress	0
+damage	0
+Swedish	0
+pathogenesis	0
+age	0
+stress	0
+damage	1
+Swedish	0
+pathogenesis	0
+age	1
+stress	0
+damage	0
+Swedish	0
+pathogenesis	1
+age	0
+stress	1
+damage	0
+Swedish	0
+pathogenesis	1
+age	0
+stress	0
+================================================
+Question: With which particular protein does amyloid-beta interact?
+extracellular domain	0
+disease-related proteins	0
+mitochondria	0
+receptor	0
+gelsolin	0
+extracellular domain	0
+disease-related proteins	0
+mitochondria	0
+receptor	0
+gelsolin	0
+extracellular domain	0
+disease-related proteins	0
+mitochondria	0
+receptor	0
+gelsolin	0
+extracellular domain	0
+disease-related proteins	0
+mitochondria	1
+receptor	0
+gelsolin	0
+extracellular domain	0
+disease-related proteins	0
+mitochondria	2
+receptor	0
+gelsolin	0
+================================================
+Question: The aggregation of which peptide has been widely observed in brains of Alzheimer patients?
+AD	0
+amyloid-beta	2
+extracellular	1
+mtDMA	0
+secretase	0
+AD	0
+amyloid-beta	0
+extracellular	0
+mtDMA	0
+secretase	1
+AD	1
+amyloid-beta	0
+extracellular	0
+mtDMA	0
+secretase	0
+AD	2
+amyloid-beta	1
+extracellular	0
+mtDMA	0
+secretase	0
+AD	3
+amyloid-beta	1
+extracellular	0
+mtDMA	0
+secretase	0
+================================================
+Question: What specific animal model can be used to study the role of amyloid-beta in apoptosis of choroid Plexus cells?
+patients with AD	0
+animal AD models	0
+brain	0
+APP/Ps mice	0
+mouse	0
+patients with AD	2
+animal AD models	0
+brain	1
+APP/Ps mice	0
+mouse	1
+patients with AD	0
+animal AD models	0
+brain	0
+APP/Ps mice	0
+mouse	0
+patients with AD	2
+animal AD models	0
+brain	1
+APP/Ps mice	0
+mouse	0
+patients with AD	4
+animal AD models	0
+brain	1
+APP/Ps mice	0
+mouse	1
+================================================
+Question: Where does amyloid-beta assemble into oligomeric structures?
+fractions	0
+monomeric amyloid	0
+membranes	0
+synaptic terminals	0
+lipid	0
+fractions	0
+monomeric amyloid	0
+membranes	0
+synaptic terminals	0
+lipid	0
+fractions	0
+monomeric amyloid	0
+membranes	0
+synaptic terminals	0
+lipid	0
+fractions	0
+monomeric amyloid	0
+membranes	0
+synaptic terminals	0
+lipid	0
+fractions	0
+monomeric amyloid	0
+membranes	0
+synaptic terminals	0
+lipid	0
+================================================
+Question: When does oxidative stress happen in AD patients?
+transgenic mouse	0
+predominantly in synaptic mitochondria	0
+choroid plexus	0
+before amyloid-beta accumulation	0
+postmortem	0
+transgenic mouse	0
+predominantly in synaptic mitochondria	0
+choroid plexus	0
+before amyloid-beta accumulation	0
+postmortem	0
+transgenic mouse	0
+predominantly in synaptic mitochondria	0
+choroid plexus	0
+before amyloid-beta accumulation	0
+postmortem	0
+transgenic mouse	0
+predominantly in synaptic mitochondria	0
+choroid plexus	0
+before amyloid-beta accumulation	0
+postmortem	0
+transgenic mouse	0
+predominantly in synaptic mitochondria	0
+choroid plexus	0
+before amyloid-beta accumulation	1
+postmortem	0
+================================================
+Question: What cell type in AD brains shows mitochondrial defects?
+Aggregated counts; 
+astrocytes	astrocytes	2.0
+Correct Choice: 	astrocytes
+Best Choice: 	astrocytes
+================================================
+Question: In which anatomical structure in the brain does amyloid-beta aggregate?
+Aggregated counts; 
+receptor	receptor	5.0
+Correct Choice: 	choroid plexus
+Best Choice: 	receptor
+================================================
+Question: How many persons worldwide are estimated to have a medical condition related to neurodegeneration?
+Aggregated counts; 
+Correct Choice: 	more than 10 million
+Best Choice: 	null
+================================================
+Question: Which protein is able to block nitric oxide creation?
+Aggregated counts; 
+mitochondrial proteins	mitochondrial proteins	2.0
+amyloid	amyloid	3.0
+Correct Choice: 	gelsolin
+Best Choice: 	amyloid
+================================================
+Question: Which is the best-characterized factor that increases chances of getting AD?
+Aggregated counts; 
+damage	damage	3.0
+pathogenesis	pathogenesis	2.0
+Correct Choice: 	age
+Best Choice: 	damage
+================================================
+Question: With which particular protein does amyloid-beta interact?
+Aggregated counts; 
+mitochondria	mitochondria	2.0
+extracellular domain	extracellular domain	3.0
+Correct Choice: 	gelsolin
+Best Choice: 	extracellular domain
+================================================
+Question: The aggregation of which peptide has been widely observed in brains of Alzheimer patients?
+Aggregated counts; 
+AD	AD	3.0
+secretase	secretase	1.0
+amyloid-beta	amyloid-beta	1.0
+Correct Choice: 	amyloid-beta
+Best Choice: 	AD
+================================================
+Question: What specific animal model can be used to study the role of amyloid-beta in apoptosis of choroid Plexus cells?
+Aggregated counts; 
+patients with AD	patients with AD	5.0
+Correct Choice: 	APP/Ps mice
+Best Choice: 	patients with AD
+================================================
+Question: Where does amyloid-beta assemble into oligomeric structures?
+Aggregated counts; 
+fractions	fractions	5.0
+Correct Choice: 	synaptic terminals
+Best Choice: 	fractions
+================================================
+Question: When does oxidative stress happen in AD patients?
+Aggregated counts; 
+before amyloid-beta accumulation	before amyloid-beta accumulation	1.0
+transgenic mouse	transgenic mouse	4.0
+Correct Choice: 	before amyloid-beta accumulation
+Best Choice: 	transgenic mouse
+================================================
+Correct: 1/10=10.0%
+c@1 score:0.11000000000000001
+################### DocId: QA4MRE-2012_BIOMEDICAL_GS.xml_4###########################
+Nov 9, 2013 10:46:02 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Nov 9, 2013 10:46:02 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Nov 9, 2013 10:46:02 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Nov 9, 2013 10:46:02 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Nov 9, 2013 10:46:02 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Nov 9, 2013 10:46:02 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Nov 9, 2013 10:46:02 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Nov 9, 2013 10:46:02 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Nov 9, 2013 10:46:02 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Nov 9, 2013 10:46:02 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Nov 9, 2013 10:46:02 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Nov 9, 2013 10:46:02 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Nov 9, 2013 10:46:02 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Nov 9, 2013 10:46:02 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Nov 9, 2013 10:46:02 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Nov 9, 2013 10:46:02 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Nov 9, 2013 10:46:02 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Nov 9, 2013 10:46:02 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Nov 9, 2013 10:46:02 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Nov 9, 2013 10:46:02 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Nov 9, 2013 10:46:02 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+******Entered into process of NoiseFilterNov 9, 2013 10:46:02 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Nov 9, 2013 10:46:02 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Nov 9, 2013 10:46:02 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+
+Total sentences: 292
+Nov 9, 2013 10:46:02 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 1 processed
+Nov 9, 2013 10:46:02 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 2 processed
+Sentence no. 3 processed
+Nov 9, 2013 10:46:03 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 4 processed
+Nov 9, 2013 10:46:04 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 5 processed
+Nov 9, 2013 10:46:04 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 6 processed
+Nov 9, 2013 10:46:04 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 7 processed
+Nov 9, 2013 10:46:04 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 8 processed
+Nov 9, 2013 10:46:05 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 9 processed
+Nov 9, 2013 10:46:05 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 10 processed
+Nov 9, 2013 10:46:05 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 11 processed
+Sentence no. 12 processed
+Nov 9, 2013 10:46:05 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 13 processed
+Sentence no. 14 processed
+Nov 9, 2013 10:46:06 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 15 processed
+Sentence no. 16 processed
+Sentence no. 17 processed
+Sentence no. 18 processed
+Nov 9, 2013 10:46:16 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 19 processed
+Nov 9, 2013 10:46:20 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 20 processed
+Nov 9, 2013 10:46:21 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 21 processed
+Nov 9, 2013 10:46:34 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 22 processed
+Sentence no. 23 processed
+Nov 9, 2013 10:46:35 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 24 processed
+Nov 9, 2013 10:46:35 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 25 processed
+Nov 9, 2013 10:46:36 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 26 processed
+Nov 9, 2013 10:46:36 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 27 processed
+Sentence no. 28 processed
+Nov 9, 2013 10:46:36 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 29 processed
+Nov 9, 2013 10:46:37 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Nov 9, 2013 10:46:37 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Nov 9, 2013 10:46:38 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Nov 9, 2013 10:46:38 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Nov 9, 2013 10:46:38 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Nov 9, 2013 10:46:39 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Nov 9, 2013 10:46:39 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 30 processed
+Sentence no. 31 processed
+Sentence no. 32 processed
+Sentence no. 33 processed
+Sentence no. 34 processed
+Sentence no. 35 processed
+Sentence no. 36 processed
+Sentence no. 37 processed
+Sentence no. 38 processed
+Sentence no. 39 processed
+Nov 9, 2013 10:46:40 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 40 processed
+Nov 9, 2013 10:46:40 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 41 processed
+Nov 9, 2013 10:46:40 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 42 processed
+Nov 9, 2013 10:46:40 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 43 processed
+Nov 9, 2013 10:46:48 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 44 processed
+Nov 9, 2013 10:46:49 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 45 processed
+Nov 9, 2013 10:46:49 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 46 processed
+Sentence no. 47 processed
+Nov 9, 2013 10:46:49 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 48 processed
+Sentence no. 49 processed
+Nov 9, 2013 10:47:47 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 50 processed
+Sentence no. 51 processed
+Nov 9, 2013 10:47:47 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 52 processed
+Sentence no. 53 processed
+Sentence no. 54 processed
+Sentence no. 55 processed
+Sentence no. 56 processed
+Sentence no. 57 processed
+Nov 9, 2013 10:47:48 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 58 processed
+Nov 9, 2013 10:47:48 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 59 processed
+Nov 9, 2013 10:47:49 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 60 processed
+Nov 9, 2013 10:47:49 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 61 processed
+Sentence no. 62 processed
+Nov 9, 2013 10:47:49 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 63 processed
+Nov 9, 2013 10:47:58 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 64 processed
+Nov 9, 2013 10:47:58 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 65 processed
+Sentence no. 66 processed
+Sentence no. 67 processed
+Sentence no. 68 processed
+Nov 9, 2013 10:47:59 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 69 processed
+Nov 9, 2013 10:48:00 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 70 processed
+Nov 9, 2013 10:48:00 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 71 processed
+Nov 9, 2013 10:48:00 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 72 processed
+Nov 9, 2013 10:48:01 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 73 processed
+Nov 9, 2013 10:48:01 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 74 processed
+Nov 9, 2013 10:48:02 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 75 processed
+Nov 9, 2013 10:48:02 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 76 processed
+Nov 9, 2013 10:48:02 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 77 processed
+Sentence no. 78 processed
+Nov 9, 2013 10:48:07 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 79 processed
+Nov 9, 2013 10:48:14 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 80 processed
+Nov 9, 2013 10:48:14 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 81 processed
+Nov 9, 2013 10:48:15 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 82 processed
+Nov 9, 2013 10:48:15 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 83 processed
+Nov 9, 2013 10:48:15 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 84 processed
+Sentence no. 85 processed
+Nov 9, 2013 10:48:15 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 86 processed
+Nov 9, 2013 10:48:15 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 87 processed
+Nov 9, 2013 10:48:15 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 88 processed
+Nov 9, 2013 10:48:15 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 89 processed
+Sentence no. 90 processed
+Nov 9, 2013 10:48:16 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 91 processed
+Sentence no. 92 processed
+Nov 9, 2013 10:48:16 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 93 processed
+Nov 9, 2013 10:48:16 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 94 processed
+Sentence no. 95 processed
+Nov 9, 2013 10:48:16 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 96 processed
+Sentence no. 97 processed
+Nov 9, 2013 10:48:17 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 98 processed
+Sentence no. 99 processed
+Nov 9, 2013 10:48:17 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 100 processed
+Nov 9, 2013 10:48:17 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 101 processed
+Sentence no. 102 processed
+Sentence no. 103 processed
+Nov 9, 2013 10:48:20 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 104 processed
+Sentence no. 105 processed
+Sentence no. 106 processed
+Nov 9, 2013 10:48:20 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 107 processed
+Nov 9, 2013 10:48:20 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 108 processed
+Nov 9, 2013 10:48:20 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 109 processed
+Sentence no. 110 processed
+Nov 9, 2013 10:48:21 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 111 processed
+Nov 9, 2013 10:48:21 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 112 processed
+Nov 9, 2013 10:48:22 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 113 processed
+Nov 9, 2013 10:48:22 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 114 processed
+Nov 9, 2013 10:48:22 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 115 processed
+Nov 9, 2013 10:48:22 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 116 processed
+Nov 9, 2013 10:48:22 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 117 processed
+Nov 9, 2013 10:48:22 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 118 processed
+Sentence no. 119 processed
+Nov 9, 2013 10:48:23 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 120 processed
+Nov 9, 2013 10:48:23 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 121 processed
+Sentence no. 122 processed
+Nov 9, 2013 10:48:24 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 123 processed
+Sentence no. 124 processed
+Nov 9, 2013 10:48:25 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 125 processed
+Nov 9, 2013 10:48:26 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 126 processed
+Nov 9, 2013 10:48:26 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 127 processed
+Sentence no. 128 processed
+Nov 9, 2013 10:48:26 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 129 processed
+Nov 9, 2013 10:48:26 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 130 processed
+Nov 9, 2013 10:48:27 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 131 processed
+Nov 9, 2013 10:48:27 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 132 processed
+Nov 9, 2013 10:48:28 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 133 processed
+Sentence no. 134 processed
+Nov 9, 2013 10:48:28 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 135 processed
+Sentence no. 136 processed
+Nov 9, 2013 10:48:28 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 137 processed
+Nov 9, 2013 10:48:28 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 138 processed
+Sentence no. 139 processed
+Sentence no. 140 processed
+Nov 9, 2013 10:48:28 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 141 processed
+Sentence no. 142 processed
+Sentence no. 143 processed
+Nov 9, 2013 10:48:29 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 144 processed
+Nov 9, 2013 10:48:29 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 145 processed
+Nov 9, 2013 10:48:29 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 146 processed
+Nov 9, 2013 10:48:29 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 147 processed
+Nov 9, 2013 10:48:30 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 148 processed
+Sentence no. 149 processed
+Sentence no. 150 processed
+Nov 9, 2013 10:48:30 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 151 processed
+Nov 9, 2013 10:48:30 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 152 processed
+Nov 9, 2013 10:48:30 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 153 processed
+Nov 9, 2013 10:48:31 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 154 processed
+Nov 9, 2013 10:48:31 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 155 processed
+Sentence no. 156 processed
+Nov 9, 2013 10:48:31 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 157 processed
+Nov 9, 2013 10:48:31 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 158 processed
+Nov 9, 2013 10:48:32 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 159 processed
+Nov 9, 2013 10:48:32 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 160 processed
+Nov 9, 2013 10:48:32 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 161 processed
+Sentence no. 162 processed
+Nov 9, 2013 10:48:32 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 163 processed
+Nov 9, 2013 10:48:33 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 164 processed
+Nov 9, 2013 10:48:33 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 165 processed
+Nov 9, 2013 10:48:34 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 166 processed
+Nov 9, 2013 10:48:34 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 167 processed
+Nov 9, 2013 10:48:34 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 168 processed
+Nov 9, 2013 10:48:35 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 169 processed
+Nov 9, 2013 10:48:35 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 170 processed
+Nov 9, 2013 10:48:35 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 171 processed
+Nov 9, 2013 10:48:35 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 172 processed
+Sentence no. 173 processed
+Nov 9, 2013 10:48:35 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 174 processed
+Nov 9, 2013 10:48:35 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 175 processed
+Nov 9, 2013 10:48:36 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 176 processed
+Sentence no. 177 processed
+Nov 9, 2013 10:48:36 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 178 processed
+Nov 9, 2013 10:48:37 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 179 processed
+Nov 9, 2013 10:48:38 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 180 processed
+Sentence no. 181 processed
+Nov 9, 2013 10:48:38 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 182 processed
+Nov 9, 2013 10:48:39 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 183 processed
+Nov 9, 2013 10:48:40 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 184 processed
+Nov 9, 2013 10:48:40 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 185 processed
+Nov 9, 2013 10:48:40 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 186 processed
+Nov 9, 2013 10:48:40 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 187 processed
+Sentence no. 188 processed
+Nov 9, 2013 10:48:41 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 189 processed
+Nov 9, 2013 10:48:41 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 190 processed
+Nov 9, 2013 10:48:41 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 191 processed
+Nov 9, 2013 10:48:41 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 192 processed
+Nov 9, 2013 10:48:42 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 193 processed
+Nov 9, 2013 10:48:42 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 194 processed
+Sentence no. 195 processed
+Nov 9, 2013 10:48:42 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 196 processed
+Sentence no. 197 processed
+Nov 9, 2013 10:48:42 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 198 processed
+Sentence no. 199 processed
+Sentence no. 200 processed
+Sentence no. 201 processed
+Nov 9, 2013 10:48:43 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 202 processed
+Nov 9, 2013 10:48:43 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 203 processed
+Nov 9, 2013 10:48:43 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 204 processed
+Nov 9, 2013 10:48:44 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 205 processed
+Sentence no. 206 processed
+Nov 9, 2013 10:48:44 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 207 processed
+Sentence no. 208 processed
+Nov 9, 2013 10:48:46 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 209 processed
+Sentence no. 210 processed
+Sentence no. 211 processed
+Sentence no. 212 processed
+Sentence no. 213 processed
+Sentence no. 214 processed
+Sentence no. 215 processed
+Sentence no. 216 processed
+Sentence no. 217 processed
+Nov 9, 2013 10:48:46 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 218 processed
+Sentence no. 219 processed
+Nov 9, 2013 10:48:47 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 220 processed
+Sentence no. 221 processed
+Sentence no. 222 processed
+Sentence no. 223 processed
+Sentence no. 224 processed
+Sentence no. 225 processed
+Nov 9, 2013 10:48:49 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 226 processed
+Nov 9, 2013 10:48:50 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 227 processed
+Nov 9, 2013 10:48:50 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 228 processed
+Sentence no. 229 processed
+Nov 9, 2013 10:48:53 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 230 processed
+Nov 9, 2013 10:48:57 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 231 processed
+Nov 9, 2013 10:48:57 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 232 processed
+Sentence no. 233 processed
+Nov 9, 2013 10:48:59 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 234 processed
+Nov 9, 2013 10:48:59 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 235 processed
+Sentence no. 236 processed
+Nov 9, 2013 10:48:59 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 237 processed
+Nov 9, 2013 10:48:59 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 238 processed
+Nov 9, 2013 10:48:59 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 239 processed
+Sentence no. 240 processed
+Nov 9, 2013 10:49:00 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 241 processed
+Nov 9, 2013 10:49:00 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 242 processed
+Nov 9, 2013 10:49:00 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 243 processed
+Sentence no. 244 processed
+Nov 9, 2013 10:49:00 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 245 processed
+Nov 9, 2013 10:49:02 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 246 processed
+Nov 9, 2013 10:49:02 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 247 processed
+Sentence no. 248 processed
+Nov 9, 2013 10:49:02 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 249 processed
+Nov 9, 2013 10:49:03 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 250 processed
+Nov 9, 2013 10:49:03 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 251 processed
+Nov 9, 2013 10:49:03 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 252 processed
+Nov 9, 2013 10:49:04 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 253 processed
+Nov 9, 2013 10:49:04 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 254 processed
+Sentence no. 255 processed
+Nov 9, 2013 10:49:05 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 256 processed
+Nov 9, 2013 10:49:05 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 257 processed
+Nov 9, 2013 10:49:05 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 258 processed
+Nov 9, 2013 10:49:06 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 259 processed
+Nov 9, 2013 10:49:06 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 260 processed
+Sentence no. 261 processed
+Nov 9, 2013 10:49:07 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 262 processed
+Nov 9, 2013 10:49:07 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 263 processed
+Nov 9, 2013 10:49:07 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 264 processed
+Sentence no. 265 processed
+Nov 9, 2013 10:49:08 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 266 processed
+Sentence no. 267 processed
+Sentence no. 268 processed
+Nov 9, 2013 10:49:10 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 269 processed
+Sentence no. 270 processed
+Nov 9, 2013 10:49:10 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 271 processed
+Sentence no. 272 processed
+Sentence no. 273 processed
+Nov 9, 2013 10:49:10 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 274 processed
+Sentence no. 275 processed
+Sentence no. 276 processed
+Nov 9, 2013 10:49:12 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 277 processed
+Nov 9, 2013 10:49:12 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 278 processed
+Sentence no. 279 processed
+Sentence no. 280 processed
+Sentence no. 281 processed
+Nov 9, 2013 10:49:12 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 282 processed
+Nov 9, 2013 10:49:13 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 283 processed
+Sentence no. 284 processed
+Sentence no. 285 processed
+Sentence no. 286 processed
+Nov 9, 2013 10:49:17 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 287 processed
+Sentence no. 288 processed
+Sentence no. 289 processed
+Nov 9, 2013 10:49:20 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 290 processed
+Nov 9, 2013 10:49:20 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Sentence no. 291 processed
+Sentence no. 292 processed
+Sentence no. 293 processed
+Sentence no. 294 processed
+Sentence no. 295 processed
+Sentence no. 296 processed
+Sentence no. 297 processed
+Answer no. 0 processed
+Answer no. 1 processed
+Answer no. 2 processed
+Answer no. 3 processed
+Answer no. 4 processed
+Answer no. 0 processed
+Answer no. 1 processed
+Answer no. 2 processed
+Answer no. 3 processed
+Answer no. 4 processed
+Answer no. 0 processed
+Answer no. 1 processed
+Answer no. 2 processed
+Answer no. 3 processed
+Answer no. 4 processed
+Answer no. 0 processed
+Answer no. 1 processed
+Answer no. 2 processed
+Answer no. 3 processed
+Answer no. 4 processed
+Answer no. 0 processed
+Answer no. 1 processed
+Answer no. 2 processed
+Answer no. 3 processed
+Answer no. 4 processed
+Answer no. 0 processed
+Answer no. 1 processed
+Answer no. 2 processed
+Answer no. 3 processed
+Answer no. 4 processed
+Answer no. 0 processed
+Answer no. 1 processed
+Answer no. 2 processed
+Answer no. 3 processed
+Answer no. 4 processed
+Answer no. 0 processed
+Answer no. 1 processed
+Answer no. 2 processed
+Answer no. 3 processed
+Answer no. 4 processed
+Answer no. 0 processed
+Answer no. 1 processed
+Answer no. 2 processed
+Answer no. 3 processed
+Answer no. 4 processed
+Answer no. 0 processed
+Answer no. 1 processed
+Answer no. 2 processed
+Answer no. 3 processed
+Answer no. 4 processed
+Total Questions: 10
+Nov 9, 2013 10:49:22 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Question no. 1 processed
+Nov 9, 2013 10:49:22 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Question no. 2 processed
+Question no. 3 processed
+Question no. 4 processed
+Nov 9, 2013 10:49:22 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Question no. 5 processed
+Question no. 6 processed
+Question no. 7 processed
+Nov 9, 2013 10:49:22 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Question no. 8 processed
+Nov 9, 2013 10:49:22 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Question no. 9 processed
+Nov 9, 2013 10:49:22 AM edu.stanford.nlp.process.PTBLexer next
+WARNING: Untokenizable: ? (U+FFFD, decimal: 65533)
+Question no. 10 processed
+Question no. 11 processed
+org.apache.solr.client.solrj.SolrServerException: Server at http://ur.lti.cs.cmu.edu:8983/solr/qa4mre was not found (404).
+	at org.apache.solr.client.solrj.impl.HttpSolrServer.request(HttpSolrServer.java:402)
+	at org.apache.solr.client.solrj.impl.HttpSolrServer.request(HttpSolrServer.java:221)
+	at edu.cmu.lti.oaqa.core.provider.solr.SolrWrapper.indexDocument(SolrWrapper.java:192)
+	at edu.cmu.lti.deiis.hw5.indexers.SolrIndexer.process(SolrIndexer.java:133)
+	at org.apache.uima.analysis_component.JCasAnnotator_ImplBase.process(JCasAnnotator_ImplBase.java:48)
+	at org.apache.uima.analysis_engine.impl.PrimitiveAnalysisEngine_impl.callAnalysisComponentProcess(PrimitiveAnalysisEngine_impl.java:375)
+	at org.apache.uima.analysis_engine.impl.PrimitiveAnalysisEngine_impl.processAndOutputNewCASes(PrimitiveAnalysisEngine_impl.java:296)
+	at org.apache.uima.analysis_engine.asb.impl.ASB_impl$AggregateCasIterator.processUntilNextOutputCas(ASB_impl.java:567)
+	at org.apache.uima.analysis_engine.asb.impl.ASB_impl$AggregateCasIterator.<init>(ASB_impl.java:409)
+	at org.apache.uima.analysis_engine.asb.impl.ASB_impl.process(ASB_impl.java:342)
+	at org.apache.uima.analysis_engine.impl.AggregateAnalysisEngine_impl.processAndOutputNewCASes(AggregateAnalysisEngine_impl.java:267)
+	at org.apache.uima.analysis_engine.impl.AnalysisEngineImplBase.process(AnalysisEngineImplBase.java:267)
+	at org.apache.uima.collection.impl.cpm.engine.ProcessingUnit.processNext(ProcessingUnit.java:897)
+	at org.apache.uima.collection.impl.cpm.engine.ProcessingUnit.run(ProcessingUnit.java:577)
+========================================================
+Question: What effect can be observed when when ??-secretase is blocked? 
+1.6372116	These data suggest that the effect of FAD mutations in PS1 on APP-CTFs accumulation was similar in presence or absence of otherhuman components of the ?-secretase.
+1.2176441	The relative amounts of AICD-Flag generated in the reactions, reflecting ?-secretase activity, were estimated by densitometry.
+1.1617143	(B) ?-Secretase activity assays were performed with microsomal extracts prepared in 1% CHAPSO-HEPES buffer.
+1.1617143	(A) ?-Secretase activity assays performed with ?-MEF and ? - PS1/2 microsomal extracts prepared in 1% CHAPSO-HEPES buffer.
+1.0452415	Since the phenotype of PS1 mutations have mainly been assessed in vivo or in cell-based systems, we investigated the effects of FAD-linked PS1 mutants on the processing of APP-CTFs in cell-free systems, by using semi-purified and purified enzymatic complexes isolated from MEF PS1/PS2 double knockout cells stably overexpressing differentially tagged human ?-secretase components.
+1.0336852	In vitro ?-secretase activity assays
+0.9777554	In vitro ?-secretase activity assays were performed as previously described [27].
+0.9218256	(A) Schematic representation of the ?-secretase purification process.
+0.9164357	3) Solubilisation of ?-secretase complexes.
+0.86589587	Taken together, these data suggest that the overexpression of the other human components of ?-secretase can influence the phenotype of FAD-linked mutations.
+=========================================================
+========================================================
+Question: When APH1 genes are overexpressed in MEF KO what happens with the A???
+2.582611	When compared to APH1aS or L, overexpression of APH1b in MEF knockout for all APH1 genes led to increased production of longer A? species [24].
+1.5043917	Indeed, ?-secretase complexes are heterogeneous in composition due to the existence of two human APH1 genes, APH1a and APH1b, and two splicing isoforms of APH1a (S and L), as well as two presenilin genes, PSEN1 and PSEN2.
+=========================================================
+========================================================
+Question: In which gene are mutations associated to many cases of early-onset familial forms of Alzheimer's disease?G
+1.7318636	The supernatant was collected and centrifuged at 100,000? g for 1 h at 4?C in a SW32
+1.7318636	Editor: Stefano L. Sensi, University G. D'Annunzio, Italy
+1.3854909	Nuclei and unbroken cells were removed by centrifugation at 3,000? g for 20 min at 4?C in a Beckman Coulter Allegra X-15R centrifuge.
+1.3854909	The membranes were then incubated at 4?C for 1 h. To pellet the insoluble material, the solution was centrifuged at 16,000? g at 4?C for 1 h, the pellet was discarded, and the supernatant saved.
+0.97969	Total protein extracts were prepared in 1% NP40 - HEPES buffer (50 mM HEPES, pH 7.0, 150 mM NaCl, 5 mM MgCl2, 5 mM CaCl2), supplemented with protease inhibitor cocktail (Roche), and were clarified by centrifugation for 1 h at 16,000? g, 4?C. Cell membranes were obtained as described below and solubilised in 1% CHAPSO - HEPES buffer and centrifuged at 16,000? g for 1 h. Supernatants corresponding to the microsomal protein extracts were harvested and stored at ?80?C. Protein content of the extracts was estimated by the BCA protein assay reagent kit (Pierce).
+=========================================================
+========================================================
+Question: What experimental technique was used specifically to purify the ??-secretase complex?
+1.7853162	3) Solubilisation of ?-secretase complexes.
+1.481941	Next, these freshly prepared solubilised preparations were used for affinity purification of ?-secretase complexes as described below.
+1.481941	To do so, ?-secretase complexes from the different clones were co-immunoprecipitated from microsomal extracts and their activities were assayed in vitro with the C100-His substrate.
+1.3808159	(B) Blue-Native PAGE analysis of purified ?-secretase complexes made of different PS1 variants.
+1.3808159	Another possible explanation would be that purified ?-secretase complexes lack binding partners modulating the processing of APP-based substrates, due to purification conditions affecting physical interactions of proteins.
+1.3808159	Since all cell lines were generated on a PS knockout background, this strategy allowed us to purify exclusively and selectively ?-secretase complexes made of human components.
+1.3599014	A multi-step affinity purification procedure was used to isolate semi-purified or highly purified ?-secretase complexes.
+1.3599014	PS1 and PS2 play fundamental roles in cell signalling as part of the ?-secretase complex.
+1.2796907	As the main goal of this experiment was to compare the efficacy of the different ?-secretase complexes to process APP-based substrates, it is important to note that the final yields of the complexes purified from the different clones were very similar (Figure 4B), thus facilitating further comparative analyses.
+1.2587764	Note that the levels of A? produced from FAD-linked ?-secretase complexes were all in the non-linear range of the ELISA standards, close to the detection limit.
+=========================================================
+========================================================
+Question: What peptide is able to control the expression of the ApoE gene?
+0.06415628	Quantification of A? peptidesA? peptides from the ?-secretase assays described above were quantified by sandwich ELISA according to the protocol provided by the manufacturer.
+0.05613674	The beads were washed 3 times in the same buffer, and the bound proteins were eluted for 1 h at 4?C with 0.4 mL of this buffer containing 500 ?g/mL of V5 peptides (Sigma-Aldrich).
+0.05613674	The beads werewashed 3 times in the same buffer, and the bound proteins were eluted overnight at 4?C with 0.2 mL of this buffer containing 200 ?g/mL of HA peptides (Sigma-Aldrich).
+0.05613674	The beads were washed 3 times in the same buffer, and the bound proteins were eluted over 4 h at 4?C with 0.4 mL of this buffer containing 200 ?g/mL of Flag peptides (Sigma-Aldrich).
+0.04811721	Together with nicastrin (NCT), anterior pharynx-defective protein 1 (APH1), and presenilin enhancer 2 (PEN2), the catalytic subunit PS1 constitutes the core of the ?-secretase complex and contributes to the proteolysis of the amyloid precursor protein (APP) into amyloid-beta (A?) peptides.
+0.04811721	The amyloid precursor protein (APP) is processed by the successive actions of ?-secretase (BACE1) and ?-secretase, generating amyloid-beta peptides (A?) of different lengths, ranging from 37 to 46 amino acids [10].
+0.04811721	WT MEF, ?-MEF and ? - PS1/2 were transduced with an APP-based substrate corresponding to the 99 C-terminal residues of human APP fused to the APP signal peptide in N-terminus (SPA4CT [36]) and a Flag Tag in C-terminus.
+0.041195642	Different patterns of PS1 expression and autoproteolysis were observed in the different clones.
+0.027463762	Ten clones were isolated by the limiting dilution method and were further screened for NCT-V5, Flag-PEN2 and APH1aL-HA expression by immunodetection.
+0.027463762	The latter cleaves numerous type-I membrane proteins in their transmembrane domain [7], releasing their corresponding intracellular domains, which are capable of influencing gene expression.
+=========================================================
+========================================================
+Question: Which amino acid is critical for the activity of the PS1 protein?
+0.6238425	Membrane protein extracts were prepared and ?-secretase activity was assayed on an exogenous recombinant APP-based substrate consisting of the C-terminal 99 amino acid residues of APP, and referred to as C100-Flag (Figure 3A).
+0.28516993	The amyloid precursor protein (APP) is processed by the successive actions of ?-secretase (BACE1) and ?-secretase, generating amyloid-beta peptides (A?) of different lengths, ranging from 37 to 46 amino acids [10].
+0.23684373	Experimental evidence such as the binding of transition-state analogue ?-secretase inhibitors to PS1 [4], as well as the abolishment of ?-secretase activity when PS1 lacks the aspartate residues critical for proteolysis [4], [5], [6], have confirmed that presenilins harbour the active site of the enzymatic complex.
+0.13431635	We also thank J.R. Alattia, C. Schweizer, and A. Alahari for critical readings of the manuscript.
+0.080589816	Find this article online Jarrett JT, Berger EP, Lansbury PT Jr (1993) The carboxy terminus of the beta amyloid protein is critical for the seeding of amyloid formation: implications for the pathogenesis of Alzheimer's disease.
+0.0713368	In vitro ?-secretase activity assays
+0.0624197	In vitro ?-secretase activity assays were performed as previously described [27].
+0.053726543	MEF PS1/PS2 DKO cells (1.0?109 cells) expressing NCT-V5, Flag-PEN2, APH1aL-HA and different forms of PS1: wild type (WT), or with FAD-linked variants or lacking the critical aspartate residues, were collected from 15 cm dishes and fully resuspended in 40 mL of MES buffer (50 mM MES, pH 6.0, 150 mM NaCl, 5 mM MgCl2, 5 mM CaCl2), supplemented with protease inhibitor cocktail (Roche).
+0.0535026	g003 We next performed activity assays under semi-purified conditions.
+0.0445855	Enzymatic activity of highly purified ?-secretase complexes with FAD-linked or aspartate PS1 mutants.
+=========================================================
+========================================================
+Question: What experimental technique was used to determine the structure of ??-secretase?
+0.6712094	In particular, protocols for the high-grade purification of proteolytically active ?-secretase constituted of NCT, APH1aL, PEN2 and wild-type PS1 [26], [27] allowed the reconstitution of 3D structures at 15 ? and 12 ? resolution by EM and cryo-EM and gave new insights on the structure and activity of the enzyme [28], [29].
+0.3619848	The relative amounts of AICD-Flag generated in the reactions, reflecting ?-secretase activity, were estimated by densitometry.
+0.34535784	(B) ?-Secretase activity assays were performed with microsomal extracts prepared in 1% CHAPSO-HEPES buffer.
+0.34535784	(A) ?-Secretase activity assays performed with ?-MEF and ? - PS1/2 microsomal extracts prepared in 1% CHAPSO-HEPES buffer.
+0.30729693	In vitro ?-secretase activity assays
+0.29066998	In vitro ?-secretase activity assays were performed as previously described [27].
+0.27404302	(A) Schematic representation of the ?-secretase purification process.
+0.2724407	3) Solubilisation of ?-secretase complexes.
+0.25741607	Taken together, these data suggest that the overexpression of the other human components of ?-secretase can influence the phenotype of FAD-linked mutations.
+0.25741607	They further support the concept that modulating rather than inhibiting ?-secretase activity would be a more appropriate therapeutic strategy for AD [58].
+=========================================================
+========================================================
+Question: What candidate drug that blocks the ??-secretase is now tested in clinical trials?
+1.5658576	Supporting this view, the ?-secretase inhibitor Semagacestat tested in phase III clinical trials not only failed to slow cognitive decline in patients with mild-to-moderate AD, but actually made it worse [59].
+0.27267155	The relative amounts of AICD-Flag generated in the reactions, reflecting ?-secretase activity, were estimated by densitometry.
+0.26014698	(B) ?-Secretase activity assays were performed with microsomal extracts prepared in 1% CHAPSO-HEPES buffer.
+0.26014698	(A) ?-Secretase activity assays performed with ?-MEF and ? - PS1/2 microsomal extracts prepared in 1% CHAPSO-HEPES buffer.
+0.23147693	In vitro ?-secretase activity assays
+0.21895237	In vitro ?-secretase activity assays were performed as previously described [27].
+0.20642781	(A) Schematic representation of the ?-secretase purification process.
+0.20522085	3) Solubilisation of ?-secretase complexes.
+0.19390327	Taken together, these data suggest that the overexpression of the other human components of ?-secretase can influence the phenotype of FAD-linked mutations.
+0.19390327	They further support the concept that modulating rather than inhibiting ?-secretase activity would be a more appropriate therapeutic strategy for AD [58].
+=========================================================
+========================================================
+Question: What mutation of the PS1 protein causes ??-secretase activity almost to disappear?
+1.0193384	Our biochemical and functional findings strongly suggest that pathogenic mutations in PSEN1 cause a loss of ?-secretase activity.
+0.8564355	Together, our results strongly support the hypothesis that the pathogenic L166P, ?E9, and P436Q mutations in PSEN1 cause a drastic loss (at least 90% as estimated by ELISA) of ?-secretase activity.
+0.8006668	In vitro ?-secretase activity assays
+0.72191924	In vitro ?-secretase activity assays were performed as previously described [27].
+0.6935326	To assess how FAD-linked mutations in PS1 affect ?-secretase activity in these purified complexes, we performed in vitro assays by using C100-Flag substrate (Figure 3A) and equal amounts of the different purified complexes, immediately after the purification to avoid freezing/thawing cycles that might affect enzymatic activity.
+0.6679296	The functional characterization of these complexes revealed that all PS1 FAD-linked mutations caused a loss of ?-secretase activity phenotype, in terms of A?1?40, A?1?42 and APP intracellular domain productions in vitro.
+0.6668361	The relative amounts of AICD-Flag generated in the reactions, reflecting ?-secretase activity, were estimated by densitometry.
+0.61672366	Although a poor recovery of ?-secretase activity for the PS1-L166P and a comparatively better performance of PS1-?E9 have been reported by others under similar experimental conditions [23], the potential of PS1-P436Q mutation to restore the processing of endogenous APP-CTFs has never been assessed [34], [35].
+0.5880885	(B) ?-Secretase activity assays were performed with microsomal extracts prepared in 1% CHAPSO-HEPES buffer.
+0.5880885	(A) ?-Secretase activity assays performed with ?-MEF and ? - PS1/2 microsomal extracts prepared in 1% CHAPSO-HEPES buffer.
+=========================================================
+========================================================
+Question: How many mutations relevant for familial forms of Alzheimer's disease have been detected for the PSEN1 gene?
+0.8204544	Mutations linked to early onset, familial forms of Alzheimer's disease (FAD) are found most frequently in PSEN1, the gene encoding presenilin-1 (PS1).
+0.13342878	g005 Discussion Top Several conflicting results as to how Alzheimer's disease-linked mutations in PSEN1 affect the processing of APP by ?-secretase have been reported.
+0.13342878	This deleterious dual effect might explain why FAD-linked PSEN1 mutations cause early onset Alzheimer's disease.
+0.13342878	Alzheimer's Disease-Linked Mutations in Presenilin-1 Result in a Drastic Loss of Activity in Purified ?-Secretase Complexes
+0.11675018	Our data support the view that PS1 mutations lead to a strong ?-secretase loss-of-function phenotype and an increased A?1?42/A?1?40 ratio, two mechanisms that are potentially involved in the pathogenesis of Alzheimer's disease.
+0.11675018	Introduction Top Since their discovery in 1995 and their association with early onset familial Alzheimer's disease (FAD) [1], [2], the presenilin genes PSEN1 and PSEN2 have been widely studied, and the complexity of their biological role is becoming increasingly evident.
+0.100071594	Find this article online Jarrett JT, Berger EP, Lansbury PT Jr (1993) The carboxy terminus of the beta amyloid protein is critical for the seeding of amyloid formation: implications for the pathogenesis of Alzheimer's disease.
+0.100071594	Matthias Cacquevel, Lor?ne Aeschbach, Jemila Houacine, Patrick C. Fraering*?cole Polytechnique F?d?rale de Lausanne, Brain Mind Institute, Laboratory of Molecular and Cellular Biology of Alzheimer's Disease, Lausanne, Switzerland
+0.026894707	It was initially suggested that such mutations lead to a toxic gain of function because they are associated with a relative increased production of longer and more hydrophobic A? species, mainly A?1?42, that accumulate and aggregate early in the course of the disease [15], [16].
+0.015368404	Next, the clone expressing the highest levels of all three recombinant proteins was selected (designated ? - PS1/2) and used as the parental cell line that was further transduced with lentivectors carrying the following different human PS1 variants: PS1-WT, three dominant-negative forms of PS1 that lack the crucial, catalytic site aspartate residues (D257A, D385A, and both D257A/D385A referred to as DDAA later in the article), and three FAD-linked PS1 mutants (L166P, ?E9 and P436Q, with mean disease onset at 24 years, 45.5 years and 28.3 years, respectively).
+=========================================================
+Question: What effect can be observed when when ??-secretase is blocked? 
+APP-CTF accumulation	1
+PSEN1 mutations	0
+cell-based data	0
+APH1 variants	0
+transition-state analogue	0
+APP-CTF accumulation	0
+PSEN1 mutations	0
+cell-based data	0
+APH1 variants	0
+transition-state analogue	0
+APP-CTF accumulation	0
+PSEN1 mutations	0
+cell-based data	0
+APH1 variants	0
+transition-state analogue	0
+APP-CTF accumulation	0
+PSEN1 mutations	0
+cell-based data	0
+APH1 variants	0
+transition-state analogue	0
+APP-CTF accumulation	0
+PSEN1 mutations	1
+cell-based data	0
+APH1 variants	7
+transition-state analogue	0
+================================================
+Question: When APH1 genes are overexpressed in MEF KO what happens with the A???
+They are purified	0
+They are anterior	0
+They are shorter	0
+They are longer	0
+They are supported	0
+They are purified	0
+They are anterior	0
+They are shorter	1
+They are longer	0
+They are supported	0
+================================================
+Question: In which gene are mutations associated to many cases of early-onset familial forms of Alzheimer's disease?G
+FAD	0
+I-CLiPs	0
+NCT	0
+PSEN1	0
+D257A	0
+FAD	0
+I-CLiPs	0
+NCT	0
+PSEN1	0
+D257A	0
+FAD	0
+I-CLiPs	0
+NCT	0
+PSEN1	0
+D257A	1
+FAD	1
+I-CLiPs	0
+NCT	2
+PSEN1	0
+D257A	0
+FAD	0
+I-CLiPs	0
+NCT	0
+PSEN1	0
+D257A	0
+================================================
+Question: What experimental technique was used specifically to purify the ??-secretase complex?
+plasmids	0
+affinity chromatography	0
+lysate	0
+cell lines	0
+knockout experiments	0
+plasmids	0
+affinity chromatography	0
+lysate	0
+cell lines	0
+knockout experiments	0
+plasmids	0
+affinity chromatography	0
+lysate	0
+cell lines	0
+knockout experiments	0
+plasmids	0
+affinity chromatography	0
+lysate	0
+cell lines	0
+knockout experiments	0
+plasmids	0
+affinity chromatography	0
+lysate	0
+cell lines	0
+knockout experiments	0
+================================================
+Question: What peptide is able to control the expression of the ApoE gene?
+AD	0
+APP-CTFs	0
+c-secretase	0
+cholesterol	0
+AICD	0
+AD	0
+APP-CTFs	0
+c-secretase	0
+cholesterol	0
+AICD	0
+AD	0
+APP-CTFs	0
+c-secretase	0
+cholesterol	0
+AICD	0
+AD	0
+APP-CTFs	0
+c-secretase	0
+cholesterol	0
+AICD	0
+AD	0
+APP-CTFs	0
+c-secretase	0
+cholesterol	0
+AICD	0
+================================================
+Question: Which amino acid is critical for the activity of the PS1 protein?
+aspartate	0
+C-terminal	1
+42-residue	0
+99	1
+DDAA	0
+aspartate	0
+C-terminal	0
+42-residue	0
+99	0
+DDAA	0
+aspartate	1
+C-terminal	0
+42-residue	0
+99	0
+DDAA	0
+aspartate	0
+C-terminal	0
+42-residue	0
+99	0
+DDAA	0
+aspartate	0
+C-terminal	0
+42-residue	0
+99	0
+DDAA	0
+================================================
+Question: What experimental technique was used to determine the structure of ??-secretase?
+densitometry	0
+EM	2
+ELISA	0
+immunostaining	0
+purification	2
+densitometry	0
+EM	0
+ELISA	0
+immunostaining	0
+purification	0
+densitometry	0
+EM	0
+ELISA	0
+immunostaining	0
+purification	0
+densitometry	0
+EM	0
+ELISA	0
+immunostaining	0
+purification	0
+densitometry	0
+EM	0
+ELISA	0
+immunostaining	0
+purification	0
+================================================
+Question: What candidate drug that blocks the ??-secretase is now tested in clinical trials?
+LRP1	0
+biochemical	0
+PSEN1	0
+AD	0
+Semagacestat	0
+LRP1	0
+biochemical	0
+PSEN1	0
+AD	0
+Semagacestat	0
+LRP1	0
+biochemical	0
+PSEN1	0
+AD	0
+Semagacestat	0
+LRP1	0
+biochemical	0
+PSEN1	0
+AD	0
+Semagacestat	0
+LRP1	0
+biochemical	0
+PSEN1	0
+AD	0
+Semagacestat	0
+================================================
+Question: What mutation of the PS1 protein causes ??-secretase activity almost to disappear?
+P436Q	0
+L166P	0
+wild-type	0
+AICD	0
+C100-His	0
+P436Q	0
+L166P	0
+wild-type	0
+AICD	0
+C100-His	0
+P436Q	0
+L166P	0
+wild-type	0
+AICD	0
+C100-His	0
+P436Q	0
+L166P	0
+wild-type	0
+AICD	0
+C100-His	0
+P436Q	0
+L166P	0
+wild-type	0
+AICD	0
+C100-His	0
+================================================
+Question: How many mutations relevant for familial forms of Alzheimer's disease have been detected for the PSEN1 gene?
+13	0
+42	0
+P436Q	0
+185	0
+PSEN2	0
+13	0
+42	1
+P436Q	0
+185	0
+PSEN2	0
+13	0
+42	0
+P436Q	0
+185	0
+PSEN2	0
+13	0
+42	0
+P436Q	0
+185	0
+PSEN2	0
+13	0
+42	1
+P436Q	0
+185	0
+PSEN2	0
+================================================
+Question: What effect can be observed when when ??-secretase is blocked? 
+Aggregated counts; 
+APH1 variants	APH1 variants	1.0
+APP-CTF accumulation	APP-CTF accumulation	4.0
+Correct Choice: 	APP-CTF accumulation
+Best Choice: 	APP-CTF accumulation
+================================================
+Question: When APH1 genes are overexpressed in MEF KO what happens with the A???
+Aggregated counts; 
+They are shorter	They are shorter	1.0
+They are purified	They are purified	1.0
+Correct Choice: 	They are longer
+Best Choice: 	They are shorter
+================================================
+Question: In which gene are mutations associated to many cases of early-onset familial forms of Alzheimer's disease?G
+Aggregated counts; 
+NCT	NCT	1.0
+D257A	D257A	1.0
+FAD	FAD	3.0
+Correct Choice: 	PSEN1
+Best Choice: 	FAD
+================================================
+Question: What experimental technique was used specifically to purify the ??-secretase complex?
+Aggregated counts; 
+plasmids	plasmids	5.0
+Correct Choice: 	affinity chromatography
+Best Choice: 	plasmids
+================================================
+Question: What peptide is able to control the expression of the ApoE gene?
+Aggregated counts; 
+AD	AD	5.0
+Correct Choice: 	AICD
+Best Choice: 	AD
+================================================
+Question: Which amino acid is critical for the activity of the PS1 protein?
+Aggregated counts; 
+aspartate	aspartate	4.0
+C-terminal	C-terminal	1.0
+Correct Choice: 	aspartate
+Best Choice: 	aspartate
+================================================
+Question: What experimental technique was used to determine the structure of ??-secretase?
+Aggregated counts; 
+EM	EM	1.0
+densitometry	densitometry	4.0
+Correct Choice: 	EM
+Best Choice: 	densitometry
+================================================
+Question: What candidate drug that blocks the ??-secretase is now tested in clinical trials?
+Aggregated counts; 
+LRP1	LRP1	5.0
+Correct Choice: 	Semagacestat
+Best Choice: 	LRP1
+================================================
+Question: What mutation of the PS1 protein causes ??-secretase activity almost to disappear?
+Aggregated counts; 
+P436Q	P436Q	5.0
+Correct Choice: 	P436Q
+Best Choice: 	P436Q
+================================================
+Question: How many mutations relevant for familial forms of Alzheimer's disease have been detected for the PSEN1 gene?
+Aggregated counts; 
+42	42	2.0
+13	13	3.0
+Correct Choice: 	185
+Best Choice: 	13
+================================================
+Correct: 3/10=30.0%
+c@1 score:0.30000000000000004
+

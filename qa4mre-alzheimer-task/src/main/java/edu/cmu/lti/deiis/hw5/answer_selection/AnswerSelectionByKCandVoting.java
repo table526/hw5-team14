@@ -1,5 +1,7 @@
 package edu.cmu.lti.deiis.hw5.answer_selection;
 
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
@@ -117,7 +119,16 @@ public class AnswerSelectionByKCandVoting extends JCasAnnotator_ImplBase {
     double cAt1 = (((double) matched) / ((double) total) * unanswered + (double) matched)
             * (1.0 / total);
     System.out.println("c@1 score:" + cAt1);
-
+   /* try
+    {
+      FileWriter writer = new FileWriter("panOut1", true);
+      writer.write("Correct: " + matched + "/" + total + "=" + ((matched * 100.0) / total) + "%");
+      writer.write("c@1 score:" + cAt1);
+      writer.close();
+    }catch(IOException e)
+    {
+      e.printStackTrace();
+    }*/
   }
 
   public String findBestChoice(HashMap<String, Double> hshAnswer) throws Exception {

@@ -41,7 +41,9 @@ public class AnswerChoiceCandAnsPMIScorer extends JCasAnnotator_ImplBase {
 		
 		try {
 			this.solrWrapper = new SolrWrapper(serverUrl);
-			// loadStopWords(stopFile);
+			System.out.println("");
+			
+			 //loadStopWords(stopFile);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -85,6 +87,8 @@ public class AnswerChoiceCandAnsPMIScorer extends JCasAnnotator_ImplBase {
 
 					for (int k = 0; k < candSentNouns.size(); k++) {
 						try {
+						  System.out.println("cand:"+candSentNouns.get(k).getText()+"\tchoi"+ choiceList.get(j));
+						  
 							score1 += scoreCoOccurInSameDoc(candSentNouns
 									.get(k).getText(), choiceList.get(j));
 
@@ -161,13 +165,16 @@ public class AnswerChoiceCandAnsPMIScorer extends JCasAnnotator_ImplBase {
 			QueryResponse rsp = null;
 			long combinedHits = 0;
 			try {
-				rsp = solrWrapper.getServer().query(solrParams);
+			  //Solrserver so = solrWrapper.getServer()
+
+        System.out.println(solrWrapper.getServer());
+			  rsp = solrWrapper.getServer().query(solrParams);
+				
 				combinedHits = rsp.getResults().getNumFound();
 			} catch (Exception e) {
-				// System.out.println(e + "\t" + query);
+				 System.out.println(e + "\t" + query);
 			}
 
-			// System.out.println(query+"\t"+combinedHits);
 
 			query = choiceNounPhrase;
 			// System.out.println(query);

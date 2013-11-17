@@ -32,10 +32,10 @@ public class QuestionCandSentSimilarityMatcher  extends JCasAnnotator_ImplBase{
 	String coreName;
 	String schemaName;
 	int TOP_SEARCH_RESULTS=10;
-  public static String[] correctAnsString1 ={"immunofluorescence experiments","ER Golgi apparatus","CLU2","rs11136000T","rs11136000","CLU2","androgen","activation","valproate","449"};
-  public static String[] correctAnsString2 ={"somatostatin","somatostatin","BV-2","RealTime PCR","somatostatin","microglia","extracellular","octreotide","SSTR-1 SSTR-2 SSTR-4","siRNA"};
-  public static String[] correctAnsString3 ={"astrocytes","choroid plexus","more than 10 million","gelsolin","age","gelsolin","amyloid-beta","APP Ps mice","synaptic terminals","before amyloid-beta accumulation"};
-  public static String[] correctAnsString4 ={"APP-CTF accumulation","longer","PSEN1","affinity chromatography","AICD","aspartate","EM","Semagacestat","P436Q","185"};
+//  public static String[] correctAnsString1 ={"immunofluorescence experiments","ER Golgi apparatus","CLU2","rs11136000T","rs11136000","CLU2","androgen","activation","valproate","449"};
+//  public static String[] correctAnsString2 ={"somatostatin","somatostatin","BV-2","RealTime PCR","somatostatin","microglia","extracellular","octreotide","SSTR-1 SSTR-2 SSTR-4","siRNA"};
+//  public static String[] correctAnsString3 ={"astrocytes","choroid plexus","more than 10 million","gelsolin","age","gelsolin","amyloid-beta","APP Ps mice","synaptic terminals","before amyloid-beta accumulation"};
+//  public static String[] correctAnsString4 ={"APP-CTF accumulation","longer","PSEN1","affinity chromatography","AICD","aspartate","EM","Semagacestat","P436Q","185"};
 	@Override
 	public void initialize(UimaContext context)
 			throws ResourceInitializationException {

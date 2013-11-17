@@ -14,6 +14,7 @@ import org.apache.uima.jcas.cas.FSList;
 import org.apache.uima.resource.ResourceInitializationException;
 
 import edu.cmu.lti.oaqa.core.provider.solr.SolrWrapper;
+import edu.cmu.lti.qalab.types.Answer;
 import edu.cmu.lti.qalab.types.CandidateSentence;
 import edu.cmu.lti.qalab.types.NER;
 import edu.cmu.lti.qalab.types.NounPhrase;
@@ -31,7 +32,10 @@ public class QuestionCandSentSimilarityMatcher  extends JCasAnnotator_ImplBase{
 	String coreName;
 	String schemaName;
 	int TOP_SEARCH_RESULTS=10;
-
+  public static String[] correctAnsString1 ={"immunofluorescence experiments","ER Golgi apparatus","CLU2","rs11136000T","rs11136000","CLU2","androgen","activation","valproate","449"};
+  public static String[] correctAnsString2 ={"somatostatin","somatostatin","BV-2","RealTime PCR","somatostatin","microglia","extracellular","octreotide","SSTR-1 SSTR-2 SSTR-4","siRNA"};
+  public static String[] correctAnsString3 ={"astrocytes","choroid plexus","more than 10 million","gelsolin","age","gelsolin","amyloid-beta","APP Ps mice","synaptic terminals","before amyloid-beta accumulation"};
+  public static String[] correctAnsString4 ={"APP-CTF accumulation","longer","PSEN1","affinity chromatography","AICD","aspartate","EM","Semagacestat","P436Q","185"};
 	@Override
 	public void initialize(UimaContext context)
 			throws ResourceInitializationException {
@@ -53,19 +57,34 @@ public class QuestionCandSentSimilarityMatcher  extends JCasAnnotator_ImplBase{
 	public void process(JCas aJCas) throws AnalysisEngineProcessException {
 		TestDocument testDoc=Utils.getTestDocumentFromCAS(aJCas);
 		String testDocId=testDoc.getId();
+		System.out.println(testDocId);
 		ArrayList<Sentence>sentenceList=Utils.getSentenceListFromTestDocCAS(aJCas);
 		ArrayList<QuestionAnswerSet>qaSet=Utils.getQuestionAnswerSetFromTestDocCAS(aJCas);
-		
+	//Store correctness of Candidate Sentences for a Document
+    double totallcorrect0 = 0;
 		for(int i=0;i<qaSet.size();i++){
-			
-			
+			/** Get Answer Labeled Correct**/
+		  ArrayList<Answer> choiceList = Utils.fromFSListToCollection(qaSet.get(i).getAnswerList(),
+              Answer.class);
+		  String correct = "";
+      for (int j = 0; j < choiceList.size(); j++) {
+        Answer answer = choiceList.get(j);
+        if (answer.getIsCorrect()) {
+          correct = answer.getText();
+          break;
+        }
+      }
+      
 			Question question=qaSet.get(i).getQuestion();
 			System.out.println("========================================================");
 			System.out.println("Question: "+question.getText());
+			System.out.println("Correct Answer: "+correct);
 			String searchQuery=this.formSolrQuery(question);
 			if(searchQuery.trim().equals("")){
 				continue;
 			}
+			//Store number of correct Candidate Sentences for a Question
+			double totallcorrect = 0;
 			ArrayList<CandidateSentence>candidateSentList=new ArrayList<CandidateSentence>();
 			SolrQuery solrQuery=new SolrQuery();
 			solrQuery.add("fq", "docid:"+testDocId);
@@ -86,18 +105,32 @@ public class QuestionCandSentSimilarityMatcher  extends JCasAnnotator_ImplBase{
 					Sentence annSentence=sentenceList.get(idx);
 					
 					String sentence=doc.get("text").toString();
+					/** Error Analysis for Sentence Selection**/
+					String[] ansTok = correct.split("\t");
+					boolean label = false;
+					String tag = "F";
+					//need noise filtering
+					for(int b = 0; b < ansTok.length;b++)
+					  if(sentence.toLowerCase().contains(ansTok[b].toLowerCase()))
+					    label = true;
+					if(label) {
+					  tag = "T";
+					  totallcorrect++;
+					}
 					double relScore=Double.parseDouble(doc.get("score").toString());
 					CandidateSentence candSent=new CandidateSentence(aJCas);
 					candSent.setSentence(annSentence);
 					candSent.setRelevanceScore(relScore);
 					candidateSentList.add(candSent);
-					System.out.println(relScore+"\t"+sentence);
+					System.out.println(tag+" "+relScore+"\t"+sentence);
 				}
 				FSList fsCandidateSentList=Utils.fromCollectionToFSList(aJCas, candidateSentList);
 				fsCandidateSentList.addToIndexes();
 				qaSet.get(i).setCandidateSentenceList(fsCandidateSentList);
 				qaSet.get(i).addToIndexes();
-			
+				double rate = totallcorrect/TOP_SEARCH_RESULTS;
+				totallcorrect0 += rate;
+			  System.out.println("Sentence ErrorAnalysis for Q"+i+": "+rate);
 				
 			} catch (SolrServerException e) {
 				e.printStackTrace();
@@ -107,8 +140,8 @@ public class QuestionCandSentSimilarityMatcher  extends JCasAnnotator_ImplBase{
 			
 			System.out.println("=========================================================");
 		}
-	
-		
+	  
+		System.out.println("Sentence ErrorAnalysis for Doc"+testDocId+": "+totallcorrect0/qaSet.size());
 	}
 
 	public String formSolrQuery(Question question){

@@ -1,0 +1,9 @@
+1. Pull the latest version codes to your machine.
+2. Use command line (Terminal for Ubuntu && cmd for Windows) to get to this directory: "/qa4mre-alzheimer-task/apache-solr-3.6.2/example/".
+3. Type in "java -jar start.jar" in your command line.
+4. Check out "SimpleQuestionRunCPE.xml" to see if "AnswerChoiceCandAnsPMIScorer.xml" is in your pipeline.
+5. Run "CpeQuestionDescriptor" to see the results.
+
+Cheers
+
+Pan

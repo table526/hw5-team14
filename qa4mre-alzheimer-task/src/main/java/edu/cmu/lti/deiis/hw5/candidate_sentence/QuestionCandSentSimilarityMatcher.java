@@ -1,6 +1,9 @@
 package edu.cmu.lti.deiis.hw5.candidate_sentence;
 
+//import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashSet;
 
 import org.apache.solr.client.solrj.SolrQuery;
 import org.apache.solr.client.solrj.SolrServerException;
@@ -23,6 +26,7 @@ import edu.cmu.lti.qalab.types.QuestionAnswerSet;
 import edu.cmu.lti.qalab.types.Sentence;
 import edu.cmu.lti.qalab.types.TestDocument;
 import edu.cmu.lti.qalab.utils.Utils;
+//import edu.umass.cs.mallet.base.util.Arrays;
 
 public class QuestionCandSentSimilarityMatcher  extends JCasAnnotator_ImplBase{
 
@@ -36,7 +40,8 @@ public class QuestionCandSentSimilarityMatcher  extends JCasAnnotator_ImplBase{
   public static String[] correctAnsString2 ={"somatostatin","somatostatin","BV-2","RealTime PCR","somatostatin","microglia","extracellular","octreotide","SSTR-1 SSTR-2 SSTR-4","siRNA"};
   public static String[] correctAnsString3 ={"astrocytes","choroid plexus","more than 10 million","gelsolin","age","gelsolin","amyloid-beta","APP Ps mice","synaptic terminals","before amyloid-beta accumulation"};
   public static String[] correctAnsString4 ={"APP-CTF accumulation","longer","PSEN1","affinity chromatography","AICD","aspartate","EM","Semagacestat","P436Q","185"};
-	@Override
+	public static String[] stopwordsStrings = {"and", "the","before","they"};
+  @Override
 	public void initialize(UimaContext context)
 			throws ResourceInitializationException {
 		super.initialize(context);
@@ -62,6 +67,8 @@ public class QuestionCandSentSimilarityMatcher  extends JCasAnnotator_ImplBase{
 		ArrayList<QuestionAnswerSet>qaSet=Utils.getQuestionAnswerSetFromTestDocCAS(aJCas);
 	//Store correctness of Candidate Sentences for a Document
     double totallcorrect0 = 0;
+    /**build hashset for stop words**/
+    HashSet<String> stopW = new HashSet<String>(Arrays.asList(stopwordsStrings));
 		for(int i=0;i<qaSet.size();i++){
 			/** Get Answer Labeled Correct**/
 		  ArrayList<Answer> choiceList = Utils.fromFSListToCollection(qaSet.get(i).getAnswerList(),
@@ -74,7 +81,6 @@ public class QuestionCandSentSimilarityMatcher  extends JCasAnnotator_ImplBase{
           break;
         }
       }
-      
 			Question question=qaSet.get(i).getQuestion();
 			System.out.println("========================================================");
 			System.out.println("Question: "+question.getText());
@@ -106,13 +112,25 @@ public class QuestionCandSentSimilarityMatcher  extends JCasAnnotator_ImplBase{
 					
 					String sentence=doc.get("text").toString();
 					/** Error Analysis for Sentence Selection**/
-					String[] ansTok = correct.split("\t");
+					String[] ansTok = correct.split(" ");
 					boolean label = false;
 					String tag = "F";
 					//need noise filtering
-					for(int b = 0; b < ansTok.length;b++)
-					  if(sentence.toLowerCase().contains(ansTok[b].toLowerCase()))
-					    label = true;
+					for(int b = 0; b < ansTok.length;b++){
+					  String target = ansTok[b].replaceAll("([a-z]+)[?:!.,;]*", "$1");
+					  if(!target.toUpperCase().equals(target)) target = target.toLowerCase();
+					  if(stopW.contains(target) == false){
+//					  if(sentence.toLowerCase().contains(target))
+//					    label = true;
+//					  }
+					    String[] senTok = sentence.split(" ");
+					    for(int g = 0; g < senTok.length;g++){
+					      String filter = senTok[g].replaceAll("([a-z]+)[?:!.,;]*", "$1");
+					      if(!filter.toUpperCase().equals(filter)) filter = filter.toLowerCase();
+					      if(filter.equals(target)) label = true;
+					    }
+					    }
+					}
 					if(label) {
 					  tag = "T";
 					  totallcorrect++;

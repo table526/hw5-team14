@@ -1,9 +1,11 @@
 package edu.cmu.lti.deiis.hw5.collectionreaders;
 
 import java.io.File;
+import java.io.FileFilter;
 import java.io.FileInputStream;
 import java.io.IOException;
 
+import org.apache.commons.io.filefilter.HiddenFileFilter;
 import org.apache.uima.cas.CAS;
 import org.apache.uima.cas.CASException;
 import org.apache.uima.cas.impl.XmiCasDeserializer;
@@ -35,7 +37,7 @@ public class QA4MREXMITestDocReader extends CollectionReader_ImplBase {
 		
 		File inputDir = new File(
 				(String) getConfigParameterValue("INPUT_DIR"));
-		documents = inputDir.listFiles();
+		documents = inputDir.listFiles((FileFilter) HiddenFileFilter.VISIBLE);
 		System.out.println("Total files: "+documents.length);
 	}
 
@@ -47,6 +49,7 @@ public class QA4MREXMITestDocReader extends CollectionReader_ImplBase {
 		try {
 			
 			File currentFile = (File) documents[nCurrFile];
+		//	if(currentFile.getName().startsWith(".")) return;
 		    FileInputStream inputStream = new FileInputStream(currentFile);
 		    try {
 		        XmiCasDeserializer.deserialize(inputStream, aCAS, true);

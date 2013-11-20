@@ -5,7 +5,7 @@ CPM Initialization Complete
 Read: /Users/liqihui/Documents/workspace/hw5-team14/qa4mre-alzheimer-task/XMIs/12-test-alzheimer/QA4MRE-2012_BIOMEDICAL_GS.xml_1.xmi
 QA4MRE-2012_BIOMEDICAL_GS.xml_1
 ========================================================
-Question: Which technique was used to determine the cellular locations of the CLU1 and CLU2 gene products?
+Question: Which technique was used to determine the cellular locations of the CLU1 and CLU2 gene products?   Word: No        Sentence Meaning: No
 Correct Answer: immunofluorescence experiments
 F 0.17989147        Within B, the value in parentheses following the tissue name is the CLU1:CLU2 ratio.
 F 0.17989147        The most parsimonious interpretation of these data is that CLU1 translation is generally initiated at the common exon 2 ATG.
@@ -20,7 +20,7 @@ F 0.15351206        Hence, CLU1 and CLU2 produce similar secreted proteins in vi
 Sentence ErrorAnalysis for Q0: 0.0
 =========================================================
 ========================================================
-Question: What compartments inside the cell contain clusterin proteins?
+Question: What compartments inside the cell contain clusterin proteins?   	Word: No        Sentence Meaning: No
 Correct Answer: ER and the Golgi apparatus
 F 3.1744194        Comparable results were obtained in two cell types, suggesting that CLU1 and CLU2 generally produce soluble clusterin protein.
 F 2.9803903        Cell lysates contained both intact and cleaved clusterin while conditioned medium contained only cleaved clusterin; the clusterin protein produced by CLU1 and CLU2 appeared equal in size (Figure 4A).

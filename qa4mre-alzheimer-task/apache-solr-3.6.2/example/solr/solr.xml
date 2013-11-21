@@ -38,7 +38,7 @@
   adminPath: RequestHandler path to manage cores.  
     If 'null' (or absent), cores will not be manageable via request handler
   -->
-  <cores adminPath="/admin/cores" defaultCoreName="collection1">
-    <core name="collection1" instanceDir="." />
+  <cores adminPath="/admin/cores" defaultCoreName="qa4mre">
+    <core name="qa4mre" instanceDir="." />
   </cores>
 </solr>

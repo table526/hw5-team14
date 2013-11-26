@@ -177,7 +177,6 @@ public class QuestionCandSentSimilarityMatcher  extends JCasAnnotator_ImplBase{
 		}
 		solrQuery=solrQuery.trim();
 		
-		
 		return solrQuery;
 	}
 

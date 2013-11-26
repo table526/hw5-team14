@@ -1,0 +1,1988 @@
+
+(process:10795): Gtk-WARNING **: Locale not supported by C library.
+	Using the fallback 'C' locale.
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+
+Total files: 5
+Read: /home/pan/11791/hw5/qa4mre-alzheimer-task/XMIs/12-test-alzheimer/Biomedical_about_Alzheimer_Sample_GS.xml_1.xml
+Biomedical_about_Alzheimer_Sample_GS.xml_1
+========================================================
+Question: Which enzyme is responsible for the transformation of testosterone into estrogen?
+Correct Answer: aromatase
+Sentence ErrorAnalysis for Q0: 0.0
+=========================================================
+========================================================
+Question: What experimental approach is useful to create an in vivo system where conversion of testosterone into estrogen is blocked?
+Correct Answer: knock-out of the aromatase gene
+Sentence ErrorAnalysis for Q1: 0.0
+=========================================================
+========================================================
+Question: What experimental approach was successful to inhibit in vivo the production of amyloid beta?
+Correct Answer: knock-out of BACE1 gene
+Sentence ErrorAnalysis for Q2: 0.0
+=========================================================
+========================================================
+Question: Which assay was used to determine cognitive performance?
+Correct Answer: hole-board memory test
+Sentence ErrorAnalysis for Q3: 0.0
+=========================================================
+========================================================
+Question: What is the product of the transformation of testosterone carried out by aromatase?
+Correct Answer: estrogen
+Sentence ErrorAnalysis for Q4: 0.0
+=========================================================
+========================================================
+Question: Where is BACE1 particularly enriched in the case of AD? 
+Correct Answer: neurons around Abeta plaques
+Sentence ErrorAnalysis for Q5: 0.0
+=========================================================
+========================================================
+Question: Which hormone is able to inhibit the transcription of BACE1?
+Correct Answer: testosterone
+Sentence ErrorAnalysis for Q6: 0.0
+=========================================================
+========================================================
+Question: At which age was the expression of BACE1 mRNA significantly lower?
+Correct Answer: eighteen month
+Sentence ErrorAnalysis for Q7: 0.0
+=========================================================
+========================================================
+Question: How does NEP promote the decrease of amyloid plaques in the brain?
+Correct Answer: Through clearance of Abeta
+Sentence ErrorAnalysis for Q8: 0.0
+=========================================================
+========================================================
+Question: What substance described in the papers could be used potentially used to treat elderly male patients suffering from AD?
+Correct Answer: testosterone
+Sentence ErrorAnalysis for Q9: 0.0
+=========================================================
+Sentence ErrorAnalysis for DocBiomedical_about_Alzheimer_Sample_GS.xml_1: 0.0
+Question: Which enzyme is responsible for the transformation of testosterone into estrogen?
+================================================
+Question: What experimental approach is useful to create an in vivo system where conversion of testosterone into estrogen is blocked?
+================================================
+Question: What experimental approach was successful to inhibit in vivo the production of amyloid beta?
+================================================
+Question: Which assay was used to determine cognitive performance?
+================================================
+Question: What is the product of the transformation of testosterone carried out by aromatase?
+================================================
+Question: Where is BACE1 particularly enriched in the case of AD? 
+================================================
+Question: Which hormone is able to inhibit the transcription of BACE1?
+================================================
+Question: At which age was the expression of BACE1 mRNA significantly lower?
+================================================
+Question: How does NEP promote the decrease of amyloid plaques in the brain?
+================================================
+Question: What substance described in the papers could be used potentially used to treat elderly male patients suffering from AD?
+================================================
+Question: Which enzyme is responsible for the transformation of testosterone into estrogen?
+Aggregated counts; 
+Correct Choice: 	aromatase
+Best Choice: 	null
+================================================
+Question: What experimental approach is useful to create an in vivo system where conversion of testosterone into estrogen is blocked?
+Aggregated counts; 
+Correct Choice: 	knock-out of the aromatase gene
+Best Choice: 	null
+================================================
+Question: What experimental approach was successful to inhibit in vivo the production of amyloid beta?
+Aggregated counts; 
+Correct Choice: 	knock-out of BACE1 gene
+Best Choice: 	null
+================================================
+Question: Which assay was used to determine cognitive performance?
+Aggregated counts; 
+Correct Choice: 	hole-board memory test
+Best Choice: 	null
+================================================
+Question: What is the product of the transformation of testosterone carried out by aromatase?
+Aggregated counts; 
+Correct Choice: 	estrogen
+Best Choice: 	null
+================================================
+Question: Where is BACE1 particularly enriched in the case of AD? 
+Aggregated counts; 
+Correct Choice: 	neurons around Abeta plaques
+Best Choice: 	null
+================================================
+Question: Which hormone is able to inhibit the transcription of BACE1?
+Aggregated counts; 
+Correct Choice: 	testosterone
+Best Choice: 	null
+================================================
+Question: At which age was the expression of BACE1 mRNA significantly lower?
+Aggregated counts; 
+Correct Choice: 	eighteen month
+Best Choice: 	null
+================================================
+Question: How does NEP promote the decrease of amyloid plaques in the brain?
+Aggregated counts; 
+Correct Choice: 	Through clearance of Abeta
+Best Choice: 	null
+================================================
+Question: What substance described in the papers could be used potentially used to treat elderly male patients suffering from AD?
+Aggregated counts; 
+Correct Choice: 	testosterone
+Best Choice: 	null
+================================================
+Correct: 0/10=0.0%
+c@1 score:0.0
+java.io.FileNotFoundException: results/12-test-alzheimer/Biomedical_about_Alzheimer_Sample_GS.xml_1.xmi (No such file or directory)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:194)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:145)
+	at edu.cmu.lti.deiis.hw5.casconsumers.QA4MREResultCasConsumer.writeXmi(QA4MREResultCasConsumer.java:72)
+	at edu.cmu.lti.deiis.hw5.casconsumers.QA4MREResultCasConsumer.processCas(QA4MREResultCasConsumer.java:60)
+	at org.apache.uima.analysis_engine.impl.compatibility.CasConsumerAdapter.process(CasConsumerAdapter.java:99)
+	at org.apache.uima.analysis_engine.impl.PrimitiveAnalysisEngine_impl.callAnalysisComponentProcess(PrimitiveAnalysisEngine_impl.java:375)
+	at org.apache.uima.analysis_engine.impl.PrimitiveAnalysisEngine_impl.processAndOutputNewCASes(PrimitiveAnalysisEngine_impl.java:296)
+	at org.apache.uima.analysis_engine.impl.AnalysisEngineImplBase.process(AnalysisEngineImplBase.java:267)
+	at org.apache.uima.collection.impl.cpm.engine.ProcessingUnit.processNext(ProcessingUnit.java:897)
+	at org.apache.uima.collection.impl.cpm.engine.ProcessingUnit.run(ProcessingUnit.java:577)
+Read: /home/pan/11791/hw5/qa4mre-alzheimer-task/XMIs/12-test-alzheimer/QA4MRE-2012_BIOMEDICAL_GS.xml_3.xmi
+QA4MRE-2012_BIOMEDICAL_GS.xml_3
+========================================================
+Question: What cell type in AD brains shows mitochondrial defects?
+Correct Answer: astrocytes
+F 0.2850662	Accumulation of amyloid-beta in AD brains is thought to underlie neuronal dysfunction and memory loss, being centrally implicated in AD pathogenesis.
+T 0.2850662	Mitochondrial abnormalities have been found both in neurons and astrocytes [35???37], suggesting that both neurons and astrocytes might be damaged by free radicals in the AD brain.
+Sentence ErrorAnalysis for Q0: 0.1
+=========================================================
+========================================================
+Question: In which anatomical structure in the brain does amyloid-beta aggregate?
+Correct Answer: choroid plexus
+F 0.061228197	Increased oxidative stress levels have been found in the brains of patients with AD in Sweden and early in Tg2576 APP transgenic mice [12, 13].
+F 0.061228197	Accumulation of amyloid-beta in AD brains is thought to underlie neuronal dysfunction and memory loss, being centrally implicated in AD pathogenesis.
+F 0.061228197	Studies of postmortem brains from AD patients and transgenic mouse models of AD suggest that oxidative damage, induced by amyloid-beta, is associated with mitochondria early in AD progression.
+F 0.061228197	The brain is vulnerable to oxidative stress owing to its high lipid content, its relatively high oxygen metabolism, and its low levels of antioxidant defenses [26].
+F 0.061228197	Mitochondrial abnormalities have been found both in neurons and astrocytes [35???37], suggesting that both neurons and astrocytes might be damaged by free radicals in the AD brain.
+F 0.061228197	Oxidative stress was also reported in the mitochondria of other tissues different to the brain such as platelets and fibroblasts from AD patients [29, 30].
+F 0.053574674	Moreover, previous to mitochondrial accumulation of amyloid-beta showed in AD patient and AD transgenic mouse brain, the toxic amyloid-beta species has to be accumulated in the cytosol of the cells.
+F 0.045921147	Moreover, we summarize evidence from AD postmortem brain as well as animal AD models showing that amyloid-beta triggers mitochondrial dysfunction through a number of pathways such as impairment of oxidative phosphorylation, elevation of reactive oxygen species production, alteration of mitochondrial dynamics, and interaction with mitochondrial proteins.
+Sentence ErrorAnalysis for Q1: 0.0
+=========================================================
+========================================================
+Question: How many persons worldwide are estimated to have a medical condition related to neurodegeneration?
+Correct Answer: more than 10 million
+Sentence ErrorAnalysis for Q2: 0.0
+=========================================================
+========================================================
+Question: Which protein is able to block nitric oxide creation?
+Correct Answer: gelsolin
+F 0.04942268	Although mitochondria have the ability to produce proteins, the vast majority of proteins that function within the mitochondria, including those involved in DNA transcription, translation, and repair, are encoded by nuclear DNA and are transported into the mitochondria from the cytosol.
+F 0.04539763	Both proteins are known to localize to mitochondrial membranes, block the transport of nuclear-encoded mitochondrial proteins to mitochondria, interact with mitochondrial proteins, disrupt the electron transport chain, increase reactive oxygen species production, cause mitochondrial damage, and prevent neurons from functioning normally.
+F 0.04539763	Amyloid-beta and APP protein are known to localize to mitochondrial membranes, block the transport of nuclear-encoded mitochondrial proteins to mitochondria, interact with mitochondrial proteins, disrupt the electron transport chain, increase reactive oxygen species (ROS) production, cause mitochondrial damage, and prevent neurons from functioning normally.
+F 0.04324485	Mitochondria were found to be the target both for amyloid precursor protein (APP) that accumulates in the mitochondrial import channels and for amyloid-beta that interacts with several proteins inside mitochondria and leads to mitochondrial dysfunction [30].
+F 0.034947116	Intermembrane space contains proapoptotic proteins like cytochrome c, Smac/Diablo, EndoG, and Htra2/Omi.
+F 0.034947116	Complexes I, III, and IV are located in inner mitochondrial membrane as integral proteins, whereas complex II is attached to the inner surface of this membrane.
+F 0.034947116	The remaining genes encode transfer (22 genes) and ribosomal (2 genes) RNA allowing the mitochondria to generate their own proteins.
+F 0.034947116	H2O2 and superoxide radicals, released from the mitochondrial matrix and from the inner and outer mitochondrial membranes, might be carried to the cytoplasm and, ultimately, might lead to the oxidation of cytoplasmic proteins [26].
+F 0.030578725	The recent emphasis on the intracellular biology of amyloid-beta and its precursor protein (APP) has led researchers to consider the possibility that mitochondria-associated and mitochondrial amyloid-beta may directly cause neurotoxicity.
+F 0.03026509	In previous studies with choroid plexus homogenates with different cases with AD in the different stages (I/0, III-IV, and V-VI), we demonstrated that in AD patients, amyloid-beta peptide also accumulates in choroid plexus [15], there is an oxidation of carboxymethyl-lysine (CML), and N-carboxyethyl-lysine (CEL) may result in impaired protein interactions, protein folding, and protein kinase activity; abnormal function of endothelialand vascular smooth muscle cells; impaired HDL-cholesterol metabolism in the choroid plexus in advanced stages of AD [16].2.
+Sentence ErrorAnalysis for Q3: 0.0
+=========================================================
+========================================================
+Question: Which is the best-characterized factor that increases chances of getting AD?
+Correct Answer: age
+F 0.07466884	The most widely recognized is AD, which is among the principal debilitating conditions of the current century.
+F 0.07466884	mtDNA defects have also been linked to an increased incidence of AD [32].
+F 0.07390298	Studies of postmortem brains from AD patients and transgenic mouse models of AD suggest that oxidative damage, induced by amyloid-beta, is associated with mitochondria early in AD progression.
+F 0.060341533	Oxidative stress plays a critical role in the pathogenesis of AD and is intimately linked to aging, the best established risk factor for AD.
+F 0.060341533	Accumulation of amyloid-beta in AD brains is thought to underlie neuronal dysfunction and memory loss, being centrally implicated in AD pathogenesis.
+F 0.060341533	One of the most interesting events in AD is that mitochondrial oxidative stress occurs early in AD progression, before the onset of amyloid-beta pathology [27, 28].
+F 0.053334884	Biochemical and morphological alterations of mitochondria may play an important role in the pathogenesis of Alzheimer???sdisease (AD).
+F 0.053334884	The histological hallmark lesions of AD are characterized by senile plaques and cerebrovascular deposits.
+F 0.053334884	Energy deficiency and mitochondrial dysfunction have been recognized as a prominent, early event in AD.
+F 0.053334884	Figure 2: APP processing in nondemented healthy individuals and AD patients.
+Sentence ErrorAnalysis for Q4: 0.0
+=========================================================
+========================================================
+Question: With which particular protein does amyloid-beta interact?
+Correct Answer: gelsolin
+F 1.283077	Amyloid-Beta in the Cytosol
+F 0.96230775	New Insights in the Amyloid-Beta Interaction with Mitochondria
+F 0.96230775	In this paper, we will outline current knowledge of the intracellular localization of amyloid-beta.
+F 0.7938634	The recent emphasis on the intracellular biology of amyloid-beta and its precursor protein (APP) has led researchers to consider the possibility that mitochondria-associated and mitochondrial amyloid-beta may directly cause neurotoxicity.
+F 0.7938634	Moreover, previous to mitochondrial accumulation of amyloid-beta showed in AD patient and AD transgenic mouse brain, the toxic amyloid-beta species has to be accumulated in the cytosol of the cells.
+F 0.6804544	These findings are further in line with the recently proposed hypothesis of an intracellular amyloid-beta toxicity cascade which suggests that the toxic amyloid-beta species intervening in molecular and biochemical abnormalities may be intracellular soluble aggregates instead of extracellular, insoluble plaques.
+F 0.6415385	Particularly, mitochondrial dysfunction is a hallmark of amyloid-beta-induced neuronal toxicity in Alzheimer???s disease.
+F 0.6415385	The extracellular amyloid plaques mainly composed of amyloid-beta and intracellular neurofibrillary tangles built up of hyperphosphorylated tau, although the molecular mechanisms underlying the disease are still unknown and there is still no cure.
+F 0.6415385	Accumulation of amyloid-beta in AD brains is thought to underlie neuronal dysfunction and memory loss, being centrally implicated in AD pathogenesis.
+F 0.6415385	Studies of postmortem brains from AD patients and transgenic mouse models of AD suggest that oxidative damage, induced by amyloid-beta, is associated with mitochondria early in AD progression.
+Sentence ErrorAnalysis for Q5: 0.0
+=========================================================
+========================================================
+Question: The aggregation of which peptide has been widely observed in brains of Alzheimer patients?
+Correct Answer: amyloid-beta
+T 0.12489684	These findings are further in line with the recently proposed hypothesis of an intracellular amyloid-beta toxicity cascade which suggests that the toxic amyloid-beta species intervening in molecular and biochemical abnormalities may be intracellular soluble aggregates instead of extracellular, insoluble plaques.
+F 0.115312144	Further cleavage of this C-terminal fragment by ??-secretase generates the nonamyloidogenic peptide (P3) and APP intracellular domain (ACID).
+F 0.07232005	Increased oxidative stress levels have been found in the brains of patients with AD in Sweden and early in Tg2576 APP transgenic mice [12, 13].
+T 0.07232005	Accumulation of amyloid-beta in AD brains is thought to underlie neuronal dysfunction and memory loss, being centrally implicated in AD pathogenesis.
+T 0.07232005	Studies of postmortem brains from AD patients and transgenic mouse models of AD suggest that oxidative damage, induced by amyloid-beta, is associated with mitochondria early in AD progression.
+F 0.07232005	The brain is vulnerable to oxidative stress owing to its high lipid content, its relatively high oxygen metabolism, and its low levels of antioxidant defenses [26].
+F 0.07232005	Mitochondrial abnormalities have been found both in neurons and astrocytes [35???37], suggesting that both neurons and astrocytes might be damaged by free radicals in the AD brain.
+F 0.07232005	Oxidative stress was also reported in the mitochondria of other tissues different to the brain such as platelets and fibroblasts from AD patients [29, 30].
+T 0.063280046	Moreover, previous to mitochondrial accumulation of amyloid-beta showed in AD patient and AD transgenic mouse brain, the toxic amyloid-beta species has to be accumulated in the cytosol of the cells.
+T 0.057656072	In previous studies with choroid plexus homogenates with different cases with AD in the different stages (I/0, III-IV, and V-VI), we demonstrated that in AD patients, amyloid-beta peptide also accumulates in choroid plexus [15], there is an oxidation of carboxymethyl-lysine (CML), and N-carboxyethyl-lysine (CEL) may result in impaired protein interactions, protein folding, and protein kinase activity; abnormal function of endothelialand vascular smooth muscle cells; impaired HDL-cholesterol metabolism in the choroid plexus in advanced stages of AD [16].2.
+Sentence ErrorAnalysis for Q6: 0.5
+=========================================================
+========================================================
+Question: What specific animal model can be used to study the role of amyloid-beta in apoptosis of choroid Plexus cells?
+Correct Answer: APP/Ps mice
+F 1.0104734	In this paper, we will outline current knowledge of the intracellular localization of amyloid-beta.
+F 0.95635384	Moreover, previous to mitochondrial accumulation of amyloid-beta showed in AD patient and AD transgenic mouse brain, the toxic amyloid-beta species has to be accumulated in the cytosol of the cells.
+F 0.90741336	The extracellular amyloid plaques mainly composed of amyloid-beta and intracellular neurofibrillary tangles built up of hyperphosphorylated tau, although the molecular mechanisms underlying the disease are still unknown and there is still no cure.
+F 0.90741336	Accumulation of amyloid-beta in AD brains is thought to underlie neuronal dysfunction and memory loss, being centrally implicated in AD pathogenesis.
+F 0.90741336	Studies of postmortem brains from AD patients and transgenic mouse models of AD suggest that oxidative damage, induced by amyloid-beta, is associated with mitochondria early in AD progression.
+F 0.90741336	The aberrant signalling of these receptors in AD triggered an abnormal accumulation of amyloid-beta into cytosol-inducing cellular stress underlies to neuronal dysfunction and dementia.
+F 0.8558833	Recent scientific research has identified multiple mechanisms of amyloid-beta interaction with mitochondria at different mitochondrial compartments: the outer mitochondrial membrane, intermembrane space, inner mitochondrial membrane, and the matrix.
+F 0.81609523	The recent emphasis on the intracellular biology of amyloid-beta and its precursor protein (APP) has led researchers to consider the possibility that mitochondria-associated and mitochondrial amyloid-beta may directly cause neurotoxicity.
+F 0.77725315	Multiple lines of evidence support APP and amyloid-beta as contributing factors to mitochondrial dysfunction in AD: both APP and amyloid-beta are present in mitochondrial membrane and interact with mitochondrial proteins, block mitochondrial import channels, impair mitochondrial transport, disrupt the electron transfer chain, increase ROS levels, and cause mitochondrial damage.324968.
+F 0.7671547	Several lines of evidence suggest that APP and amyloid-beta are factors contributing to mitochondrial dysfunction in AD (Figure 2).
+Sentence ErrorAnalysis for Q7: 0.0
+=========================================================
+========================================================
+Question: Where does amyloid-beta assemble into oligomeric structures?
+Correct Answer: synaptic terminals
+F 0.9825529	Amyloid-Beta in the Cytosol
+F 0.73691463	New Insights in the Amyloid-Beta Interaction with Mitochondria
+F 0.73691463	In this paper, we will outline current knowledge of the intracellular localization of amyloid-beta.
+F 0.60792357	The recent emphasis on the intracellular biology of amyloid-beta and its precursor protein (APP) has led researchers to consider the possibility that mitochondria-associated and mitochondrial amyloid-beta may directly cause neurotoxicity.
+F 0.60792357	Moreover, previous to mitochondrial accumulation of amyloid-beta showed in AD patient and AD transgenic mouse brain, the toxic amyloid-beta species has to be accumulated in the cytosol of the cells.
+F 0.52107733	These findings are further in line with the recently proposed hypothesis of an intracellular amyloid-beta toxicity cascade which suggests that the toxic amyloid-beta species intervening in molecular and biochemical abnormalities may be intracellular soluble aggregates instead of extracellular, insoluble plaques.
+F 0.49127644	Particularly, mitochondrial dysfunction is a hallmark of amyloid-beta-induced neuronal toxicity in Alzheimer???s disease.
+F 0.49127644	The extracellular amyloid plaques mainly composed of amyloid-beta and intracellular neurofibrillary tangles built up of hyperphosphorylated tau, although the molecular mechanisms underlying the disease are still unknown and there is still no cure.
+F 0.49127644	Accumulation of amyloid-beta in AD brains is thought to underlie neuronal dysfunction and memory loss, being centrally implicated in AD pathogenesis.
+F 0.49127644	Studies of postmortem brains from AD patients and transgenic mouse models of AD suggest that oxidative damage, induced by amyloid-beta, is associated with mitochondria early in AD progression.
+Sentence ErrorAnalysis for Q8: 0.0
+=========================================================
+========================================================
+Question: When does oxidative stress happen in AD patients?
+Correct Answer: before amyloid-beta accumulation
+F 3.2714055	Oxidative stress was also reported in the mitochondria of other tissues different to the brain such as platelets and fibroblasts from AD patients [29, 30].
+F 0.9926883	Increased oxidative stress levels have been found in the brains of patients with AD in Sweden and early in Tg2576 APP transgenic mice [12, 13].
+F 0.9926883	Oxidative stress plays a critical role in the pathogenesis of AD and is intimately linked to aging, the best established risk factor for AD.
+F 0.9926883	The brain is vulnerable to oxidative stress owing to its high lipid content, its relatively high oxygen metabolism, and its low levels of antioxidant defenses [26].
+T 0.9926883	One of the most interesting events in AD is that mitochondrial oxidative stress occurs early in AD progression, before the onset of amyloid-beta pathology [27, 28].
+F 0.80376804	Figure 2: APP processing in nondemented healthy individuals and AD patients.
+F 0.74451625	Many lines of evidence suggest that oxidative stress is one of the earliest changes and plays an important role in the pathological process in AD, and more recently, energy deficiency and mitochondrial dysfunction have been recognized as a prominent, early event in AD [1???11].
+T 0.64301443	Studies of postmortem brains from AD patients and transgenic mouse models of AD suggest that oxidative damage, induced by amyloid-beta, is associated with mitochondria early in AD progression.
+T 0.5626376	Moreover, previous to mitochondrial accumulation of amyloid-beta showed in AD patient and AD transgenic mouse brain, the toxic amyloid-beta species has to be accumulated in the cytosol of the cells.
+T 0.5626376	There are many studies proposing that megalin- and/or RAGE-dependent signalling are involved in the regulation of amyloid-beta clearance and probably may contribute to amyloid pathology and cognitive dysfunction observed in the AD patients and AD mouse model.4.
+Sentence ErrorAnalysis for Q9: 0.4
+=========================================================
+Sentence ErrorAnalysis for DocQA4MRE-2012_BIOMEDICAL_GS.xml_3: 0.1
+Question: What cell type in AD brains shows mitochondrial defects?
+astrocytes	0
+epithelial	0
+fibroblasts	0
+membrane	0
+cytosol	0
+astrocytes	2
+epithelial	0
+fibroblasts	0
+membrane	0
+cytosol	0
+================================================
+Question: In which anatomical structure in the brain does amyloid-beta aggregate?
+receptor	0
+tissues	0
+choroid plexus	0
+fibroblasts	0
+mitochondrial	0
+receptor	0
+tissues	0
+choroid plexus	0
+fibroblasts	0
+mitochondrial	0
+receptor	0
+tissues	0
+choroid plexus	0
+fibroblasts	0
+mitochondrial	0
+receptor	0
+tissues	0
+choroid plexus	0
+fibroblasts	0
+mitochondrial	0
+receptor	0
+tissues	0
+choroid plexus	0
+fibroblasts	0
+mitochondrial	0
+================================================
+Question: How many persons worldwide are estimated to have a medical condition related to neurodegeneration?
+================================================
+Question: Which protein is able to block nitric oxide creation?
+amyloid	0
+gelsolin	0
+NO	0
+mitochondrial proteins	0
+cytotoxicity	0
+amyloid	0
+gelsolin	0
+NO	0
+mitochondrial proteins	2
+cytotoxicity	0
+amyloid	0
+gelsolin	0
+NO	0
+mitochondrial proteins	2
+cytotoxicity	0
+amyloid	3
+gelsolin	0
+NO	0
+mitochondrial proteins	0
+cytotoxicity	0
+amyloid	0
+gelsolin	0
+NO	0
+mitochondrial proteins	0
+cytotoxicity	0
+================================================
+Question: Which is the best-characterized factor that increases chances of getting AD?
+damage	0
+Swedish	0
+pathogenesis	0
+age	0
+stress	0
+damage	0
+Swedish	0
+pathogenesis	0
+age	0
+stress	0
+damage	1
+Swedish	0
+pathogenesis	0
+age	1
+stress	0
+damage	0
+Swedish	0
+pathogenesis	1
+age	0
+stress	1
+damage	0
+Swedish	0
+pathogenesis	1
+age	0
+stress	0
+================================================
+Question: With which particular protein does amyloid-beta interact?
+extracellular domain	0
+disease-related proteins	0
+mitochondria	0
+receptor	0
+gelsolin	0
+extracellular domain	0
+disease-related proteins	0
+mitochondria	0
+receptor	0
+gelsolin	0
+extracellular domain	0
+disease-related proteins	0
+mitochondria	0
+receptor	0
+gelsolin	0
+extracellular domain	0
+disease-related proteins	0
+mitochondria	2
+receptor	0
+gelsolin	0
+extracellular domain	0
+disease-related proteins	0
+mitochondria	1
+receptor	0
+gelsolin	0
+================================================
+Question: The aggregation of which peptide has been widely observed in brains of Alzheimer patients?
+AD	0
+amyloid-beta	2
+extracellular	1
+mtDMA	0
+secretase	0
+AD	0
+amyloid-beta	0
+extracellular	0
+mtDMA	0
+secretase	1
+AD	1
+amyloid-beta	0
+extracellular	0
+mtDMA	0
+secretase	0
+AD	2
+amyloid-beta	1
+extracellular	0
+mtDMA	0
+secretase	0
+AD	3
+amyloid-beta	1
+extracellular	0
+mtDMA	0
+secretase	0
+================================================
+Question: What specific animal model can be used to study the role of amyloid-beta in apoptosis of choroid Plexus cells?
+patients with AD	0
+animal AD models	0
+brain	0
+APP/Ps mice	0
+mouse	0
+patients with AD	2
+animal AD models	0
+brain	1
+APP/Ps mice	0
+mouse	1
+patients with AD	0
+animal AD models	0
+brain	0
+APP/Ps mice	0
+mouse	0
+patients with AD	2
+animal AD models	0
+brain	1
+APP/Ps mice	0
+mouse	0
+patients with AD	4
+animal AD models	0
+brain	1
+APP/Ps mice	0
+mouse	1
+================================================
+Question: Where does amyloid-beta assemble into oligomeric structures?
+fractions	0
+monomeric amyloid	0
+membranes	0
+synaptic terminals	0
+lipid	0
+fractions	0
+monomeric amyloid	0
+membranes	0
+synaptic terminals	0
+lipid	0
+fractions	0
+monomeric amyloid	0
+membranes	0
+synaptic terminals	0
+lipid	0
+fractions	0
+monomeric amyloid	0
+membranes	0
+synaptic terminals	0
+lipid	0
+fractions	0
+monomeric amyloid	0
+membranes	0
+synaptic terminals	0
+lipid	0
+================================================
+Question: When does oxidative stress happen in AD patients?
+transgenic mouse	0
+predominantly in synaptic mitochondria	0
+choroid plexus	0
+before amyloid-beta accumulation	0
+postmortem	0
+transgenic mouse	0
+predominantly in synaptic mitochondria	0
+choroid plexus	0
+before amyloid-beta accumulation	0
+postmortem	0
+transgenic mouse	0
+predominantly in synaptic mitochondria	0
+choroid plexus	0
+before amyloid-beta accumulation	0
+postmortem	0
+transgenic mouse	0
+predominantly in synaptic mitochondria	0
+choroid plexus	0
+before amyloid-beta accumulation	0
+postmortem	0
+transgenic mouse	0
+predominantly in synaptic mitochondria	0
+choroid plexus	0
+before amyloid-beta accumulation	1
+postmortem	0
+================================================
+Question: What cell type in AD brains shows mitochondrial defects?
+Aggregated counts; 
+astrocytes	astrocytes	2.0
+Correct Choice: 	astrocytes
+Best Choice: 	astrocytes
+================================================
+Question: In which anatomical structure in the brain does amyloid-beta aggregate?
+Aggregated counts; 
+receptor	receptor	5.0
+Correct Choice: 	choroid plexus
+Best Choice: 	receptor
+================================================
+Question: How many persons worldwide are estimated to have a medical condition related to neurodegeneration?
+Aggregated counts; 
+Correct Choice: 	more than 10 million
+Best Choice: 	null
+================================================
+Question: Which protein is able to block nitric oxide creation?
+Aggregated counts; 
+mitochondrial proteins	mitochondrial proteins	2.0
+amyloid	amyloid	3.0
+Correct Choice: 	gelsolin
+Best Choice: 	amyloid
+================================================
+Question: Which is the best-characterized factor that increases chances of getting AD?
+Aggregated counts; 
+damage	damage	3.0
+pathogenesis	pathogenesis	2.0
+Correct Choice: 	age
+Best Choice: 	damage
+================================================
+Question: With which particular protein does amyloid-beta interact?
+Aggregated counts; 
+mitochondria	mitochondria	2.0
+extracellular domain	extracellular domain	3.0
+Correct Choice: 	gelsolin
+Best Choice: 	extracellular domain
+================================================
+Question: The aggregation of which peptide has been widely observed in brains of Alzheimer patients?
+Aggregated counts; 
+AD	AD	3.0
+secretase	secretase	1.0
+amyloid-beta	amyloid-beta	1.0
+Correct Choice: 	amyloid-beta
+Best Choice: 	AD
+================================================
+Question: What specific animal model can be used to study the role of amyloid-beta in apoptosis of choroid Plexus cells?
+Aggregated counts; 
+patients with AD	patients with AD	5.0
+Correct Choice: 	APP/Ps mice
+Best Choice: 	patients with AD
+================================================
+Question: Where does amyloid-beta assemble into oligomeric structures?
+Aggregated counts; 
+fractions	fractions	5.0
+Correct Choice: 	synaptic terminals
+Best Choice: 	fractions
+================================================
+Question: When does oxidative stress happen in AD patients?
+Aggregated counts; 
+before amyloid-beta accumulation	before amyloid-beta accumulation	1.0
+transgenic mouse	transgenic mouse	4.0
+Correct Choice: 	before amyloid-beta accumulation
+Best Choice: 	transgenic mouse
+================================================
+Correct: 1/10=10.0%
+c@1 score:0.11000000000000001
+java.io.FileNotFoundException: results/12-test-alzheimer/QA4MRE-2012_BIOMEDICAL_GS.xml_3.xmi (No such file or directory)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:194)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:145)
+	at edu.cmu.lti.deiis.hw5.casconsumers.QA4MREResultCasConsumer.writeXmi(QA4MREResultCasConsumer.java:72)
+	at edu.cmu.lti.deiis.hw5.casconsumers.QA4MREResultCasConsumer.processCas(QA4MREResultCasConsumer.java:60)
+	at org.apache.uima.analysis_engine.impl.compatibility.CasConsumerAdapter.process(CasConsumerAdapter.java:99)
+	at org.apache.uima.analysis_engine.impl.PrimitiveAnalysisEngine_impl.callAnalysisComponentProcess(PrimitiveAnalysisEngine_impl.java:375)
+	at org.apache.uima.analysis_engine.impl.PrimitiveAnalysisEngine_impl.processAndOutputNewCASes(PrimitiveAnalysisEngine_impl.java:296)
+	at org.apache.uima.analysis_engine.impl.AnalysisEngineImplBase.process(AnalysisEngineImplBase.java:267)
+	at org.apache.uima.collection.impl.cpm.engine.ProcessingUnit.processNext(ProcessingUnit.java:897)
+	at org.apache.uima.collection.impl.cpm.engine.ProcessingUnit.run(ProcessingUnit.java:577)
+Read: /home/pan/11791/hw5/qa4mre-alzheimer-task/XMIs/12-test-alzheimer/QA4MRE-2012_BIOMEDICAL_GS.xml_2.xmi
+QA4MRE-2012_BIOMEDICAL_GS.xml_2
+========================================================
+Question: Which entity does allosterically regulate insulin degrading enzyme activity?
+Correct Answer: somatostatin
+F 0.51995146	It is known that a small fraction of IDE (ranging from 3% to 10%) is secreted into the extracellular space, where it presumably interacts with its substrates, such as insulin and ??-amyloid [8], [38].
+F 0.22747877	Insulin-degrading-enzyme (IDE) is one of the main extracellular protease targeting A??, and thus it represents an interesting pharmacological target for AD therapy.
+T 0.1949818	Human somatostatin was obtained from Sigma-Aldrich (St. Louis, MO, USA); recombinant insulin degrading-enzyme was purchased from Calbiochem (San Diego, CA, USA); ??-amyloid (1???40) was obtained from Anaspec (San Jose, CA, USA).
+F 0.1838306	Notably, IDE is a zinc metalloendopeptidase that hydrolyzes a wide range of substrates, including insulin, amylin, glucagon, atrial natriuretic factor and insulin-like growth factors I and II [8].
+F 0.16248484	Several proteases, such as insulin-degrading-enzyme (IDE), neprilysin (NEP) and matrix metalloproteinase 9 (MMP-9) are involved in A?? degradation [4]???[6].
+T 0.12998787	Somatostatin Modulates Insulin-Degrading-Enzyme Metabolism: Implications for the Regulation of Microglia Activity in ADGrazia Tundo1, Chiara Ciaccio1, Diego Sbardella1,2, Mariaserena Boraso3, Barbara Viviani3, Massimiliano Coletta1,2, Stefano Marini1*1 Department of Experimental Medicine and Biochemical Sciences, University of Roma Tor Vergata, Roma, Italy, 2 Interuniversity Consortium for the Research on the Chemistry of Metals in Biological Systems, Bari, Italy, 3 Department of Pharmacological Sciences, University of Milan, Milan, Italy
+Sentence ErrorAnalysis for Q0: 0.2
+=========================================================
+========================================================
+Question: Which peptide hormone is the positive transcriptional regulator of IDE?
+Correct Answer: somatostatin
+T 0.44629434	Somatostatin regulates IDE activity enhancing IDE-dependent A?? degradation.
+F 0.40706855	This addition further amplifies the positive modulation of IDE expression (Figure 1).
+T 0.40706855	Somatostatin induces an increase of IDE expression in microglia cells.
+F 0.40706855	To this purpose, IDE expression was silenced through a siRNA-based approach.
+F 0.40165257	IDE level was analyzed by Western blotting in cell lysates collected after 24 hrs of sst incubation and as indicated in Figure S1, no detectable modulation of IDE expression was observed.
+F 0.3912853	Therefore, this evidence might explain the discrepancy between sst and its analogue concerning the positive modulation of IDE expression, even though additional factors cannot be ruled out.
+F 0.37550205	The sst-mediated up-regulation of IDE in BV-2 cells was further checked by quantifying the mRNA using a Real
+F 0.37550205	In order to determine whether, besides inducing synthesis, sst also stimulates IDE secretion, the enzyme concentration in cell supernatants was quantified 24 hrs after sst administration.
+F 0.37550205	As reported in Figure 2B, the neuropeptide induces the increase of IDE secretion in a similar way to WB and RT-PCR (Figue 1B and 2A).
+F 0.37550205	A similar result can also be obtained for IDE secretion, by using an ELISA assay on BV-2 cell supernatants collected 24 hrs after the administration (Figure 4B).
+Sentence ErrorAnalysis for Q1: 0.2
+=========================================================
+========================================================
+Question: In which cell line was the gene expression regulation of IDE characterized?
+Correct Answer: BV-2
+F 0.6022106	It is interesting to note that WB analysis on cell lysates of sst-stimulated N9 microglia cell line confirms the enhancing effect on IDE expression (data not shown).
+T 0.24031895	g001 Since there was no principle difference in the response to somatostatin in microglia cell lines compared to primary rat microglia, immortalized BV-2 cells were subsequently used.
+F 0.15019935	BV-2, a murine microglial cell line, was cultured in RPMI 1640 supplemented with 15% fetal bovine serum (FBS), L-glutammine (2 mM), penicillin (50 IU/ml), streptomycin (50 ??g/ml), sodium pyruvate (1 mM) and ciprofloxacin (0.03 mM).
+F 0.12894729	Somatostatin regulates IDE activity enhancing IDE-dependent A?? degradation.
+F 0.121572666	Modulation of IDE expression by somatostatin.
+F 0.10745606	This result indicates that somatostatin acts not only by modulating IDE expression, but also by affecting IDE secretion and increasing the amount of the enzyme in the extracellular space.
+F 0.10637608	g002 Somatostatin effect on IDE secretion
+F 0.10637608	g003 Octreotide modulation of IDE expression
+F 0.10637608	We previously demonstrated that sst is an allosteric modulator of IDE [17].
+F 0.10528501	Following a previous observation where somatostatin directly interacts with IDE, here we demonstrate that somatostatin regulates A?? catabolism by modulating IDE proteolytic activity in IDE gene-silencing experiments.
+Sentence ErrorAnalysis for Q2: 0.1
+=========================================================
+========================================================
+Question: Which method was applied to measure the quantity of IDE mRNA in the gene regulation experiments described in the paper?
+Correct Answer: RealTime PCR
+F 1.121079	A time-course investigation reveals that IDE mRNA increases linearly with the sst concentration within 5 hrs to incubation and turns back after 24 hrs, suggesting a transcriptional effect triggered by sst in BV2 cells (Figure 2A).
+F 0.2902784	Find this article online Bradford MM (1976) A rapid and sensitive method for the quantitation of microgram quantities of protein utilizing the principle of protein-dye binding.
+F 0.12406875	(A) IDE mRNA increases after 5 hrs of incubation with somatostatin (white columns); 24 hrs after incubation, the level is similar to the control (grey columns).
+F 0.11038251	Materials and Methods Top Materials
+F 0.088620536	Somatostatin triggers IDE gene transcription and protein which displays a different turnover rate: IDE-mRNA reaches a maximum of transcription within 5 hrs after stimulation, returning to the basal level within 24 hrs, whereas the protein concentration increases in cell lysates and supernatants at later times, being still clearly evident after 24 hrs.
+Sentence ErrorAnalysis for Q3: 0.0
+=========================================================
+========================================================
+Question: What regulates the production of neprilysin?
+Correct Answer: somatostatin
+F 1.588229	In addition to their ability to phagocyte ??-amyloid, microglia can also clear A?? by degradation through the production of A??-degrading enzymes, such as IDE, neprilysin and MMP-9 [29], [33], [39].
+T 0.7812629	Somatostatin seems to be also involved in the regulation of neprilysin activity by affecting its expression and its synaptic localization [22].
+F 0.546884	Several proteases, such as insulin-degrading-enzyme (IDE), neprilysin (NEP) and matrix metalloproteinase 9 (MMP-9) are involved in A?? degradation [4]???[6].
+F 0.42382365	IDE concentration was determined by using a TMB colorimetric kit according to product instructions.
+Sentence ErrorAnalysis for Q4: 0.1
+=========================================================
+========================================================
+Question: What kind of glial cell is able to phagocyte b-amyloid?
+Correct Answer: microglia
+F 0.22224249	A layer of astrocytic cells was obtained through the vigorous shaking of a confluent 10-day-old monolayer of mixed glial cells [34].
+F 0.22224249	Primary cultures of glial cells were prepared from 2-day-old newborn rats (Sprague???Dawley, Charles River, Calco, Italy).
+Sentence ErrorAnalysis for Q5: 0.0
+=========================================================
+========================================================
+Question: What is the major protease produced by microglia responsible for degrading A?
+Correct Answer: extracellular
+F 0.08485071	g004 Somatostatin regulation of A??(1???40) degradation by insulin-degrading-enzyme
+T 0.06788057	Insulin-degrading-enzyme (IDE) is one of the main extracellular protease targeting A??, and thus it represents an interesting pharmacological target for AD therapy.
+F 0.06788057	We have recently demonstrated that somatostatin (sst) is a substrate and an allosteric modulator of IDE activity, which enhances the proteolytic processing of a synthetic A??-peptide [17].
+F 0.06788057	Equal volumes of each sample were incubated overnight at 4??C on plates pre-coated with anti-A?? (35???40) Mouse IgG.
+F 0.06788057	(A) WB (left panel) and densitometric analysis of IDE (right panel) after 24 hrs incubation with the indicated concentrations of octreotide.
+F 0.06788057	Therefore, we aimed to verify whether sst by allosteric modulation of endogenous IDE could affect the clearance of the A?? peptide secreted by BV-2 cells.
+F 0.06788057	Therefore, at physiological concentrations, sst modulates IDE activity also by promoting A??(1???40) degradation in the BV-2 cells supernatants.
+F 0.06788057	In addition, since the A?? chronic accumulation triggers a further reduction in sst level [18], all these events could represent a vicious cycle which ultimately favors A?? plaque formations.
+F 0.06788057	In our previous work, we reported that somatostatin is an allosteric modulator of IDE enzymatic activity on a fluorogenic A??-peptide [17].
+F 0.0593955	Abstract Top The deposition of ??-amyloid (A??) into senile plaques and the impairment of somatostatin-mediated neurotransmission are key pathological events in the onset of Alzheimer's disease (AD).
+Sentence ErrorAnalysis for Q6: 0.1
+=========================================================
+========================================================
+Question: What substance exhibited a similar effect on  IDE secretion as achieved by somatostatin?
+Correct Answer: octreotide
+F 1.810153	This result indicates that somatostatin acts not only by modulating IDE expression, but also by affecting IDE secretion and increasing the amount of the enzyme in the extracellular space.
+F 1.6796799	Interestingly, we also observed that in astrocytes, incubation with somatostatin does not have any significant detectable effect of IDE expression, reinforcing the physiological relevance of somatostatin action on IDE secretion in microglia cells.
+F 1.3789771	g002 Somatostatin effect on IDE secretion
+F 1.1365073	Through this pathway, somatostatin enhances IDE secretion, strengthening the pool of active enzymes which interact with ??-amyloid and other IDE extracellular substrates.
+F 0.8266967	Modulation of IDE expression by somatostatin.
+T 0.7702451	Somatostatin analogue octreotide increases IDE expression and secretion.
+F 0.7702451	It is known that IDE and somatostatin levels are altered in AD progression [3], [20].
+F 0.76055944	In this work, we show that in activated microglia, somatostatin regulates IDE expression, secretion and proteolytic activity toward A??, which suggests that somatostatin pathological depletion could be one of the key events leading to A?? deposition.
+F 0.74596673	Following a previous observation where somatostatin directly interacts with IDE, here we demonstrate that somatostatin regulates A?? catabolism by modulating IDE proteolytic activity in IDE gene-silencing experiments.
+T 0.7420192	As a whole, these data indicate the relevant role played by somatostatin and, potentially, by analogue octreotide, in preventing A?? accumulation by partially restoring IDE activity.
+Sentence ErrorAnalysis for Q7: 0.2
+=========================================================
+========================================================
+Question: What are the sst receptors that are expressed on rat astrocytes?
+Correct Answer: SSTR-1, SSTR-2 and SSTR-4
+F 4.730613	In order to assess whether the effect of sst on IDE expression is a microglia characteristic, rat astrocytes which display three sst receptor subtypes as well (SSTR-1, SSTR-2, and SSTR-4) [37] were incubated with the same somatostatin concentrations (Figure S1).
+F 0.9049001	Rat Astrocytes were incubated with indicated concentrations of somatostatin.
+Sentence ErrorAnalysis for Q8: 0.0
+=========================================================
+========================================================
+Question: What method was used to inhibit the expression of IDE?
+Correct Answer: siRNA
+F 1.9897463	This addition further amplifies the positive modulation of IDE expression (Figure 1).
+F 1.9897463	Somatostatin induces an increase of IDE expression in microglia cells.
+F 1.9897463	To this purpose, IDE expression was silenced through a siRNA-based approach.
+F 1.865757	Therefore, this evidence might explain the discrepancy between sst and its analogue concerning the positive modulation of IDE expression, even though additional factors cannot be ruled out.
+F 1.8460627	IDE level was analyzed by Western blotting in cell lysates collected after 24 hrs of sst incubation and as indicated in Figure S1, no detectable modulation of IDE expression was observed.
+F 1.770546	Modulation of IDE expression by somatostatin.
+F 1.7417675	Therefore, these findings indicate that octreotide and sst exert a very similar effect on IDE expression and secretion in BV-2 cells (see Figures 1, 2 and 4).
+F 1.7417675	It is thus conceivable that sst depletion results in a decrease of IDE expression and secretion contributing to the pathological deposition of ??-amyloid in the brain.
+F 1.7417675	Western blot analysis of normalized lysis samples indicates that no detectable effect of IDE expression is observed (left panel).
+F 1.6465566	g003 Octreotide modulation of IDE expression
+Sentence ErrorAnalysis for Q9: 0.0
+=========================================================
+Sentence ErrorAnalysis for DocQA4MRE-2012_BIOMEDICAL_GS.xml_2: 0.09
+Question: Which entity does allosterically regulate insulin degrading enzyme activity?
+AD	0
+Ab	0
+somatostatin	0
+microglia cells	0
+IDE	1
+AD	1
+Ab	0
+somatostatin	0
+microglia cells	0
+IDE	2
+AD	0
+Ab	0
+somatostatin	2
+microglia cells	0
+IDE	0
+AD	0
+Ab	0
+somatostatin	0
+microglia cells	0
+IDE	2
+AD	0
+Ab	0
+somatostatin	0
+microglia cells	0
+IDE	1
+================================================
+Question: Which peptide hormone is the positive transcriptional regulator of IDE?
+Ab	0
+somatostatin	0
+BV-2	0
+AD	0
+mRNA	0
+Ab	0
+somatostatin	0
+BV-2	0
+AD	0
+mRNA	0
+Ab	0
+somatostatin	0
+BV-2	0
+AD	0
+mRNA	0
+Ab	0
+somatostatin	0
+BV-2	0
+AD	0
+mRNA	0
+Ab	0
+somatostatin	0
+BV-2	0
+AD	0
+mRNA	0
+================================================
+Question: In which cell line was the gene expression regulation of IDE characterized?
+mouse	0
+astrocytes	0
+microglia	1
+BV-2	0
+beta-amyloid	0
+mouse	0
+astrocytes	0
+microglia	2
+BV-2	1
+beta-amyloid	0
+mouse	0
+astrocytes	0
+microglia	1
+BV-2	2
+beta-amyloid	0
+mouse	0
+astrocytes	0
+microglia	0
+BV-2	0
+beta-amyloid	0
+mouse	0
+astrocytes	0
+microglia	0
+BV-2	0
+beta-amyloid	0
+================================================
+Question: Which method was applied to measure the quantity of IDE mRNA in the gene regulation experiments described in the paper?
+ELISA	0
+siRNA	0
+RealTime PCR	0
+Western Blotting	0
+IgG antibody	0
+ELISA	0
+siRNA	0
+RealTime PCR	0
+Western Blotting	0
+IgG antibody	0
+ELISA	0
+siRNA	0
+RealTime PCR	0
+Western Blotting	0
+IgG antibody	0
+ELISA	0
+siRNA	0
+RealTime PCR	0
+Western Blotting	0
+IgG antibody	0
+ELISA	0
+siRNA	0
+RealTime PCR	0
+Western Blotting	0
+IgG antibody	0
+================================================
+Question: What regulates the production of neprilysin?
+somatostatin	0
+NEP	0
+enzyme	1
+matrix metalloproteinase	0
+microglia	1
+somatostatin	0
+NEP	0
+enzyme	0
+matrix metalloproteinase	0
+microglia	0
+somatostatin	0
+NEP	1
+enzyme	2
+matrix metalloproteinase	1
+microglia	0
+somatostatin	0
+NEP	0
+enzyme	0
+matrix metalloproteinase	0
+microglia	0
+================================================
+Question: What kind of glial cell is able to phagocyte b-amyloid?
+neprilysin	0
+siRNA	0
+brain	0
+culture medium	0
+microglia	0
+neprilysin	0
+siRNA	0
+brain	0
+culture medium	0
+microglia	0
+================================================
+Question: What is the major protease produced by microglia responsible for degrading A?
+Ab	0
+cells	0
+IDE	0
+extracellular	0
+beta-amyloid	0
+Ab	0
+cells	0
+IDE	2
+extracellular	1
+beta-amyloid	0
+Ab	0
+cells	0
+IDE	1
+extracellular	0
+beta-amyloid	0
+Ab	0
+cells	0
+IDE	0
+extracellular	0
+beta-amyloid	0
+Ab	0
+cells	0
+IDE	1
+extracellular	0
+beta-amyloid	0
+================================================
+Question: What substance exhibited a similar effect on  IDE secretion as achieved by somatostatin?
+octreotide	0
+analogue	0
+endogenous modulator	0
+substrate	0
+beta-amyloid	0
+octreotide	0
+analogue	0
+endogenous modulator	0
+substrate	0
+beta-amyloid	0
+octreotide	0
+analogue	0
+endogenous modulator	0
+substrate	0
+beta-amyloid	0
+octreotide	0
+analogue	0
+endogenous modulator	0
+substrate	1
+beta-amyloid	0
+octreotide	0
+analogue	0
+endogenous modulator	0
+substrate	0
+beta-amyloid	0
+================================================
+Question: What are the sst receptors that are expressed on rat astrocytes?
+SSTR-2, SSTR-3 and SSTR-4	4
+SSTR-1, SSTR-2 and SSTR-4	6
+somatostatin	1
+microglia	2
+rat	2
+SSTR-2, SSTR-3 and SSTR-4	0
+SSTR-1, SSTR-2 and SSTR-4	0
+somatostatin	1
+microglia	0
+rat	1
+================================================
+Question: What method was used to inhibit the expression of IDE?
+Western blot	0
+microglia	0
+positive modulation	1
+siRNA	0
+culture medium	0
+Western blot	0
+microglia	1
+positive modulation	0
+siRNA	0
+culture medium	0
+Western blot	0
+microglia	0
+positive modulation	0
+siRNA	1
+culture medium	0
+Western blot	0
+microglia	0
+positive modulation	1
+siRNA	0
+culture medium	0
+Western blot	1
+microglia	0
+positive modulation	0
+siRNA	0
+culture medium	0
+================================================
+Question: Which entity does allosterically regulate insulin degrading enzyme activity?
+Aggregated counts; 
+somatostatin	somatostatin	1.0
+IDE	IDE	4.0
+Correct Choice: 	somatostatin
+Best Choice: 	IDE
+================================================
+Question: Which peptide hormone is the positive transcriptional regulator of IDE?
+Aggregated counts; 
+Ab	Ab	5.0
+Correct Choice: 	somatostatin
+Best Choice: 	Ab
+================================================
+Question: In which cell line was the gene expression regulation of IDE characterized?
+Aggregated counts; 
+mouse	mouse	2.0
+microglia	microglia	2.0
+BV-2	BV-2	1.0
+Correct Choice: 	BV-2
+Best Choice: 	mouse
+================================================
+Question: Which method was applied to measure the quantity of IDE mRNA in the gene regulation experiments described in the paper?
+Aggregated counts; 
+ELISA	ELISA	5.0
+Correct Choice: 	RealTime PCR
+Best Choice: 	ELISA
+================================================
+Question: What regulates the production of neprilysin?
+Aggregated counts; 
+enzyme	enzyme	2.0
+somatostatin	somatostatin	2.0
+Correct Choice: 	somatostatin
+Best Choice: 	enzyme
+================================================
+Question: What kind of glial cell is able to phagocyte b-amyloid?
+Aggregated counts; 
+neprilysin	neprilysin	2.0
+Correct Choice: 	microglia
+Best Choice: 	neprilysin
+================================================
+Question: What is the major protease produced by microglia responsible for degrading A?
+Aggregated counts; 
+Ab	Ab	2.0
+IDE	IDE	3.0
+Correct Choice: 	extracellular
+Best Choice: 	IDE
+================================================
+Question: What substance exhibited a similar effect on  IDE secretion as achieved by somatostatin?
+Aggregated counts; 
+octreotide	octreotide	4.0
+substrate	substrate	1.0
+Correct Choice: 	octreotide
+Best Choice: 	octreotide
+================================================
+Question: What are the sst receptors that are expressed on rat astrocytes?
+Aggregated counts; 
+somatostatin	somatostatin	1.0
+SSTR-1, SSTR-2 and SSTR-4	SSTR-1, SSTR-2 and SSTR-4	1.0
+Correct Choice: 	SSTR-1, SSTR-2 and SSTR-4
+Best Choice: 	somatostatin
+================================================
+Question: What method was used to inhibit the expression of IDE?
+Aggregated counts; 
+siRNA	siRNA	1.0
+microglia	microglia	1.0
+Western blot	Western blot	1.0
+positive modulation	positive modulation	2.0
+Correct Choice: 	siRNA
+Best Choice: 	positive modulation
+================================================
+Correct: 1/10=10.0%
+c@1 score:0.1
+java.io.FileNotFoundException: results/12-test-alzheimer/QA4MRE-2012_BIOMEDICAL_GS.xml_2.xmi (No such file or directory)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:194)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:145)
+	at edu.cmu.lti.deiis.hw5.casconsumers.QA4MREResultCasConsumer.writeXmi(QA4MREResultCasConsumer.java:72)
+	at edu.cmu.lti.deiis.hw5.casconsumers.QA4MREResultCasConsumer.processCas(QA4MREResultCasConsumer.java:60)
+	at org.apache.uima.analysis_engine.impl.compatibility.CasConsumerAdapter.process(CasConsumerAdapter.java:99)
+	at org.apache.uima.analysis_engine.impl.PrimitiveAnalysisEngine_impl.callAnalysisComponentProcess(PrimitiveAnalysisEngine_impl.java:375)
+	at org.apache.uima.analysis_engine.impl.PrimitiveAnalysisEngine_impl.processAndOutputNewCASes(PrimitiveAnalysisEngine_impl.java:296)
+	at org.apache.uima.analysis_engine.impl.AnalysisEngineImplBase.process(AnalysisEngineImplBase.java:267)
+	at org.apache.uima.collection.impl.cpm.engine.ProcessingUnit.processNext(ProcessingUnit.java:897)
+	at org.apache.uima.collection.impl.cpm.engine.ProcessingUnit.run(ProcessingUnit.java:577)
+Read: /home/pan/11791/hw5/qa4mre-alzheimer-task/XMIs/12-test-alzheimer/QA4MRE-2012_BIOMEDICAL_GS.xml_4.xmi
+QA4MRE-2012_BIOMEDICAL_GS.xml_4
+========================================================
+Question: What effect can be observed when when ??-secretase is blocked? 
+Correct Answer: APP-CTF accumulation
+T 1.6553564	These data suggest that the effect of FAD mutations in PS1 on APP-CTFs accumulation was similar in presence or absence of other human components of the ??-secretase.
+F 1.4186561	In vitro ??-secretase activity assays were performed as previously described [27].
+F 1.4186561	In vitro ??-secretase activity assays
+F 1.3041782	(A) Schematic representation of the ??-secretase purification process.
+F 1.2469394	The relative amounts of AICD-Flag generated in the reactions, reflecting ??-secretase activity, were estimated by densitometry.
+F 1.2469394	Therefore, it is plausible that a single mutation in PSEN1 confers different catalytic properties to distinct ??-secretase subtypes.
+F 1.2469394	Taken together, these data suggest that the overexpression of the other human components of ??-secretase can influence the phenotype of FAD-linked mutations.
+F 1.2469394	They further support the concept that modulating rather than inhibiting ??-secretase activity would be a more appropriate therapeutic strategy for AD [58].
+F 1.2469394	For each PS1 variant, five clones were selected for a full characterization and two of them were further used for ??-secretase purification.
+F 1.2469394	Finally, beads were resuspended in 50 ??L of 0.2% CHAPSO - HEPES buffer and were used for in vitro ??-secretase assays.
+Sentence ErrorAnalysis for Q0: 0.1
+=========================================================
+========================================================
+Question: When APH1 genes are overexpressed in MEF KO what happens with the A???
+Correct Answer: They are longer
+T 1.4834074	When compared to APH1aS or L, overexpression of APH1b in MEF knockout for all APH1 genes led to increased production of longer A?? species [24].
+T 0.8646639	Indeed, ??-secretase complexes are heterogeneous in composition due to the existence of two human APH1 genes, APH1a and APH1b, and two splicing isoforms of APH1a (S and L), as well as two presenilin genes, PSEN1 and PSEN2.
+F 0.27888083	First, only traces of both A??1???40 and A??1???42 were detected in ??-MEFs overexpressing PS1 with aspartate mutants.
+F 0.2678664	However, in the latter, the ratio may have been overestimated because the A??1???40 levels measured were at the detection limit.
+F 0.2483361	Interestingly, the same study also reported that P436Q variant showed a decreased ??-secretase activity and A??40 and A??42 secretion in PS1/PS2 double knockout cells (~75% or ~50% of the control for A??40 or A??42, respectively), but to a lesser extent than what we measured in this study (more than 97% for both A?? species).
+F 0.21381672	Although there is a growing consensus that FAD-linked PS1 mutations affect A?? production by enhancing the A??1???42/A??1???40 ratio, it remains unclear whether and how they affect the generation of APP intracellular domain (AICD).
+F 0.18795626	This substrate was transduced in the above-described ??-secretase overexpressing stable cell lines (??-MEFs) as well as in wild-type MEFs, and APP-CTFs and A?? levels were measured in cell lysate and cell media, respectively (Figure 2).
+F 0.18795626	Next, overexpression of SPA4CT-Flag in ??-MEFs led to the pronounced intracellular accumulation of APP-CTFs in cells overexpressing the PS1 aspartate mutants (Figure 2C), and to the secretion in the cell culture media of different A?? levels as measured by ELISA (Figure 2D).
+F 0.16525924	The resulting cleavage products were separated by SDS-PAGE and detected by immunostaining with an anti-Flag antibody (M2) for C100-Flag or AICD-Flag (A), and by sandwich ELISA for A??1???40 or A??1???42 (B).
+F 0.14256223	In support to that regard, Winkler and colleagues recently purified human ??-secretase with PS1-L166P and observed that such complexes, containing both APH1a and AHP1b, led to increased A??1???42 production associated with decreased A??1???40 production, as compared to the PS1-WT complexes.
+Sentence ErrorAnalysis for Q1: 0.2
+=========================================================
+========================================================
+Question: In which gene are mutations associated to many cases of early-onset familial forms of Alzheimer's disease?G
+Correct Answer: PSEN1
+F 1.4755745	Briefly, cells were incubated in 10 cm dishes until they reached 70% confluence and were transiently co-transfected by the calcium phosphate method, with 5 ??g of envelope plasmid (pMD2G), 15 ??g of packaging plasmid (psPAX2), and 20 ??g of vector plasmids (pSIN-PGK-WHV).
+F 1.4198722	Editor: Stefano L. Sensi, University G. D'Annunzio, Italy
+F 1.4198722	The washed membranes were then centrifuged at 100,000?? g for 1 h at 4??C and stored at ???80??C until use.
+F 1.4198722	The supernatant was collected and centrifuged at 100,000?? g for 1 h at 4??C in a SW32
+F 1.1358978	Nuclei and unbroken cells were removed by centrifugation at 3,000?? g for 20 min at 4??C in a Beckman Coulter Allegra X-15R centrifuge.
+F 1.1358978	The membranes were then incubated at 4??C for 1 h. To pellet the insoluble material, the solution was centrifuged at 16,000?? g at 4??C for 1 h, the pellet was discarded, and the supernatant saved.
+F 0.99391055	The beads were washed 3 times in the same buffer, and the bound proteins were eluted over 4 h at 4??C with 0.4 mL of this buffer containing 200 ??g/mL of Flag peptides (Sigma-Aldrich).
+F 0.99391055	The beads were washed 3 times in the same buffer, and the bound proteins were eluted for 1 h at 4??C with 0.4 mL of this buffer containing 500 ??g/mL of V5 peptides (Sigma-Aldrich).
+F 0.99391055	The beads were washed 3 times in the same buffer, and the bound proteins were eluted overnight at 4??C with 0.2 mL of this buffer containing 200 ??g/mL of HA peptides (Sigma-Aldrich).
+F 0.85192335	Briefly, 100 ??g of proteins were diluted in a final volume of 1 mL of 1% CHAPSO - HEPES extraction buffer containing protease inhibitors (Roche), and 50 ??L of pre-equilibrated anti-Flag or anti-HA affinity beads (Sigma-Aldrich) were added.
+Sentence ErrorAnalysis for Q2: 0.0
+=========================================================
+========================================================
+Question: What experimental technique was used specifically to purify the ??-secretase complex?
+Correct Answer: affinity chromatography
+F 2.1073918	3) Solubilisation of ??-secretase complexes.
+T 1.8983753	Next, these freshly prepared solubilised preparations were used for affinity purification of ??-secretase complexes as described below.
+F 1.6893587	Another possible explanation would be that purified ??-secretase complexes lack binding partners modulating the processing of APP-based substrates, due to purification conditions affecting physical interactions of proteins.
+F 1.5848503	As the main goal of this experiment was to compare the efficacy of the different ??-secretase complexes to process APP-based substrates, it is important to note that the final yields of the complexes purified from the different clones were very similar (Figure 4B), thus facilitating further comparative analyses.
+T 1.5396017	A multi-step affinity purification procedure was used to isolate semi-purified or highly purified ??-secretase complexes.
+F 1.5396017	PS1 and PS2 play fundamental roles in cell signalling as part of the ??-secretase complex.
+F 1.5396017	To do so, ??-secretase complexes from the different clones were co-immunoprecipitated from microsomal extracts and their activities were assayed in vitro with the C100-His substrate.
+F 1.4350936	Note that the levels of A?? produced from FAD-linked ??-secretase complexes were all in the non-linear range of the ELISA standards, close to the detection limit.
+F 1.4350936	One possible explanation would be that specific subtypes of ??-secretase complexes are less affected than others by PSEN1 mutations.
+F 1.4124693	High-grade purification of human ??-secretase complexes with FAD-linked PS1 mutants.
+Sentence ErrorAnalysis for Q3: 0.2
+=========================================================
+========================================================
+Question: What peptide is able to control the expression of the ApoE gene?
+Correct Answer: AICD
+F 0.07841888	Quantification of A?? peptidesA?? peptides from the ??-secretase assays described above were quantified by sandwich ELISA according to the protocol provided by the manufacturer.
+F 0.05489322	The amyloid precursor protein (APP) is processed by the successive actions of ??-secretase (BACE1) and ??-secretase, generating amyloid-beta peptides (A??) of different lengths, ranging from 37 to 46 amino acids [10].
+F 0.05489322	The beads were washed 3 times in the same buffer, and the bound proteins were eluted over 4 h at 4??C with 0.4 mL of this buffer containing 200 ??g/mL of Flag peptides (Sigma-Aldrich).
+F 0.05489322	The beads were washed 3 times in the same buffer, and the bound proteins were eluted for 1 h at 4??C with 0.4 mL of this buffer containing 500 ??g/mL of V5 peptides (Sigma-Aldrich).
+F 0.05489322	The beads were washed 3 times in the same buffer, and the bound proteins were eluted overnight at 4??C with 0.2 mL of this buffer containing 200 ??g/mL of HA peptides (Sigma-Aldrich).
+F 0.04705133	Together with nicastrin (NCT), anterior pharynx-defective protein 1 (APH1), and presenilin enhancer 2 (PEN2), the catalytic subunit PS1 constitutes the core of the ??-secretase complex and contributes to the proteolysis of the amyloid precursor protein (APP) into amyloid-beta (A??) peptides.
+F 0.04705133	WT MEF, ??-MEF and ?? - PS1/2 were transduced with an APP-based substrate corresponding to the 99 C-terminal residues of human APP fused to the APP signal peptide in N-terminus (SPA4CT [36]) and a Flag Tag in C-terminus.
+F 0.04705133	WT MEF, MEF PS1/2???/??? and ?? - PS1/2 were transduced with an APP-based substrate corresponding to the 99 C-terminal residues of human APP fused to the APP signal peptide in N-terminus (SPA4CT [36]).
+F 0.04147706	Different patterns of PS1 expression and autoproteolysis were observed in the different clones.
+F 0.027651373	The latter cleaves numerous type-I membrane proteins in their transmembrane domain [7], releasing their corresponding intracellular domains, which are capable of influencing gene expression.
+Sentence ErrorAnalysis for Q4: 0.0
+=========================================================
+========================================================
+Question: Which amino acid is critical for the activity of the PS1 protein?
+Correct Answer: aspartate
+F 0.62709445	Membrane protein extracts were prepared and ??-secretase activity was assayed on an exogenous recombinant APP-based substrate consisting of the C-terminal 99 amino acid residues of APP, and referred to as C100-Flag (Figure 3A).
+F 0.33335072	The amyloid precursor protein (APP) is processed by the successive actions of ??-secretase (BACE1) and ??-secretase, generating amyloid-beta peptides (A??) of different lengths, ranging from 37 to 46 amino acids [10].
+T 0.24013086	Experimental evidence such as the binding of transition-state analogue ??-secretase inhibitors to PS1 [4], as well as the abolishment of ??-secretase activity when PS1 lacks the aspartate residues critical for proteolysis [4], [5], [6], have confirmed that presenilins harbour the active site of the enzymatic complex.
+F 0.13454126	We also thank J.R. Alattia, C. Schweizer, and A. Alahari for critical readings of the manuscript.
+F 0.080724746	Find this article online Jarrett JT, Berger EP, Lansbury PT Jr (1993) The carboxy terminus of the beta amyloid protein is critical for the seeding of amyloid formation: implications for the pathogenesis of Alzheimer's disease.
+F 0.0741815	In vitro ??-secretase activity assays were performed as previously described [27].
+F 0.0741815	In vitro ??-secretase activity assays
+F 0.05563612	g003 We next performed activity assays under semi-purified conditions.
+F 0.05563612	The loss of activity in ??-secretase containing PS1 variants also leads to decreased generation of AICD.
+T 0.053816497	MEF PS1/PS2 DKO cells (1.0??109 cells) expressing NCT-V5, Flag-PEN2, APH1aL-HA and different forms of PS1: wild type (WT), or with FAD-linked variants or lacking the critical aspartate residues, were collected from 15 cm dishes and fully resuspended in 40 mL of MES buffer (50 mM MES, pH 6.0, 150 mM NaCl, 5 mM MgCl2, 5 mM CaCl2), supplemented with protease inhibitor cocktail (Roche).
+Sentence ErrorAnalysis for Q5: 0.2
+=========================================================
+========================================================
+Question: What experimental technique was used to determine the structure of ??-secretase?
+Correct Answer: EM
+T 0.7014549	In particular, protocols for the high-grade purification of proteolytically active ??-secretase constituted of NCT, APH1aL, PEN2 and wild-type PS1 [26], [27] allowed the reconstitution of 3D structures at 15 ?? and 12 ?? resolution by EM and cryo-EM and gave new insights on the structure and activity of the enzyme [28], [29].
+F 0.4225948	In vitro ??-secretase activity assays were performed as previously described [27].
+F 0.4225948	In vitro ??-secretase activity assays
+F 0.3884937	(A) Schematic representation of the ??-secretase purification process.
+F 0.37144315	The relative amounts of AICD-Flag generated in the reactions, reflecting ??-secretase activity, were estimated by densitometry.
+F 0.37144315	Therefore, it is plausible that a single mutation in PSEN1 confers different catalytic properties to distinct ??-secretase subtypes.
+F 0.37144315	Taken together, these data suggest that the overexpression of the other human components of ??-secretase can influence the phenotype of FAD-linked mutations.
+F 0.37144315	They further support the concept that modulating rather than inhibiting ??-secretase activity would be a more appropriate therapeutic strategy for AD [58].
+F 0.37144315	For each PS1 variant, five clones were selected for a full characterization and two of them were further used for ??-secretase purification.
+F 0.37144315	Finally, beads were resuspended in 50 ??L of 0.2% CHAPSO - HEPES buffer and were used for in vitro ??-secretase assays.
+Sentence ErrorAnalysis for Q6: 0.1
+=========================================================
+========================================================
+Question: What candidate drug that blocks the ??-secretase is now tested in clinical trials?
+Correct Answer: Semagacestat
+T 1.6980708	Supporting this view, the ??-secretase inhibitor Semagacestat tested in phase III clinical trials not only failed to slow cognitive decline in patients with mild-to-moderate AD, but actually made it worse [59].
+F 0.31988084	In vitro ??-secretase activity assays were performed as previously described [27].
+F 0.31988084	In vitro ??-secretase activity assays
+F 0.29406822	(A) Schematic representation of the ??-secretase purification process.
+F 0.2811619	The relative amounts of AICD-Flag generated in the reactions, reflecting ??-secretase activity, were estimated by densitometry.
+F 0.2811619	Therefore, it is plausible that a single mutation in PSEN1 confers different catalytic properties to distinct ??-secretase subtypes.
+F 0.2811619	Taken together, these data suggest that the overexpression of the other human components of ??-secretase can influence the phenotype of FAD-linked mutations.
+F 0.2811619	They further support the concept that modulating rather than inhibiting ??-secretase activity would be a more appropriate therapeutic strategy for AD [58].
+F 0.2811619	For each PS1 variant, five clones were selected for a full characterization and two of them were further used for ??-secretase purification.
+F 0.2811619	Finally, beads were resuspended in 50 ??L of 0.2% CHAPSO - HEPES buffer and were used for in vitro ??-secretase assays.
+Sentence ErrorAnalysis for Q7: 0.1
+=========================================================
+========================================================
+Question: What mutation of the PS1 protein causes ??-secretase activity almost to disappear?
+Correct Answer: P436Q
+F 1.0997654	Our biochemical and functional findings strongly suggest that pathogenic mutations in PSEN1 cause a loss of ??-secretase activity.
+T 0.93232685	Together, our results strongly support the hypothesis that the pathogenic L166P, ??E9, and P436Q mutations in PSEN1 cause a drastic loss (at least 90% as estimated by ELISA) of ??-secretase activity.
+F 0.9289342	In vitro ??-secretase activity assays were performed as previously described [27].
+F 0.9289342	In vitro ??-secretase activity assays
+F 0.7173213	The functional characterization of these complexes revealed that all PS1 FAD-linked mutations caused a loss of ??-secretase activity phenotype, in terms of A??1???40, A??1???42 and APP intracellular domain productions in vitro.
+F 0.7123738	To assess how FAD-linked mutations in PS1 affect ??-secretase activity in these purified complexes, we performed in vitro assays by using C100-Flag substrate (Figure 3A) and equal amounts of the different purified complexes, immediately after the purification to avoid freezing/thawing cycles that might affect enzymatic activity.
+F 0.685613	The relative amounts of AICD-Flag generated in the reactions, reflecting ??-secretase activity, were estimated by densitometry.
+F 0.685613	They further support the concept that modulating rather than inhibiting ??-secretase activity would be a more appropriate therapeutic strategy for AD [58].
+F 0.685613	(B) ??-Secretase activity assays were performed with microsomal extracts prepared in 1% CHAPSO-HEPES buffer.
+F 0.633602	Although a poor recovery of ??-secretase activity for the PS1-L166P and a comparatively better performance of PS1-??E9 have been reported by others under similar experimental conditions [23], the potential of PS1-P436Q mutation to restore the processing of endogenous APP-CTFs has never been assessed [34], [35].
+Sentence ErrorAnalysis for Q8: 0.1
+=========================================================
+========================================================
+Question: How many mutations relevant for familial forms of Alzheimer's disease have been detected for the PSEN1 gene?
+Correct Answer: 185
+F 0.81963	Mutations linked to early onset, familial forms of Alzheimer's disease (FAD) are found most frequently in PSEN1, the gene encoding presenilin-1 (PS1).
+F 0.13308363	Alzheimer's Disease-Linked Mutations in Presenilin-1 Result in a Drastic Loss of Activity in Purified ??-Secretase Complexes
+F 0.13308363	g005 Discussion Top Several conflicting results as to how Alzheimer's disease-linked mutations in PSEN1 affect the processing of APP by ??-secretase have been reported.
+F 0.13308363	This deleterious dual effect might explain why FAD-linked PSEN1 mutations cause early onset Alzheimer's disease.
+F 0.116448164	Introduction Top Since their discovery in 1995 and their association with early onset familial Alzheimer's disease (FAD) [1], [2], the presenilin genes PSEN1 and PSEN2 have been widely studied, and the complexity of their biological role is becoming increasingly evident.
+F 0.09981271	Matthias Cacquevel, Lor??ne Aeschbach, Jemila Houacine, Patrick C. Fraering*??cole Polytechnique F??d??rale de Lausanne, Brain Mind Institute, Laboratory of Molecular and Cellular Biology of Alzheimer's Disease, Lausanne, Switzerland
+F 0.09981271	Our data support the view that PS1 mutations lead to a strong ??-secretase loss-of-function phenotype and an increased A??1???42/A??1???40 ratio, two mechanisms that are potentially involved in the pathogenesis of Alzheimer's disease.
+F 0.09981271	Find this article online Jarrett JT, Berger EP, Lansbury PT Jr (1993) The carboxy terminus of the beta amyloid protein is critical for the seeding of amyloid formation: implications for the pathogenesis of Alzheimer's disease.
+F 0.015624065	Next, the clone expressing the highest levels of all three recombinant proteins was selected (designated ?? - PS1/2) and used as the parental cell line that was further transduced with lentivectors carrying the following different human PS1 variants: PS1-WT, three dominant-negative forms of PS1 that lack the crucial, catalytic site aspartate residues (D257A, D385A, and both D257A/D385A referred to as DDAA later in the article), and three FAD-linked PS1 mutants (L166P, ??E9 and P436Q, with mean disease onset at 24 years, 45.5 years and 28.3 years, respectively).
+Sentence ErrorAnalysis for Q9: 0.0
+=========================================================
+Sentence ErrorAnalysis for DocQA4MRE-2012_BIOMEDICAL_GS.xml_4: 0.09999999999999999
+Question: What effect can be observed when when ??-secretase is blocked? 
+APP-CTF accumulation	1
+PSEN1 mutations	0
+cell-based data	0
+APH1 variants	0
+transition-state analogue	0
+APP-CTF accumulation	0
+PSEN1 mutations	0
+cell-based data	0
+APH1 variants	0
+transition-state analogue	0
+APP-CTF accumulation	0
+PSEN1 mutations	0
+cell-based data	0
+APH1 variants	0
+transition-state analogue	0
+APP-CTF accumulation	0
+PSEN1 mutations	0
+cell-based data	0
+APH1 variants	0
+transition-state analogue	0
+APP-CTF accumulation	0
+PSEN1 mutations	0
+cell-based data	0
+APH1 variants	0
+transition-state analogue	0
+================================================
+Question: When APH1 genes are overexpressed in MEF KO what happens with the A???
+They are purified	0
+They are anterior	0
+They are shorter	0
+They are longer	0
+They are supported	0
+They are purified	0
+They are anterior	0
+They are shorter	0
+They are longer	0
+They are supported	0
+They are purified	0
+They are anterior	0
+They are shorter	0
+They are longer	0
+They are supported	0
+They are purified	0
+They are anterior	0
+They are shorter	0
+They are longer	0
+They are supported	0
+They are purified	0
+They are anterior	0
+They are shorter	0
+They are longer	0
+They are supported	0
+================================================
+Question: In which gene are mutations associated to many cases of early-onset familial forms of Alzheimer's disease?G
+FAD	0
+I-CLiPs	0
+NCT	0
+PSEN1	0
+D257A	0
+FAD	0
+I-CLiPs	0
+NCT	0
+PSEN1	0
+D257A	0
+FAD	0
+I-CLiPs	0
+NCT	0
+PSEN1	0
+D257A	0
+FAD	0
+I-CLiPs	0
+NCT	0
+PSEN1	0
+D257A	0
+FAD	0
+I-CLiPs	0
+NCT	0
+PSEN1	0
+D257A	0
+================================================
+Question: What experimental technique was used specifically to purify the ??-secretase complex?
+plasmids	0
+affinity chromatography	0
+lysate	0
+cell lines	0
+knockout experiments	0
+plasmids	0
+affinity chromatography	0
+lysate	0
+cell lines	0
+knockout experiments	0
+plasmids	0
+affinity chromatography	0
+lysate	0
+cell lines	0
+knockout experiments	0
+plasmids	0
+affinity chromatography	0
+lysate	0
+cell lines	0
+knockout experiments	0
+plasmids	0
+affinity chromatography	0
+lysate	0
+cell lines	0
+knockout experiments	0
+================================================
+Question: What peptide is able to control the expression of the ApoE gene?
+AD	0
+APP-CTFs	0
+c-secretase	0
+cholesterol	0
+AICD	0
+AD	0
+APP-CTFs	0
+c-secretase	0
+cholesterol	0
+AICD	0
+AD	0
+APP-CTFs	0
+c-secretase	0
+cholesterol	0
+AICD	0
+AD	0
+APP-CTFs	0
+c-secretase	0
+cholesterol	0
+AICD	0
+AD	0
+APP-CTFs	0
+c-secretase	0
+cholesterol	0
+AICD	0
+================================================
+Question: Which amino acid is critical for the activity of the PS1 protein?
+aspartate	0
+C-terminal	1
+42-residue	0
+99	1
+DDAA	0
+aspartate	0
+C-terminal	0
+42-residue	0
+99	0
+DDAA	0
+aspartate	1
+C-terminal	0
+42-residue	0
+99	0
+DDAA	0
+aspartate	0
+C-terminal	0
+42-residue	0
+99	0
+DDAA	0
+aspartate	0
+C-terminal	0
+42-residue	0
+99	1
+DDAA	0
+================================================
+Question: What experimental technique was used to determine the structure of ??-secretase?
+densitometry	0
+EM	2
+ELISA	0
+immunostaining	0
+purification	2
+densitometry	0
+EM	0
+ELISA	0
+immunostaining	0
+purification	0
+densitometry	0
+EM	0
+ELISA	0
+immunostaining	0
+purification	0
+densitometry	0
+EM	0
+ELISA	0
+immunostaining	0
+purification	1
+densitometry	1
+EM	0
+ELISA	0
+immunostaining	0
+purification	0
+================================================
+Question: What candidate drug that blocks the ??-secretase is now tested in clinical trials?
+LRP1	0
+biochemical	0
+PSEN1	0
+AD	1
+Semagacestat	1
+LRP1	0
+biochemical	0
+PSEN1	0
+AD	0
+Semagacestat	0
+LRP1	0
+biochemical	0
+PSEN1	0
+AD	0
+Semagacestat	0
+LRP1	0
+biochemical	0
+PSEN1	0
+AD	0
+Semagacestat	0
+LRP1	0
+biochemical	0
+PSEN1	0
+AD	0
+Semagacestat	0
+================================================
+Question: What mutation of the PS1 protein causes ??-secretase activity almost to disappear?
+P436Q	0
+L166P	0
+wild-type	0
+AICD	0
+C100-His	0
+P436Q	1
+L166P	1
+wild-type	0
+AICD	0
+C100-His	0
+P436Q	0
+L166P	0
+wild-type	0
+AICD	0
+C100-His	0
+P436Q	0
+L166P	0
+wild-type	0
+AICD	0
+C100-His	0
+P436Q	0
+L166P	0
+wild-type	0
+AICD	0
+C100-His	0
+================================================
+Question: How many mutations relevant for familial forms of Alzheimer's disease have been detected for the PSEN1 gene?
+13	0
+42	0
+P436Q	0
+185	0
+PSEN2	0
+13	0
+42	0
+P436Q	0
+185	0
+PSEN2	0
+13	0
+42	0
+P436Q	0
+185	0
+PSEN2	0
+13	0
+42	0
+P436Q	0
+185	0
+PSEN2	0
+13	0
+42	0
+P436Q	0
+185	0
+PSEN2	1
+================================================
+Question: What effect can be observed when when ??-secretase is blocked? 
+Aggregated counts; 
+APP-CTF accumulation	APP-CTF accumulation	5.0
+Correct Choice: 	APP-CTF accumulation
+Best Choice: 	APP-CTF accumulation
+================================================
+Question: When APH1 genes are overexpressed in MEF KO what happens with the A???
+Aggregated counts; 
+They are purified	They are purified	5.0
+Correct Choice: 	They are longer
+Best Choice: 	They are purified
+================================================
+Question: In which gene are mutations associated to many cases of early-onset familial forms of Alzheimer's disease?G
+Aggregated counts; 
+FAD	FAD	5.0
+Correct Choice: 	PSEN1
+Best Choice: 	FAD
+================================================
+Question: What experimental technique was used specifically to purify the ??-secretase complex?
+Aggregated counts; 
+plasmids	plasmids	5.0
+Correct Choice: 	affinity chromatography
+Best Choice: 	plasmids
+================================================
+Question: What peptide is able to control the expression of the ApoE gene?
+Aggregated counts; 
+AD	AD	5.0
+Correct Choice: 	AICD
+Best Choice: 	AD
+================================================
+Question: Which amino acid is critical for the activity of the PS1 protein?
+Aggregated counts; 
+aspartate	aspartate	3.0
+99	99	1.0
+C-terminal	C-terminal	1.0
+Correct Choice: 	aspartate
+Best Choice: 	aspartate
+================================================
+Question: What experimental technique was used to determine the structure of ??-secretase?
+Aggregated counts; 
+EM	EM	1.0
+purification	purification	1.0
+densitometry	densitometry	3.0
+Correct Choice: 	EM
+Best Choice: 	densitometry
+================================================
+Question: What candidate drug that blocks the ??-secretase is now tested in clinical trials?
+Aggregated counts; 
+AD	AD	1.0
+LRP1	LRP1	4.0
+Correct Choice: 	Semagacestat
+Best Choice: 	LRP1
+================================================
+Question: What mutation of the PS1 protein causes ??-secretase activity almost to disappear?
+Aggregated counts; 
+P436Q	P436Q	5.0
+Correct Choice: 	P436Q
+Best Choice: 	P436Q
+================================================
+Question: How many mutations relevant for familial forms of Alzheimer's disease have been detected for the PSEN1 gene?
+Aggregated counts; 
+PSEN2	PSEN2	1.0
+13	13	4.0
+Correct Choice: 	185
+Best Choice: 	13
+================================================
+Correct: 3/10=30.0%
+c@1 score:0.30000000000000004
+java.io.FileNotFoundException: results/12-test-alzheimer/QA4MRE-2012_BIOMEDICAL_GS.xml_4.xmi (No such file or directory)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:194)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:145)
+	at edu.cmu.lti.deiis.hw5.casconsumers.QA4MREResultCasConsumer.writeXmi(QA4MREResultCasConsumer.java:72)
+	at edu.cmu.lti.deiis.hw5.casconsumers.QA4MREResultCasConsumer.processCas(QA4MREResultCasConsumer.java:60)
+	at org.apache.uima.analysis_engine.impl.compatibility.CasConsumerAdapter.process(CasConsumerAdapter.java:99)
+	at org.apache.uima.analysis_engine.impl.PrimitiveAnalysisEngine_impl.callAnalysisComponentProcess(PrimitiveAnalysisEngine_impl.java:375)
+	at org.apache.uima.analysis_engine.impl.PrimitiveAnalysisEngine_impl.processAndOutputNewCASes(PrimitiveAnalysisEngine_impl.java:296)
+	at org.apache.uima.analysis_engine.impl.AnalysisEngineImplBase.process(AnalysisEngineImplBase.java:267)
+	at org.apache.uima.collection.impl.cpm.engine.ProcessingUnit.processNext(ProcessingUnit.java:897)
+	at org.apache.uima.collection.impl.cpm.engine.ProcessingUnit.run(ProcessingUnit.java:577)
+Read: /home/pan/11791/hw5/qa4mre-alzheimer-task/XMIs/12-test-alzheimer/QA4MRE-2012_BIOMEDICAL_GS.xml_1.xmi
+QA4MRE-2012_BIOMEDICAL_GS.xml_1
+========================================================
+Question: Which technique was used to determine the cellular locations of the CLU1 and CLU2 gene products?
+Correct Answer: immunofluorescence experiments
+F 0.17989147	Within B, the value in parentheses following the tissue name is the CLU1:CLU2 ratio.
+F 0.17989147	The most parsimonious interpretation of these data is that CLU1 translation is generally initiated at the common exon 2 ATG.
+F 0.17146483	The possibility exists that a portion of CLU1 translation is initiated at the exon 1a ATG at levels too low to be readily detected or that produce an unstable protein which is rapidly degraded.
+F 0.17146483	Moreover, variability in these factors could facilitate or obscure the SNP association with CLU1 expression described here, suggesting that replication of these data in additional samples is necessary for their acceptance by the research community.
+F 0.16347201	Since the minor rs11136000T allele was associated with both increased CLU1 expression and reduced AD risk [15], [16], [17], [18], [19], we interpret these results as suggesting that increased CLU1 expression is associated with reduced AD risk.
+F 0.15699518	Quantitative expression studies show that both CLU1 and CLU2 are increased in AD but only CLU1 is associated with rs11136000.
+F 0.15699518	Second, the expression of only CLU1 was associated with rs11136000 while both CLU1 and CLU2 were increased with robust AD neuropathology.
+F 0.1554732	The predicted protein sequences encoded by CLU1 and CLU2, beginning with the initial ATG sites shown in A, are shown in panel C. The sequence in gray font is unique to CLU1 while sequence in black font is common to CLU1 and CLU2.
+F 0.15351206	However, only CLU1 expression was associated with rs11136000.
+F 0.15351206	Hence, CLU1 and CLU2 produce similar secreted proteins in vitro.
+Sentence ErrorAnalysis for Q0: 0.0
+=========================================================
+========================================================
+Question: What compartments inside the cell contain clusterin proteins?
+Correct Answer: ER and the Golgi apparatus
+F 3.1744194	Comparable results were obtained in two cell types, suggesting that CLU1 and CLU2 generally produce soluble clusterin protein.
+F 2.9803903	Cell lysates contained both intact and cleaved clusterin while conditioned medium contained only cleaved clusterin; the clusterin protein produced by CLU1 and CLU2 appeared equal in size (Figure 4A).
+F 2.6078415	g004 To evaluate whether the clusterin proteins produced by CLU1 and CLU2 in vitro are similar to those produced in vivo, we compared ectopic clusterin with endogenous clusterin in SH-SY5Y cells and in human brain by Western blotting with a clusterin antibody.
+F 2.0323513	CLU1 and CLU2 produce clusterin proteins that are similar to each other and to clusterin in human brain.
+F 2.0323513	Third, CLU1 and CLU2 produce secreted clusterin proteins that are similar to each other and to clusterin in human brain.
+F 2.0323513	Both CLU1 and CLU2 produce a soluble, secreted clusterin protein that is similar to that observed in human brain.
+F 1.7360947	We note that the lack of an association between total CLU and rs11136000 was similar to prior reports that total CLU mRNA or clusterin protein were not associated with rs11136000 [17], [34].
+F 1.5109608	Although the primary role of clusterin in AD is unclear, CLU is implicated in AD by several lines of evidence, including (I) CLU mRNA and clusterin protein is increased in AD [5], [6], (ii) clusterin is a component of plaques [4], [5], [7], (iii) clusterin modulates AD-related pathways such as inflammation and apoptosis [1], [8], [9] and (iv) clusterin acts as an amyloid-beta (A??) chaperone to alter A?? aggregation and/or clearance ([10], [11], reviewed in [4], [12], [13], [14]).
+F 1.4961216	Overall, the cellular clusterin proteins are similar in size to the human brain clusterin, as discerned for the intact and cleaved clusterin under reducing conditions (D) or as the heterodimeric clusterin under non-reducing conditions (E).
+F 1.4961216	Overall, we summarize our current results by noting that the proteins produced from CLU1 and CLU2 in vitro are similar to each other, and similar in size to those present in human brain, leading us to interpret our data as supporting the possibility that CLU1 and CLU2 generally produce secreted clusterin protein in vitro and in vivo.
+Sentence ErrorAnalysis for Q1: 0.0
+=========================================================
+========================================================
+Question: Which of the two CLU isoforms is the main one expressed in the choroid plexus?
+Correct Answer: CLU2
+F 2.1162472	Discerning the association between rs11136000 and CLU1 depended upon analyzing these two CLU isoforms separately.
+F 1.9060333	In summary, the association between rs11136000 and CLU1 was dependent upon analyzing the two CLU isoforms separately.
+T 1.4434352	To gain further insights into CLU isoform expression, we quantified CLU1 and CLU2 in a series of single human fetal tissue samples as well as a set of six adult choroid plexus samples (Figure 2B).
+T 1.3769715	Two CLU isoforms, CLU1 and CLU2, have been reported that consist of nine exons and differ only in their first exons and associated proximal promoters; CLU1 is predicted to encode a nuclear proteinand CLU2 a secreted protein (reviewed in [20]).
+F 0.6045505	Additional reported isoforms include a CLU isoform that lacks exon 5 and a CLU isoform that lacks exon two, which encodes the leader sequence, resulting in another nuclear clusterin [21], [22].
+F 0.5343522	Here, we investigated the hypothesis that CLU isoforms are differentially modulated by AD status and AD-associated SNPs.
+F 0.5343522	Results Top To begin to evaluate CLU expression, we screened human brain cDNA to identify CLU isoforms present in brain.
+F 0.5343522	The CLU isoforms were quantified in separate real-time PCR assays that used forward primers corresponding to their unique exon 1 and a common reverse primer that targeted the exon 2???3 boundary.
+F 0.5343522	Expression of CLU isoforms in human tissues.
+F 0.5343522	One possible modulator of interest is age-dependent changes in sex hormones since CLU isoforms are differentially regulated by androgens [35].
+Sentence ErrorAnalysis for Q2: 0.2
+=========================================================
+========================================================
+Question: Which clusterin single nucleotide polymorphism has been linked to a reduction in the risk for developing Alzheimer's disease?
+Correct Answer: rs11136000T
+F 0.49702966	Abstract Top The minor allele of rs11136000 within CLU is strongly associated with reduced Alzheimer's disease (AD) risk.
+F 0.23136978	(2010) Genetic variability in CLU and its association with Alzheimer's disease.
+F 0.2303123	Introduction Top Clusterin (CLU, APOJ) has been implicated in diseases ranging from cancer to Alzheimer's disease (AD) (reviewed in [1], [2], [3], [4]).
+F 0.19280817	Find this article online (1997) Consensus recommendations for the postmortem diagnosis of Alzheimer's disease.
+F 0.18327034	Furthermore, since CLU expression is increased in AD without reversing the disease, we speculate that enhanced CLU expression reduces AD risk only if CLU expression is increased well before AD onset, mimicking the likely SNP effects.
+F 0.15424654	The National Institute on Aging, and Reagan Institute Working Group on Diagnostic Criteria for the Neuropathological Assessment of Alzheimer's Disease.
+F 0.09640408	Find this article online Aksenov MY, Tucker HM, Nair P, Aksenova MV, Butterfield DA, et al. (1999) The expression of several mitochondrial and nuclear genes encoding the subunits of electron transport chain enzyme complexes, cytochrome c oxidase, and NADH dehydrogenase, in different brain regions in Alzheimer's disease.
+F 0.083126955	Overall, these results identify a possible means underlying the association of rs11136000 with AD risk.
+T 0.078372836	Since CLU is increased in AD and CLU1 is increased with the minor rs11136000T allele, which is also associated with reduced AD risk, we interpret our results as suggesting that increased CLU expression throughout life may reduce AD risk.
+F 0.078372836	A logical extension of the finding that AD risk is reduced with a genetic variant that correlates with increased CLU expression is that other factors that increase CLU expression may also reduce AD risk.
+Sentence ErrorAnalysis for Q3: 0.1
+=========================================================
+========================================================
+Question: Which CLU protein isoforms in the brain have been characterized?
+Correct Answer: rs11136000
+F 0.10782304	We identified CLU1 and CLU2 as the major CLU isoforms in human brain.
+F 0.10782304	CLU1 and CLU2 are the primary CLU isoforms expressed in human brain.
+F 0.10165653	Results Top To begin to evaluate CLU expression, we screened human brain cDNA to identify CLU isoforms present in brain.
+F 0.08985253	In summary, CLU1 and CLU2 are the primary CLU isoforms in brain and are predicted to encode intracellular and secreted proteins, respectively.
+F 0.08985253	Within A, each marker reflects the expression of CLU1 and CLU2, normalized to housekeeping genes, in a single brain sample.
+F 0.08985253	CLU1 and CLU2 produce clusterin proteins that are similar to each other and to clusterin in human brain.
+F 0.08985253	Hence, CLU1 and CLU2 produce proteins in vitro that are similar in size to endogenous clusterin in vitro and human brain.
+F 0.08985253	Third, CLU1 and CLU2 produce secreted clusterin proteins that are similar to each other and to clusterin in human brain.
+F 0.08985253	Both CLU1 and CLU2 produce a soluble, secreted clusterin protein that is similar to that observed in human brain.
+F 0.071882024	Lastly, although CLU1 and CLU2 are predicted to produce intracellular and secreted proteins, respectively, immunofluorescence and Western blot studies indicate that CLU1 and CLU2 both produce secreted proteins that are similar to those detected in the human brain.
+Sentence ErrorAnalysis for Q4: 0.0
+=========================================================
+========================================================
+Question: Which CLU isoform has a consistently higher gene expression?
+Correct Answer: CLU2
+F 2.791916	Additional reported isoforms include a CLU isoform that lacks exon 5 and a CLU isoform that lacks exon two, which encodes the leader sequence, resulting in another nuclear clusterin [21], [22].
+F 2.7575195	Expression of CLU isoforms in human tissues.
+F 2.4677284	Here, we investigated the hypothesis that CLU isoforms are differentially modulated by AD status and AD-associated SNPs.
+F 2.3228328	Results Top To begin to evaluate CLU expression, we screened human brain cDNA to identify CLU isoforms present in brain.
+F 2.3228328	One possible modulator of interest is age-dependent changes in sex hormones since CLU isoforms are differentially regulated by androgens [35].
+T 2.263974	We identified CLU1 and CLU2 as the major CLU isoforms in human brain.
+T 2.263974	CLU1 and CLU2 are the primary CLU isoforms expressed in human brain.
+F 2.263974	The association between CLU expression and rs11136000 was discerned because the CLU isoforms were analyzed separately.
+F 2.263974	Discerning the association between rs11136000 and CLU1 depended upon analyzing these two CLU isoforms separately.
+F 2.2503848	The CLU isoforms were quantified in separate real-time PCR assays that used forward primers corresponding to their unique exon 1 and a common reverse primer that targeted the exon 2???3 boundary.
+Sentence ErrorAnalysis for Q5: 0.2
+=========================================================
+========================================================
+Question: Which hormone can control the expression of CLU isoforms?
+Correct Answer: androgen
+F 4.1970105	Expression of CLU isoforms in human tissues.
+F 3.976327	One possible modulator of interest is age-dependent changes in sex hormones since CLU isoforms are differentially regulated by androgens [35].
+F 3.4690468	Results Top To begin to evaluate CLU expression, we screened human brain cDNA to identify CLU isoforms present in brain.
+F 3.4546702	The association between CLU expression and rs11136000 was discerned because the CLU isoforms were analyzed separately.
+F 2.9693608	g002 We next evaluated CLU isoform expression as a function of AD neuropathology, rs11136000 status, sex and age.
+F 2.8480337	Variation in CLU isoform expression were analyzed as a function of rs11136000 genotype, AD neuropathology, sex and age by using a general linear model (SPSS v.18 (IBM, Somers, NY)).
+F 2.7267063	To gain further insights into CLU isoform expression, we quantified CLU1 and CLU2 in a series of single human fetal tissue samples as well as a set of six adult choroid plexus samples (Figure 2B).
+F 2.6675844	Additional reported isoforms include a CLU isoform that lacks exon 5 and a CLU isoform that lacks exon two, which encodes the leader sequence, resulting in another nuclear clusterin [21], [22].
+F 2.3578339	Here, we investigated the hypothesis that CLU isoforms are differentially modulated by AD status and AD-associated SNPs.
+F 2.1631532	We identified CLU1 and CLU2 as the major CLU isoforms in human brain.
+Sentence ErrorAnalysis for Q6: 0.0
+=========================================================
+========================================================
+Question: What effect do androgens have on CLU2 gene expression?
+Correct Answer: activation
+F 0.16641237	Consistent with this observation, Cochrane etal found that androgen-treatment in a prostate cancer cell line decreased CLU1 expression while enhancing CLU2 expression [35].
+F 0.16641237	One possible modulator of interest is age-dependent changes in sex hormones since CLU isoforms are differentially regulated by androgens [35].
+F 0.07093697	Furthermore, since CLU expression is increased in AD without reversing the disease, we speculate that enhanced CLU expression reduces AD risk only if CLU expression is increased well before AD onset, mimicking the likely SNP effects.
+F 0.07093697	Find this article online Holtzman DM (2004) In vivo effects of ApoE and clusterin on amyloid-beta metabolism and neuropathology.
+Sentence ErrorAnalysis for Q7: 0.0
+=========================================================
+========================================================
+Question: Which particular histone deacetylase inhibitor has been shown to enhance the expression of CLU? 
+Correct Answer: valproate
+F 0.45869437	Furthermore, since CLU expression is increased in AD without reversing the disease, we speculate that enhanced CLU expression reduces AD risk only if CLU expression is increased well before AD onset, mimicking the likely SNP effects.
+F 0.44174305	Identifying the unknown factors that account for the additional variance, which could include epigenetic factors, will facilitate understanding of CLU expression.
+F 0.42411062	A logical extension of the finding that AD risk is reduced with a genetic variant that correlates with increased CLU expression is that other factors that increase CLU expression may also reduce AD risk.
+F 0.4237682	For example, when we analyzed total CLU expression in the same fashion as reported here, total CLU was not associated with rs11136000 (p = 0.51) although a robust association with AD pathology was observed (p = 0.005, Ling et al., unpublished observations).
+F 0.41853398	The association between CLU expression and rs11136000 was discerned because the CLU isoforms were analyzed separately.
+T 0.41454062	While valproate may also act via other mechanisms [38], the actions of valproate on CLU expression may be relevant to its neuroprotection and merit further exploration to reduce AD risk.
+T 0.4009394	Interestingly, one member of this class, valproate, increases CLU expression in human astrocytes [37] and reduces amyloid accumulation as well as behavioral deficits in mouse amyloid models [38], [39].
+F 0.38149875	Expression of CLU isoforms in human tissues.
+F 0.32598156	Results Top To begin to evaluate CLU expression, we screened human brain cDNA to identify CLU isoforms present in brain.
+F 0.2877652	Since CLU is increased in AD and CLU1 is increased with the minor rs11136000T allele, which is also associated with reduced AD risk, we interpret our results as suggesting that increased CLU expression throughout life may reduce AD risk.
+Sentence ErrorAnalysis for Q8: 0.2
+=========================================================
+========================================================
+Question: How many residues does the CLU2 protein sequence have?
+Correct Answer: 449
+Sentence ErrorAnalysis for Q9: 0.0
+=========================================================
+Sentence ErrorAnalysis for DocQA4MRE-2012_BIOMEDICAL_GS.xml_1: 0.06999999999999999
+Question: Which technique was used to determine the cellular locations of the CLU1 and CLU2 gene products?
+intracellular and secreted	0
+ER	0
+intracellular localization	0
+Golgi apparatus	0
+immunofluorescence experiments	0
+intracellular and secreted	0
+ER	0
+intracellular localization	0
+Golgi apparatus	0
+immunofluorescence experiments	0
+intracellular and secreted	0
+ER	0
+intracellular localization	0
+Golgi apparatus	0
+immunofluorescence experiments	0
+intracellular and secreted	0
+ER	0
+intracellular localization	0
+Golgi apparatus	0
+immunofluorescence experiments	0
+intracellular and secreted	0
+ER	0
+intracellular localization	0
+Golgi apparatus	0
+immunofluorescence experiments	0
+================================================
+Question: What compartments inside the cell contain clusterin proteins?
+ER and the Golgi apparatus	0
+epitope tag	0
+anibody	0
+secretory pathway	0
+secreted	0
+ER and the Golgi apparatus	0
+epitope tag	0
+anibody	0
+secretory pathway	0
+secreted	0
+ER and the Golgi apparatus	0
+epitope tag	0
+anibody	0
+secretory pathway	0
+secreted	0
+ER and the Golgi apparatus	0
+epitope tag	0
+anibody	0
+secretory pathway	0
+secreted	0
+ER and the Golgi apparatus	0
+epitope tag	0
+anibody	0
+secretory pathway	0
+secreted	0
+================================================
+Question: Which of the two CLU isoforms is the main one expressed in the choroid plexus?
+fetal tissue	0
+CLU1	2
+clusterin	0
+CLU2	0
+cerebrospinal fluid	0
+fetal tissue	0
+CLU1	1
+clusterin	0
+CLU2	0
+cerebrospinal fluid	0
+fetal tissue	1
+CLU1	2
+clusterin	0
+CLU2	2
+cerebrospinal fluid	0
+fetal tissue	0
+CLU1	3
+clusterin	0
+CLU2	6
+cerebrospinal fluid	0
+fetal tissue	0
+CLU1	0
+clusterin	1
+CLU2	0
+cerebrospinal fluid	0
+================================================
+Question: Which clusterin single nucleotide polymorphism has been linked to a reduction in the risk for developing Alzheimer's disease?
+CLU2	0
+SNPs	0
+rs11136000T	0
+clusterin	0
+CLU	1
+CLU2	0
+SNPs	0
+rs11136000T	0
+clusterin	0
+CLU	1
+CLU2	0
+SNPs	0
+rs11136000T	0
+clusterin	0
+CLU	1
+CLU2	0
+SNPs	0
+rs11136000T	0
+clusterin	0
+CLU	0
+CLU2	0
+SNPs	0
+rs11136000T	0
+clusterin	0
+CLU	4
+================================================
+Question: Which CLU protein isoforms in the brain have been characterized?
+CLU1 and CLU2	8
+clusterin	0
+rs11136000	0
+secreted proteins	0
+AD	0
+CLU1 and CLU2	8
+clusterin	0
+rs11136000	0
+secreted proteins	0
+AD	0
+CLU1 and CLU2	0
+clusterin	0
+rs11136000	0
+secreted proteins	0
+AD	0
+CLU1 and CLU2	8
+clusterin	0
+rs11136000	0
+secreted proteins	1
+AD	0
+CLU1 and CLU2	4
+clusterin	0
+rs11136000	0
+secreted proteins	0
+AD	0
+================================================
+Question: Which CLU isoform has a consistently higher gene expression?
+CLU2	0
+ribosomal protein L13A	0
+CLU1	0
+allele	0
+PNGase	0
+CLU2	0
+ribosomal protein L13A	0
+CLU1	0
+allele	0
+PNGase	0
+CLU2	0
+ribosomal protein L13A	0
+CLU1	0
+allele	0
+PNGase	0
+CLU2	0
+ribosomal protein L13A	0
+CLU1	0
+allele	0
+PNGase	0
+CLU2	0
+ribosomal protein L13A	0
+CLU1	0
+allele	0
+PNGase	0
+================================================
+Question: Which hormone can control the expression of CLU isoforms?
+real-time PCR	0
+cDNA	0
+AD	0
+rs11136000	0
+androgen	0
+real-time PCR	0
+cDNA	0
+AD	0
+rs11136000	0
+androgen	1
+real-time PCR	0
+cDNA	1
+AD	0
+rs11136000	0
+androgen	0
+real-time PCR	0
+cDNA	0
+AD	0
+rs11136000	2
+androgen	0
+real-time PCR	0
+cDNA	0
+AD	1
+rs11136000	1
+androgen	0
+================================================
+Question: What effect do androgens have on CLU2 gene expression?
+association	0
+repression	0
+inhibition	0
+activation	0
+expression	2
+association	0
+repression	0
+inhibition	0
+activation	0
+expression	0
+association	0
+repression	0
+inhibition	0
+activation	0
+expression	4
+association	0
+repression	0
+inhibition	0
+activation	0
+expression	0
+================================================
+Question: Which particular histone deacetylase inhibitor has been shown to enhance the expression of CLU? 
+astrocytes	0
+CLU2	0
+therapeutic agents	0
+valproate	0
+amyloid	0
+astrocytes	0
+CLU2	0
+therapeutic agents	0
+valproate	0
+amyloid	0
+astrocytes	0
+CLU2	0
+therapeutic agents	0
+valproate	0
+amyloid	0
+astrocytes	0
+CLU2	0
+therapeutic agents	0
+valproate	0
+amyloid	0
+astrocytes	0
+CLU2	0
+therapeutic agents	0
+valproate	0
+amyloid	0
+================================================
+Question: How many residues does the CLU2 protein sequence have?
+================================================
+Question: Which technique was used to determine the cellular locations of the CLU1 and CLU2 gene products?
+Aggregated counts; 
+intracellular and secreted	intracellular and secreted	5.0
+Correct Choice: 	immunofluorescence experiments
+Best Choice: 	intracellular and secreted
+================================================
+Question: What compartments inside the cell contain clusterin proteins?
+Aggregated counts; 
+ER and the Golgi apparatus	ER and the Golgi apparatus	5.0
+Correct Choice: 	ER and the Golgi apparatus
+Best Choice: 	ER and the Golgi apparatus
+================================================
+Question: Which of the two CLU isoforms is the main one expressed in the choroid plexus?
+Aggregated counts; 
+CLU2	CLU2	1.0
+CLU1	CLU1	3.0
+clusterin	clusterin	1.0
+Correct Choice: 	CLU2
+Best Choice: 	CLU1
+================================================
+Question: Which clusterin single nucleotide polymorphism has been linked to a reduction in the risk for developing Alzheimer's disease?
+Aggregated counts; 
+CLU2	CLU2	1.0
+CLU	CLU	4.0
+Correct Choice: 	rs11136000T
+Best Choice: 	CLU
+================================================
+Question: Which CLU protein isoforms in the brain have been characterized?
+Aggregated counts; 
+CLU1 and CLU2	CLU1 and CLU2	5.0
+Correct Choice: 	rs11136000
+Best Choice: 	CLU1 and CLU2
+================================================
+Question: Which CLU isoform has a consistently higher gene expression?
+Aggregated counts; 
+CLU2	CLU2	5.0
+Correct Choice: 	CLU2
+Best Choice: 	CLU2
+================================================
+Question: Which hormone can control the expression of CLU isoforms?
+Aggregated counts; 
+AD	AD	1.0
+androgen	androgen	1.0
+cDNA	cDNA	1.0
+real-time PCR	real-time PCR	1.0
+rs11136000	rs11136000	1.0
+Correct Choice: 	androgen
+Best Choice: 	AD
+================================================
+Question: What effect do androgens have on CLU2 gene expression?
+Aggregated counts; 
+expression	expression	2.0
+association	association	2.0
+Correct Choice: 	activation
+Best Choice: 	expression
+================================================
+Question: Which particular histone deacetylase inhibitor has been shown to enhance the expression of CLU? 
+Aggregated counts; 
+astrocytes	astrocytes	5.0
+Correct Choice: 	valproate
+Best Choice: 	astrocytes
+================================================
+Question: How many residues does the CLU2 protein sequence have?
+Aggregated counts; 
+Correct Choice: 	449
+Best Choice: 	null
+================================================
+Correct: 2/10=20.0%
+c@1 score:0.22000000000000003
+java.io.FileNotFoundException: results/12-test-alzheimer/QA4MRE-2012_BIOMEDICAL_GS.xml_1.xmi (No such file or directory)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:194)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:145)
+	at edu.cmu.lti.deiis.hw5.casconsumers.QA4MREResultCasConsumer.writeXmi(QA4MREResultCasConsumer.java:72)
+	at edu.cmu.lti.deiis.hw5.casconsumers.QA4MREResultCasConsumer.processCas(QA4MREResultCasConsumer.java:60)
+	at org.apache.uima.analysis_engine.impl.compatibility.CasConsumerAdapter.process(CasConsumerAdapter.java:99)
+	at org.apache.uima.analysis_engine.impl.PrimitiveAnalysisEngine_impl.callAnalysisComponentProcess(PrimitiveAnalysisEngine_impl.java:375)
+	at org.apache.uima.analysis_engine.impl.PrimitiveAnalysisEngine_impl.processAndOutputNewCASes(PrimitiveAnalysisEngine_impl.java:296)
+	at org.apache.uima.analysis_engine.impl.AnalysisEngineImplBase.process(AnalysisEngineImplBase.java:267)
+	at org.apache.uima.collection.impl.cpm.engine.ProcessingUnit.processNext(ProcessingUnit.java:897)
+	at org.apache.uima.collection.impl.cpm.engine.ProcessingUnit.run(ProcessingUnit.java:577)

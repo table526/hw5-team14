@@ -68,10 +68,11 @@ public class AnswerSelectionByKCandAggregation extends JCasAnnotator_ImplBase {
 
 				CandidateSentence candSent = candSentList.get(c);
 
-				ArrayList<CandidateAnswer> candAnswerList = Utils
-						.fromFSListToCollection(candSent.getCandAnswerList(),
-								CandidateAnswer.class);
-
+			//	ArrayList<CandidateAnswer> candAnswerList = Utils
+				//		.fromFSListToCollection(candSent.getCandAnswerList(),
+					//			CandidateAnswer.class);
+        ArrayList<CandidateAnswer> candAnswerList = Utils.fromFSListToCollection(
+                candSent.getCandAnswerList(), CandidateAnswer.class);
 				for (int j = 0; j < candAnswerList.size(); j++) {
 
 					CandidateAnswer candAns = candAnswerList.get(j);

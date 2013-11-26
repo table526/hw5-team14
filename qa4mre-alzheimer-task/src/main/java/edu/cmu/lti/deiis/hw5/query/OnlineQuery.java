@@ -13,7 +13,7 @@ import java.util.Iterator;
 import java.util.Map;
 import java.util.Set;
 
-import org.jsoup.Jsoup;
+import org.jsoup.Jsoup; 
 import org.jsoup.select.Elements;
 
 public class OnlineQuery {

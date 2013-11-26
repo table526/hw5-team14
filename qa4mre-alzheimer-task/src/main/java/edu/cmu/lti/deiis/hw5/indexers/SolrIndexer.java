@@ -13,7 +13,6 @@ import org.apache.uima.jcas.JCas;
 import org.apache.uima.jcas.cas.FSList;
 import org.apache.uima.resource.ResourceInitializationException;
 
-import edu.cmu.lti.deiis.hw5.query.OnlineQuery;
 import edu.cmu.lti.oaqa.core.provider.solr.SolrWrapper;
 import edu.cmu.lti.qalab.solrutils.SolrUtils;
 import edu.cmu.lti.qalab.types.Dependency;
@@ -124,10 +123,11 @@ public class SolrIndexer extends JCasAnnotator_ImplBase {
 				  
 				  indexMap.put("dependencies", depList);
 				}
+
 				SolrInputDocument solrInpDoc = this.wrapper
 						.buildSolrDocument(indexMap);
 				String docXML = this.wrapper.convertSolrDocInXML(solrInpDoc);
-
+				
 				// System.out.println(docXML);
 
 				this.wrapper.indexDocument(docXML);

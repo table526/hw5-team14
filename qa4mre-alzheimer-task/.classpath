@@ -27,16 +27,7 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/home/haodong/.m2/repository/org/apache/httpcomponents/httpclient/4.2.1/httpclient-4.2.1.jar">
-		<attributes>
-			<attribute name="maven.pomderived" value="true"/>
-			<attribute name="maven.groupId" value="org.apache.httpcomponents"/>
-			<attribute name="maven.artifactId" value="httpclient"/>
-			<attribute name="maven.version" value="4.2.1"/>
-			<attribute name="maven.scope" value="compile"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="/home/haodong/git/hw5-team14/hw5-team14/lib/httpclient-4.3.1.jar"/>
-	<classpathentry kind="lib" path="/home/haodong/git/hw5-team14/hw5-team14/jsoup-1.7.3.jar"/>
+	<classpathentry kind="lib" path="jsoup-1.7.3.jar"/>
+	<classpathentry kind="lib" path="lib/httpclient-4.3.1.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

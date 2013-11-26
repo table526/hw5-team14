@@ -60,9 +60,6 @@
     <delegateAnalysisEngine key="AnswerSelectionByKCandVoting">
       <import location="annotators/AnswerSelectionByKCandVoting.xml"/>
     </delegateAnalysisEngine>
-    <delegateAnalysisEngine key="AnswerSelectionByKCandAggregation">
-      <import name="annotators.AnswerSelectionByKCandAggregation"/>
-    </delegateAnalysisEngine>
     <!--<delegateAnalysisEngine key="AnswerSelectionByKCandAggregation">
       <import location="annotators/AnswerSelectionByKCandAggregation.xml"/>
     </delegateAnalysisEngine>-->
@@ -95,7 +92,7 @@
         <node>AnswerChoiceCandAnsSimilarityScorer</node>
         <!--<node>AnswerChoiceCandAnsSynonymScorer</node>-->
         <!--<node>AnswerChoiceCandAnsPMIScorer</node>-->
-        <node>AnswerSelectionByKCandAggregation</node>       
+        <node>AnswerSelectionByKCandVoting</node>       
         <!--<node>AnswerSelectionByKCandVoting</node>-->
       </fixedFlow>
     </flowConstraints>

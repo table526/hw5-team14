@@ -23,6 +23,7 @@ import edu.cmu.lti.qalab.types.NounPhrase;
 import edu.cmu.lti.qalab.types.Question;
 import edu.cmu.lti.qalab.types.QuestionAnswerSet;
 import edu.cmu.lti.qalab.types.TestDocument;
+import edu.cmu.lti.qalab.types.Verb;
 import edu.cmu.lti.qalab.utils.Utils;
 
 public class AnswerChoiceCandAnsPMIScorer extends JCasAnnotator_ImplBase {
@@ -79,6 +80,8 @@ public class AnswerChoiceCandAnsPMIScorer extends JCasAnnotator_ImplBase {
 								.getPhraseList(), NounPhrase.class);
 				ArrayList<NER> candSentNers = Utils.fromFSListToCollection(
 						candSent.getSentence().getNerList(), NER.class);
+        ArrayList<Verb> candSentVerbs = Utils.fromFSListToCollection(
+                candSent.getSentence().getVerbList(), Verb.class);
 
 				ArrayList<CandidateAnswer>candAnsList=new ArrayList<CandidateAnswer>();
 				for (int j = 0; j < choiceList.size(); j++) {
@@ -106,7 +109,18 @@ public class AnswerChoiceCandAnsPMIScorer extends JCasAnnotator_ImplBase {
 						}
 
 					}
+					
+          for (int k = 0; k < candSentVerbs.size(); k++) {
 
+            try {
+              score1 += scoreCoOccurInSameDoc(candSentVerbs.get(k)
+                  .getText(), choiceList.get(j));
+            } catch (Exception e) {
+              e.printStackTrace();
+            }
+
+          }
+          score1 = score1 / 3.0;
 					System.out.println("$$ Answer:" + choiceList.get(j).getText() + "Score PMI: "
 							+ score1 );
 

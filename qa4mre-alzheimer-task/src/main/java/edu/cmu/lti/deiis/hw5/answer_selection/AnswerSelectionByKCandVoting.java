@@ -23,7 +23,7 @@ import edu.cmu.lti.qalab.utils.Utils;
 public class AnswerSelectionByKCandVoting extends JCasAnnotator_ImplBase {
 
   int K_CANDIDATES = 5;
-  double NoneThreshold = 1.2;
+  double NoneThreshold = 2.0;
 
   @Override
 	public void initialize(UimaContext context)
@@ -83,7 +83,7 @@ public class AnswerSelectionByKCandVoting extends JCasAnnotator_ImplBase {
           }
           double totalScore = candAns.getSimilarityScore() + candAns.getSynonymScore()
                   + candAns.getPMIScore();
-
+          System.out.println("Answer: " + candAns.getText() + "\tSim: " + candAns.getSimilarityScore() + "\tPMI: " + candAns.getPMIScore());
           if (totalScore > maxScore) {
             maxScore = totalScore;
             selectedAnswer = answer;

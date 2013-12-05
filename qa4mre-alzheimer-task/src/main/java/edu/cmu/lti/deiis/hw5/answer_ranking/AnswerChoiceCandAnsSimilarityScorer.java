@@ -18,6 +18,7 @@ import edu.cmu.lti.qalab.types.NounPhrase;
 import edu.cmu.lti.qalab.types.Question;
 import edu.cmu.lti.qalab.types.QuestionAnswerSet;
 import edu.cmu.lti.qalab.types.TestDocument;
+import edu.cmu.lti.qalab.types.Verb;
 import edu.cmu.lti.qalab.utils.Utils;
 
 public class AnswerChoiceCandAnsSimilarityScorer extends JCasAnnotator_ImplBase {
@@ -69,19 +70,20 @@ public class AnswerChoiceCandAnsSimilarityScorer extends JCasAnnotator_ImplBase 
 									NounPhrase.class);
 					ArrayList<NER> choiceNERs = Utils.fromFSListToCollection(
 							answer.getNerList(), NER.class);
+
 					ArrayList<String> choiceSynonymNer = new ArrayList<String>();
 					ArrayList<String> choiceSynonymNoun = new ArrayList<String>();
 					
 					for(NER xx:choiceNERs){
 					  GetSynonymFromInfoplease test = new GetSynonymFromInfoplease();
-					  ArrayList<String> choice = test.getSynonyms(xx.getText(),3);
+					  ArrayList<String> choice = test.getSynonyms(xx.getText(),3, "Noun");
 		        for(String x:choice){
 		          choiceSynonymNer.add(x);
 		        }
 					}
 					for(NounPhrase yy:choiceNouns){
             GetSynonymFromInfoplease test = new GetSynonymFromInfoplease();
-            ArrayList<String> choice = test.getSynonyms(yy.getText(),3);
+            ArrayList<String> choice = test.getSynonyms(yy.getText(),3, "Noun");
             for(String x:choice){
               choiceSynonymNoun.add(x);
             }

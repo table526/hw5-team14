@@ -14,7 +14,7 @@ import org.apache.uima.cas.Feature;
 import org.apache.uima.jcas.tcas.Annotation_Type;
 
 /** 
- * Updated by JCasGen Mon May 13 14:41:33 EDT 2013
+ * Updated by JCasGen Wed Dec 04 14:51:55 EST 2013
  * @generated */
 public class Sentence_Type extends Annotation_Type {
   /** @generated */
@@ -187,6 +187,24 @@ public class Sentence_Type extends Annotation_Type {
     ll_cas.ll_setRefValue(addr, casFeatCode_nerList, v);}
     
   
+ 
+  /** @generated */
+  final Feature casFeat_verbList;
+  /** @generated */
+  final int     casFeatCode_verbList;
+  /** @generated */ 
+  public int getVerbList(int addr) {
+        if (featOkTst && casFeat_verbList == null)
+      jcas.throwFeatMissing("verbList", "edu.cmu.lti.qalab.types.Sentence");
+    return ll_cas.ll_getRefValue(addr, casFeatCode_verbList);
+  }
+  /** @generated */    
+  public void setVerbList(int addr, int v) {
+        if (featOkTst && casFeat_verbList == null)
+      jcas.throwFeatMissing("verbList", "edu.cmu.lti.qalab.types.Sentence");
+    ll_cas.ll_setRefValue(addr, casFeatCode_verbList, v);}
+    
+  
 
 
 
@@ -227,6 +245,10 @@ public class Sentence_Type extends Annotation_Type {
  
     casFeat_nerList = jcas.getRequiredFeatureDE(casType, "nerList", "uima.cas.FSList", featOkTst);
     casFeatCode_nerList  = (null == casFeat_nerList) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_nerList).getCode();
+
+ 
+    casFeat_verbList = jcas.getRequiredFeatureDE(casType, "verbList", "uima.cas.FSList", featOkTst);
+    casFeatCode_verbList  = (null == casFeat_verbList) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_verbList).getCode();
 
   }
 }

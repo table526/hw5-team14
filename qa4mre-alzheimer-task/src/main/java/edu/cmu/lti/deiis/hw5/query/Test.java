@@ -6,6 +6,6 @@ public class Test {
 	public static void main(String args[]) throws IOException{
 		String query = "asdfasdf";
 		GetSynonymFromInfoplease test = new GetSynonymFromInfoplease();
-		System.out.println(test.getSynonyms(query));
+		System.out.println(test.getSynonyms(query, 3));
 	}
 }

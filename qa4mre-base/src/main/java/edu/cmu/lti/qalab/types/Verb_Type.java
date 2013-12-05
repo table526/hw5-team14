@@ -1,5 +1,5 @@
 
-/* First created by JCasGen Sun Feb 17 07:02:45 EST 2013 */
+/* First created by JCasGen Wed Dec 04 14:09:18 EST 2013 */
 package edu.cmu.lti.qalab.types;
 
 import org.apache.uima.jcas.JCas;
@@ -16,7 +16,7 @@ import org.apache.uima.jcas.tcas.Annotation_Type;
 /** 
  * Updated by JCasGen Wed Dec 04 14:51:55 EST 2013
  * @generated */
-public class NounPhrase_Type extends Annotation_Type {
+public class Verb_Type extends Annotation_Type {
   /** @generated */
   @Override
   protected FSGenerator getFSGenerator() {return fsGenerator;}
@@ -24,25 +24,25 @@ public class NounPhrase_Type extends Annotation_Type {
   private final FSGenerator fsGenerator = 
     new FSGenerator() {
       public FeatureStructure createFS(int addr, CASImpl cas) {
-  			 if (NounPhrase_Type.this.useExistingInstance) {
+  			 if (Verb_Type.this.useExistingInstance) {
   			   // Return eq fs instance if already created
-  		     FeatureStructure fs = NounPhrase_Type.this.jcas.getJfsFromCaddr(addr);
+  		     FeatureStructure fs = Verb_Type.this.jcas.getJfsFromCaddr(addr);
   		     if (null == fs) {
-  		       fs = new NounPhrase(addr, NounPhrase_Type.this);
-  			   NounPhrase_Type.this.jcas.putJfsFromCaddr(addr, fs);
+  		       fs = new Verb(addr, Verb_Type.this);
+  			   Verb_Type.this.jcas.putJfsFromCaddr(addr, fs);
   			   return fs;
   		     }
   		     return fs;
-        } else return new NounPhrase(addr, NounPhrase_Type.this);
+        } else return new Verb(addr, Verb_Type.this);
   	  }
     };
   /** @generated */
   @SuppressWarnings ("hiding")
-  public final static int typeIndexID = NounPhrase.typeIndexID;
+  public final static int typeIndexID = Verb.typeIndexID;
   /** @generated 
      @modifiable */
   @SuppressWarnings ("hiding")
-  public final static boolean featOkTst = JCasRegistry.getFeatOkTst("edu.cmu.lti.qalab.types.NounPhrase");
+  public final static boolean featOkTst = JCasRegistry.getFeatOkTst("edu.cmu.lti.qalab.types.Verb");
  
   /** @generated */
   final Feature casFeat_text;
@@ -51,13 +51,13 @@ public class NounPhrase_Type extends Annotation_Type {
   /** @generated */ 
   public String getText(int addr) {
         if (featOkTst && casFeat_text == null)
-      jcas.throwFeatMissing("text", "edu.cmu.lti.qalab.types.NounPhrase");
+      jcas.throwFeatMissing("text", "edu.cmu.lti.qalab.types.Verb");
     return ll_cas.ll_getStringValue(addr, casFeatCode_text);
   }
   /** @generated */    
   public void setText(int addr, String v) {
         if (featOkTst && casFeat_text == null)
-      jcas.throwFeatMissing("text", "edu.cmu.lti.qalab.types.NounPhrase");
+      jcas.throwFeatMissing("text", "edu.cmu.lti.qalab.types.Verb");
     ll_cas.ll_setStringValue(addr, casFeatCode_text, v);}
     
   
@@ -69,32 +69,32 @@ public class NounPhrase_Type extends Annotation_Type {
   /** @generated */ 
   public double getWeight(int addr) {
         if (featOkTst && casFeat_weight == null)
-      jcas.throwFeatMissing("weight", "edu.cmu.lti.qalab.types.NounPhrase");
+      jcas.throwFeatMissing("weight", "edu.cmu.lti.qalab.types.Verb");
     return ll_cas.ll_getDoubleValue(addr, casFeatCode_weight);
   }
   /** @generated */    
   public void setWeight(int addr, double v) {
         if (featOkTst && casFeat_weight == null)
-      jcas.throwFeatMissing("weight", "edu.cmu.lti.qalab.types.NounPhrase");
+      jcas.throwFeatMissing("weight", "edu.cmu.lti.qalab.types.Verb");
     ll_cas.ll_setDoubleValue(addr, casFeatCode_weight, v);}
     
   
  
   /** @generated */
-  final Feature casFeat_synonyms;
+  final Feature casFeat_synonym;
   /** @generated */
-  final int     casFeatCode_synonyms;
+  final int     casFeatCode_synonym;
   /** @generated */ 
-  public int getSynonyms(int addr) {
-        if (featOkTst && casFeat_synonyms == null)
-      jcas.throwFeatMissing("synonyms", "edu.cmu.lti.qalab.types.NounPhrase");
-    return ll_cas.ll_getRefValue(addr, casFeatCode_synonyms);
+  public int getSynonym(int addr) {
+        if (featOkTst && casFeat_synonym == null)
+      jcas.throwFeatMissing("synonym", "edu.cmu.lti.qalab.types.Verb");
+    return ll_cas.ll_getRefValue(addr, casFeatCode_synonym);
   }
   /** @generated */    
-  public void setSynonyms(int addr, int v) {
-        if (featOkTst && casFeat_synonyms == null)
-      jcas.throwFeatMissing("synonyms", "edu.cmu.lti.qalab.types.NounPhrase");
-    ll_cas.ll_setRefValue(addr, casFeatCode_synonyms, v);}
+  public void setSynonym(int addr, int v) {
+        if (featOkTst && casFeat_synonym == null)
+      jcas.throwFeatMissing("synonym", "edu.cmu.lti.qalab.types.Verb");
+    ll_cas.ll_setRefValue(addr, casFeatCode_synonym, v);}
     
   
 
@@ -102,7 +102,7 @@ public class NounPhrase_Type extends Annotation_Type {
 
   /** initialize variables to correspond with Cas Type and Features
 	* @generated */
-  public NounPhrase_Type(JCas jcas, Type casType) {
+  public Verb_Type(JCas jcas, Type casType) {
     super(jcas, casType);
     casImpl.getFSClassRegistry().addGeneratorForType((TypeImpl)this.casType, getFSGenerator());
 
@@ -115,8 +115,8 @@ public class NounPhrase_Type extends Annotation_Type {
     casFeatCode_weight  = (null == casFeat_weight) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_weight).getCode();
 
  
-    casFeat_synonyms = jcas.getRequiredFeatureDE(casType, "synonyms", "uima.cas.FSList", featOkTst);
-    casFeatCode_synonyms  = (null == casFeat_synonyms) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_synonyms).getCode();
+    casFeat_synonym = jcas.getRequiredFeatureDE(casType, "synonym", "uima.cas.FSList", featOkTst);
+    casFeatCode_synonym  = (null == casFeat_synonym) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_synonym).getCode();
 
   }
 }

@@ -9,6 +9,7 @@ import org.apache.uima.jcas.JCas;
 import org.apache.uima.jcas.cas.FSList;
 import org.apache.uima.resource.ResourceInitializationException;
 
+import edu.cmu.lti.deiis.hw5.query.GetSynonymFromInfoplease;
 import edu.cmu.lti.qalab.types.Answer;
 import edu.cmu.lti.qalab.types.CandidateAnswer;
 import edu.cmu.lti.qalab.types.CandidateSentence;
@@ -68,40 +69,80 @@ public class AnswerChoiceCandAnsSimilarityScorer extends JCasAnnotator_ImplBase 
 									NounPhrase.class);
 					ArrayList<NER> choiceNERs = Utils.fromFSListToCollection(
 							answer.getNerList(), NER.class);
+					ArrayList<String> choiceSynonymNer = new ArrayList<String>();
+					ArrayList<String> choiceSynonymNone = new ArrayList<String>();
+					
+					for(NER xx:choiceNERs){
+					  GetSynonymFromInfoplease test = new GetSynonymFromInfoplease();
+					  ArrayList<String> choice = test.getSynonyms(xx.getText(),3);
+		        for(String x:choice){
+		          choiceSynonymNer.add(x);
+		        }
+					}
+					for(NounPhrase yy:choiceNouns){
+            GetSynonymFromInfoplease test = new GetSynonymFromInfoplease();
+            ArrayList<String> choice = test.getSynonyms(yy.getText(),3);
+            for(String x:choice){
+              choiceSynonymNone.add(x);
+            }
+          }
 
 					int nnMatch = 0;
 					for (int k = 0; k < candSentNouns.size(); k++) {
-						for (int l = 0; l < choiceNERs.size(); l++) {
-							if (candSentNouns.get(k).getText()
-									.contains(choiceNERs.get(l).getText())) {
-								nnMatch++;
-							}
-						}
-						for (int l = 0; l < choiceNouns.size(); l++) {
-							if (candSentNouns.get(k).getText()
-									.contains(choiceNouns.get(l).getText())) {
-								nnMatch++;
-							}
-						}
+//						for (int l = 0; l < choiceNERs.size(); l++) {
+//							if (candSentNouns.get(k).getText()
+//									.contains(choiceNERs.get(l).getText())) {
+//								nnMatch++;
+//							}
+//						}
+//						for (int l = 0; l < choiceNouns.size(); l++) {
+//							if (candSentNouns.get(k).getText()
+//									.contains(choiceNouns.get(l).getText())) {
+//								nnMatch++;
+//							}
+//						}
+					  for (int l = 0; l < choiceSynonymNer.size(); l++) {
+              if (candSentNouns.get(k).getText()
+                  .contains(choiceSynonymNer.get(l))) {
+                nnMatch++;
+              }
+            }
+            for (int l = 0; l < choiceSynonymNone.size(); l++) {
+              if (candSentNouns.get(k).getText()
+                  .contains(choiceSynonymNone.get(l))) {
+                nnMatch++;
+              }
+            }
 					}
 
 					for (int k = 0; k < candSentNers.size(); k++) {
-						for (int l = 0; l < choiceNERs.size(); l++) {
-							if (candSentNouns.get(k).getText()
-									.contains(choiceNERs.get(l).getText())) {
-								nnMatch++;
-							}
-						}
-						for (int l = 0; l < choiceNouns.size(); l++) {
-							if (candSentNouns.get(k).getText()
-									.contains(choiceNouns.get(l).getText())) {
-								nnMatch++;
-							}
-						}
-
+//						for (int l = 0; l < choiceNERs.size(); l++) {
+//							if (candSentNouns.get(k).getText()
+//									.contains(choiceNERs.get(l).getText())) {
+//								nnMatch++;
+//							}
+//						}
+//						for (int l = 0; l < choiceNouns.size(); l++) {
+//							if (candSentNouns.get(k).getText()
+//									.contains(choiceNouns.get(l).getText())) {
+//								nnMatch++;
+//							}
+//						}
+					  for (int l = 0; l < choiceSynonymNer.size(); l++) {
+              if (candSentNouns.get(k).getText()
+                  .contains(choiceSynonymNer.get(l))) {
+                nnMatch++;
+              }
+            }
+            for (int l = 0; l < choiceSynonymNone.size(); l++) {
+              if (candSentNouns.get(k).getText()
+                  .contains(choiceSynonymNone.get(l))) {
+                nnMatch++;
+              }
+            }
 					}
 
-					System.out.println(choiceList.get(j).getText() + "\t"
+					System.out.println("Simi:\t"+choiceList.get(j).getText() + "\t"
 							+ nnMatch);
 					CandidateAnswer candAnswer = null;
 					if (candSent.getCandAnswerList() == null) {

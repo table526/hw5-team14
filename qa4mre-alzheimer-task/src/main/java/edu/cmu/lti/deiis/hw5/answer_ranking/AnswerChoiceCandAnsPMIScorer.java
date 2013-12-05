@@ -14,6 +14,7 @@ import org.apache.uima.jcas.JCas;
 import org.apache.uima.jcas.cas.FSList;
 import org.apache.uima.resource.ResourceInitializationException;
 
+import edu.cmu.lti.deiis.hw5.query.GetSynonymFromInfoplease;
 import edu.cmu.lti.oaqa.core.provider.solr.SolrWrapper;
 import edu.cmu.lti.qalab.types.Answer;
 import edu.cmu.lti.qalab.types.CandidateAnswer;
@@ -29,7 +30,7 @@ public class AnswerChoiceCandAnsPMIScorer extends JCasAnnotator_ImplBase {
 
 	private SolrWrapper solrWrapper;
 	HashSet<String> hshStopWords = new HashSet<String>();
-	int K_CANDIDATES=5;
+	int K_CANDIDATES=10;
 	
 	@Override
 	public void initialize(UimaContext context)
@@ -64,6 +65,16 @@ public class AnswerChoiceCandAnsPMIScorer extends JCasAnnotator_ImplBase {
 			System.out.println("Question: " + question.getText());
 			ArrayList<Answer> choiceList = Utils.fromFSListToCollection(qaSet
 					.get(i).getAnswerList(), Answer.class);
+/**************************************************************************/	
+			ArrayList<String> choiceSynonym = new ArrayList<String>();
+			for(Answer yy:choiceList){
+        GetSynonymFromInfoplease test = new GetSynonymFromInfoplease();
+        ArrayList<String>choice = test.getSynonyms(yy.getText(),3);
+        for(String x:choice){
+          choiceSynonym.add(x);
+        }
+      }
+/******************************************************************************/
 			ArrayList<CandidateSentence> candSentList = Utils
 					.fromFSListToCollection(qaSet.get(i)
 							.getCandidateSentenceList(),
@@ -77,6 +88,7 @@ public class AnswerChoiceCandAnsPMIScorer extends JCasAnnotator_ImplBase {
 				ArrayList<NounPhrase> candSentNouns = Utils
 						.fromFSListToCollection(candSent.getSentence()
 								.getPhraseList(), NounPhrase.class);
+				
 				ArrayList<NER> candSentNers = Utils.fromFSListToCollection(
 						candSent.getSentence().getNerList(), NER.class);
 
@@ -87,11 +99,12 @@ public class AnswerChoiceCandAnsPMIScorer extends JCasAnnotator_ImplBase {
 
 					for (int k = 0; k < candSentNouns.size(); k++) {
 						try {
-						  System.out.println("cand:"+candSentNouns.get(k).getText()+"\tchoi"+ choiceList.get(j));
-						  
+						 
 							score1 += scoreCoOccurInSameDoc(candSentNouns
 									.get(k).getText(), choiceList.get(j));
-
+							System.out.println("PMI score of "+"candSentNoun:\t"+candSentNouns.get(k).getText()+"\tchoi\t"+
+									choiceList.get(j).getText()+"\tscore="+score1);
+	              
 						} catch (Exception e) {
 							e.printStackTrace();
 						}
@@ -102,13 +115,16 @@ public class AnswerChoiceCandAnsPMIScorer extends JCasAnnotator_ImplBase {
 						try {
 							score1 += scoreCoOccurInSameDoc(candSentNers.get(k)
 									.getText(), choiceList.get(j));
+//							System.out.println("cand:"+candSentNouns.get(k).getText()+"\tchoi"+ 
+//									choiceList.get(j)+"score=/t"+score1);
+
 						} catch (Exception e) {
 							e.printStackTrace();
 						}
 
 					}
 
-					System.out.println(choiceList.get(j).getText() + "\t"
+					System.out.println("PMI score of "+choiceList.get(j).getText() + "is:\t"
 							+ score1 + "\t" + ((score1)));
 
 					CandidateAnswer candAnswer=null;
@@ -167,7 +183,7 @@ public class AnswerChoiceCandAnsPMIScorer extends JCasAnnotator_ImplBase {
 			try {
 			  //Solrserver so = solrWrapper.getServer()
 
-        System.out.println(solrWrapper.getServer());
+       // System.out.println(solrWrapper.getServer());
 			  rsp = solrWrapper.getServer().query(solrParams);
 				
 				combinedHits = rsp.getResults().getNumFound();

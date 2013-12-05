@@ -4,8 +4,9 @@ import java.io.IOException;
 
 public class Test {
 	public static void main(String args[]) throws IOException{
-		String query = "insulin";
-		OnlineQuery test = new OnlineQuery();
-		System.out.println(test.getSynonym(query));
+		String query = "head";
+		//OnlineQuery test = new OnlineQuery();
+		GetSynonymFromInfoplease test = new GetSynonymFromInfoplease();
+		System.out.println(test.getSynonyms(query,5));
 	}
 }

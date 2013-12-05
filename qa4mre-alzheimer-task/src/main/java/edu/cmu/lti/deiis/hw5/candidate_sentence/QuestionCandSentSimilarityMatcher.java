@@ -16,15 +16,18 @@ import org.apache.uima.jcas.JCas;
 import org.apache.uima.jcas.cas.FSList;
 import org.apache.uima.resource.ResourceInitializationException;
 
+import edu.cmu.lti.oaqa.bio.umls_wrapper.UmlsTermsDAO;
 import edu.cmu.lti.oaqa.core.provider.solr.SolrWrapper;
 import edu.cmu.lti.qalab.types.Answer;
 import edu.cmu.lti.qalab.types.CandidateSentence;
+import edu.cmu.lti.qalab.types.Dependency;
 import edu.cmu.lti.qalab.types.NER;
 import edu.cmu.lti.qalab.types.NounPhrase;
 import edu.cmu.lti.qalab.types.Question;
 import edu.cmu.lti.qalab.types.QuestionAnswerSet;
 import edu.cmu.lti.qalab.types.Sentence;
 import edu.cmu.lti.qalab.types.TestDocument;
+import edu.cmu.lti.qalab.types.Verb;
 import edu.cmu.lti.qalab.utils.Utils;
 //import edu.umass.cs.mallet.base.util.Arrays;
 
@@ -40,7 +43,7 @@ public class QuestionCandSentSimilarityMatcher  extends JCasAnnotator_ImplBase{
   public static String[] correctAnsString2 ={"somatostatin","somatostatin","BV-2","RealTime PCR","somatostatin","microglia","extracellular","octreotide","SSTR-1 SSTR-2 SSTR-4","siRNA"};
   public static String[] correctAnsString3 ={"astrocytes","choroid plexus","more than 10 million","gelsolin","age","gelsolin","amyloid-beta","APP Ps mice","synaptic terminals","before amyloid-beta accumulation"};
   public static String[] correctAnsString4 ={"APP-CTF accumulation","longer","PSEN1","affinity chromatography","AICD","aspartate","EM","Semagacestat","P436Q","185"};
-	public static String[] stopwordsStrings = {"and", "the","before","they"};
+	public static String[] stopwordsStrings = {"and", "the","before","they","of","none","the","above","with","through"};
   @Override
 	public void initialize(UimaContext context)
 			throws ResourceInitializationException {
@@ -81,6 +84,13 @@ public class QuestionCandSentSimilarityMatcher  extends JCasAnnotator_ImplBase{
           break;
         }
       }
+//      UmlsTermsDAO umls = new UmlsTermsDAO();
+//      try {
+//        umls.getTermSynonyms("abc");
+//      } catch (Exception e1) {
+//        // TODO Auto-generated catch block
+//        e1.printStackTrace();
+//      }
 			Question question=qaSet.get(i).getQuestion();
 			System.out.println("========================================================");
 			System.out.println("Question: "+question.getText());
@@ -95,6 +105,7 @@ public class QuestionCandSentSimilarityMatcher  extends JCasAnnotator_ImplBase{
 			SolrQuery solrQuery=new SolrQuery();
 			solrQuery.add("fq", "docid:"+testDocId);
 			solrQuery.add("q",searchQuery);
+			System.out.println("SearchQuery:"+searchQuery);
 			solrQuery.add("rows",String.valueOf(TOP_SEARCH_RESULTS));
 			solrQuery.setFields("*", "score");
 			try {
@@ -165,17 +176,30 @@ public class QuestionCandSentSimilarityMatcher  extends JCasAnnotator_ImplBase{
 	public String formSolrQuery(Question question){
 		String solrQuery="";
 		
+
 		ArrayList<NounPhrase>nounPhrases=Utils.fromFSListToCollection(question.getNounList(), NounPhrase.class);
-		
+	//	ArrayList<Verb> veList = new ArrayList<Verb>();
 		for(int i=0;i<nounPhrases.size();i++){
-			solrQuery+="nounphrases:\""+nounPhrases.get(i).getText()+"\" ";			
+			solrQuery+="nounphrases:\""+nounPhrases.get(i).getText()+"\" ";	
+//			int npbegin = nounPhrases.get(i).getBegin();
+//			int npend= nounPhrases.get(i).getEnd();
 		}
 		
 		ArrayList<NER>neList=Utils.fromFSListToCollection(question.getNerList(), NER.class);
 		for(int i=0;i<neList.size();i++){
 			solrQuery+="namedentities:\""+neList.get(i).getText()+"\" ";
 		}
-		solrQuery=solrQuery.trim();
+		
+		ArrayList<Verb> veList =Utils.fromFSListToCollection(question.getVerbList(), Verb.class);
+		for(int h=0;h<veList.size();h++){
+      solrQuery+="verbs:\""+veList.get(h).getText()+"\" ";
+    }
+//		ArrayList<Dependency> dependencies = Utils.fromFSListToCollection(question.getDependencies(),
+//                    Dependency.class);
+//		for(int i=0;i<dependencies.size();i++){
+//      solrQuery+="dependencies:\""+dependencies.get(i).getRelation()+"\" ";
+//    }
+//		solrQuery=solrQuery.trim();
 		
 		
 		return solrQuery;

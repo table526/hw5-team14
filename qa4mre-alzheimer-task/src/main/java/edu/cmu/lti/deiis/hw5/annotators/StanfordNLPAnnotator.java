@@ -1,7 +1,9 @@
 package edu.cmu.lti.deiis.hw5.annotators;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collection;
+import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Properties;
@@ -19,6 +21,7 @@ import edu.cmu.lti.qalab.types.Dependency;
 import edu.cmu.lti.qalab.types.Sentence;
 import edu.cmu.lti.qalab.types.TestDocument;
 import edu.cmu.lti.qalab.types.Token;
+import edu.cmu.lti.qalab.types.Verb;
 import edu.cmu.lti.qalab.utils.Utils;
 import edu.stanford.nlp.ling.CoreAnnotations.NamedEntityTagAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.PartOfSpeechAnnotation;
@@ -32,10 +35,13 @@ import edu.stanford.nlp.trees.semgraph.SemanticGraphCoreAnnotations.CollapsedCCP
 import edu.stanford.nlp.trees.semgraph.SemanticGraphEdge;
 import edu.stanford.nlp.util.CoreMap;
 
+//import edu.cmu.lti.oaqa.bio.umls_wrapper.UmlsTermsDAO;
+
 public class StanfordNLPAnnotator extends JCasAnnotator_ImplBase {
 
 	private StanfordCoreNLP stanfordAnnotator;
 
+	public static String[] stopverbsStrings = {"can","be"};
 	@Override
 	public void initialize(UimaContext context)
 			throws ResourceInitializationException {
@@ -77,13 +83,14 @@ public class StanfordNLPAnnotator extends JCasAnnotator_ImplBase {
 			// jCas.getAnnotationIndex(SourceDocument.type);
 			
 			// FSList sentenceList = srcDoc.getSentenceList();
-
+			/**build hashset for stop verbs**/
+	    HashSet<String> stopV = new HashSet<String>(Arrays.asList(stopverbsStrings));
 			for (CoreMap sentence : sentences) {
 
 				String sentText = sentence.toString();
 				Sentence annSentence = new Sentence(jCas);
 				ArrayList<Token> tokenList = new ArrayList<Token>();
-
+				ArrayList<Verb> verbList = new ArrayList<Verb>();
 				// Dependency should have Token rather than String
 				for (CoreLabel token : sentence.get(TokensAnnotation.class)) { // order
 																				// needs
@@ -106,13 +113,23 @@ public class StanfordNLPAnnotator extends JCasAnnotator_ImplBase {
 					annToken.setPos(pos);
 					annToken.setNer(ne);
 					annToken.addToIndexes();
-
+          if(annToken.getPos().startsWith("V"))
+           if(!stopV.contains(token.lemma())) 
+           {
+          // set sentence verblist
+             String vString = token.lemma();
+             Verb verb = new Verb(jCas);
+             verb.setText(vString);
+             verb.setWeight(1);
+             verbList.add(verb);
+           }
 					tokenList.add(annToken);
 				}
 
 				FSList fsTokenList = this.createTokenList(jCas, tokenList);
 				fsTokenList.addToIndexes();
-
+				FSList fsVerbList = Utils.createVerbList(jCas, verbList);
+        fsVerbList.addToIndexes();
 				// this is the Stanford dependency graph of the current sentence
 				SemanticGraph dependencies = sentence
 						.get(CollapsedCCProcessedDependenciesAnnotation.class);
@@ -120,9 +137,10 @@ public class StanfordNLPAnnotator extends JCasAnnotator_ImplBase {
 				FSList fsDependencyList = this.createDependencyList(jCas,
 						depList);
 				fsDependencyList.addToIndexes();
+        
 				// Dependency dependency = new Dependency(jCas);
 				// System.out.println("Dependencies: "+dependencies);
-
+        annSentence.setVerbList(fsVerbList);
 				annSentence.setId(String.valueOf(sentNo));
 				annSentence.setBegin(tokenList.get(0).getBegin());// begin of
 																	// first

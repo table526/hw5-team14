@@ -77,6 +77,7 @@
   <field name="id" type="string"   indexed="true"  stored="true"  multiValued="false" required="true" compressed="true"/>
 <field name="text" type="text_en" indexed="true" stored="true" multiValued="false" termVectors="true" termPositions="true" termOffsets="true" compressed="true"/>
 <field name="namedentities" type="text_en" indexed="true" stored="true" multiValued="true" termVectors="true" termPositions="true" termOffsets="true" compressed="true"/>
+<field name="verbs" type="text_en" indexed="true" stored="true" multiValued="true" termVectors="true" termPositions="true" termOffsets="true" compressed="true"/>
 <field name="nounphrases" type="text_en" indexed="true" stored="true" multiValued="true" termVectors="true" termPositions="true" termOffsets="true"/>
 <field name="synonyms" type="text_en" indexed="true" stored="true" multiValued="true" termVectors="true" termPositions="true" termOffsets="true"/>
 <field name="dependencies" type="string" indexed="true" stored="true" multiValued="true" compressed="true"/>

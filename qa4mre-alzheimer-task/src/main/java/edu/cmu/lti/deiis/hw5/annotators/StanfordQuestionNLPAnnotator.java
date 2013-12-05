@@ -1,7 +1,9 @@
 package edu.cmu.lti.deiis.hw5.annotators;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collection;
+import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Properties;
@@ -20,8 +22,10 @@ import edu.cmu.lti.qalab.types.Dependency;
 import edu.cmu.lti.qalab.types.Question;
 import edu.cmu.lti.qalab.types.QuestionAnswerSet;
 import edu.cmu.lti.qalab.types.Sentence;
+import edu.cmu.lti.qalab.types.Synonym;
 import edu.cmu.lti.qalab.types.TestDocument;
 import edu.cmu.lti.qalab.types.Token;
+import edu.cmu.lti.qalab.types.Verb;
 import edu.cmu.lti.qalab.utils.Utils;
 import edu.stanford.nlp.ling.CoreAnnotations.NamedEntityTagAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.PartOfSpeechAnnotation;
@@ -34,11 +38,13 @@ import edu.stanford.nlp.trees.semgraph.SemanticGraph;
 import edu.stanford.nlp.trees.semgraph.SemanticGraphCoreAnnotations.CollapsedCCProcessedDependenciesAnnotation;
 import edu.stanford.nlp.trees.semgraph.SemanticGraphEdge;
 import edu.stanford.nlp.util.CoreMap;
+import edu.cmu.lti.oaqa.bio.umls_wrapper.TermRelationship;
+import edu.cmu.lti.oaqa.bio.umls_wrapper.UmlsTermsDAO;
 
 public class StanfordQuestionNLPAnnotator extends JCasAnnotator_ImplBase {
 
 	private StanfordCoreNLP stanfordAnnotator;
-
+	public static String[] stopverbsStrings = {"can","be","use"};
 	@Override
 	public void initialize(UimaContext context)
 			throws ResourceInitializationException {
@@ -155,13 +161,14 @@ public class StanfordQuestionNLPAnnotator extends JCasAnnotator_ImplBase {
 			// Although it is defined as list...this list will contain only one
 			// question
 			List<CoreMap> questions = document.get(SentencesAnnotation.class);
-
+			/**build hashset for stop verbs**/
+      HashSet<String> stopV = new HashSet<String>(Arrays.asList(stopverbsStrings));
 			for (CoreMap question : questions) {
 
 				String qText = question.toString();
 				Question annQuestion = new Question(jCas);
 				ArrayList<Token> tokenList = new ArrayList<Token>();
-
+				ArrayList<Verb> verbList = new ArrayList<Verb>();
 				// Dependency should have Token rather than String
 				for (CoreLabel token : question.get(TokensAnnotation.class)) { // order
 																				// needs
@@ -184,7 +191,16 @@ public class StanfordQuestionNLPAnnotator extends JCasAnnotator_ImplBase {
 					annToken.setPos(pos);
 					annToken.setNer(ne);
 					annToken.addToIndexes();
-
+					if(annToken.getPos().startsWith("V"))
+	           if(!stopV.contains(token.lemma())) 
+	           {
+	          // set question verblist
+	             String vString = token.lemma();
+	             Verb verb = new Verb(jCas);
+	             verb.setText(vString);
+	             verb.setWeight(1);
+	             verbList.add(verb);
+	           }
 					tokenList.add(annToken);
 				}
 
@@ -200,7 +216,32 @@ public class StanfordQuestionNLPAnnotator extends JCasAnnotator_ImplBase {
 				fsDependencyList.addToIndexes();
 				// Dependency dependency = new Dependency(jCas);
 				// System.out.println("Dependencies: "+dependencies);
-
+			// set sentence root lemma as verb
+        
+//      UmlsTermsDAO umls = new UmlsTermsDAO();
+//      ArrayList<TermRelationship> termR = new ArrayList<TermRelationship>();
+//      ArrayList<Synonym> sym = new ArrayList<Synonym>();
+//      try {
+//        termR = umls.getTermSynonyms(vString);
+//      } catch (Exception e1) {
+//        // TODO Auto-generated catch block
+//        e1.printStackTrace();
+//      }
+//      //from TermRelationshipList to SynonymList
+//      for(int d = 0; d < termR.size(); d++){
+//        String textString = termR.get(d).getFromTerm();
+//        Synonym synonym = new Synonym(jCas);
+//        synonym.setText(textString);
+//        synonym.setWeight(termR.get(d).getConfidence());
+//        sym.add(synonym);
+//      }
+//      FSList synoList = Utils.fromCollectionToFSList(jCas, sym);
+//      verb.setSynonym(synoList);
+        FSList fsVerbList = Utils.createVerbList(jCas, verbList);
+        fsVerbList.addToIndexes();
+        // Dependency dependency = new Dependency(jCas);
+        // System.out.println("Dependencies: "+dependencies);
+        annQuestion.setVerbList(fsVerbList);
 				annQuestion.setId(String.valueOf(sentNo));
 				annQuestion.setBegin(tokenList.get(0).getBegin());// begin of
 																	// first

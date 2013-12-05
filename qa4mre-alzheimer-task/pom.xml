@@ -22,11 +22,6 @@
   </distributionManagement>
   <dependencies>
     <dependency>
-      <groupId>edu.cmu.lti.qalab</groupId>
-      <artifactId>qa4mre-base</artifactId>
-      <version>0.0.1-SNAPSHOT</version>
-    </dependency>
-    <dependency>
       <groupId>org.apache.lucene</groupId>
       <artifactId>lucene-core</artifactId>
       <version>3.6.1</version>
@@ -55,6 +50,21 @@
       <groupId>de.linguatools.disco</groupId>
       <artifactId>disco</artifactId>
       <version>1.4</version>
+    </dependency>
+    <dependency>
+    	<groupId>org.apache.httpcomponents</groupId>
+    	<artifactId>httpclient</artifactId>
+    	<version>4.3.1</version>
+    </dependency>
+    <dependency>
+    	<groupId>edu.cmu.lti.oaqa.bio.annotate</groupId>
+    	<artifactId>umls_wrapper</artifactId>
+    	<version>1.0.0</version>
+    </dependency>
+    <dependency>
+    	<groupId>edu.cmu.lti.qalab</groupId>
+    	<artifactId>qa4mre-base</artifactId>
+    	<version>0.0.1-SNAPSHOT</version>
     </dependency>
   </dependencies>
   <scm>

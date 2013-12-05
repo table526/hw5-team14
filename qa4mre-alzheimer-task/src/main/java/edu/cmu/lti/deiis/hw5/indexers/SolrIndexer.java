@@ -18,9 +18,10 @@ import edu.cmu.lti.qalab.solrutils.SolrUtils;
 import edu.cmu.lti.qalab.types.Dependency;
 import edu.cmu.lti.qalab.types.NER;
 import edu.cmu.lti.qalab.types.NounPhrase;
+import edu.cmu.lti.qalab.types.Token;
 import edu.cmu.lti.qalab.types.Sentence;
-import edu.cmu.lti.qalab.types.Synonym;
 import edu.cmu.lti.qalab.types.TestDocument;
+import edu.cmu.lti.qalab.types.Verb;
 import edu.cmu.lti.qalab.utils.Utils;
 
 public class SolrIndexer extends JCasAnnotator_ImplBase {
@@ -107,6 +108,14 @@ public class SolrIndexer extends JCasAnnotator_ImplBase {
 				indexMap.put("namedentities", neList);
 				//indexMap.put("synonyms",synonymList);
 
+				FSList fsVerbsList = sent.getVerbList();
+				ArrayList<Verb> verbs = Utils.fromFSListToCollection(fsVerbsList, Verb.class);
+				ArrayList<String> veList = new ArrayList<String>();
+				for(int t = 0; t < verbs.size();t++){
+				  veList.add(verbs.get(t).getText());
+				}
+				indexMap.put("verbs", veList);
+				
 				FSList fsDependencies = sent.getDependencyList();
 				if (fsDependencies != null) {
 				  ArrayList<Dependency> dependencies = Utils
@@ -123,6 +132,12 @@ public class SolrIndexer extends JCasAnnotator_ImplBase {
 				  
 				  indexMap.put("dependencies", depList);
 				}
+				
+			  FSList fsVerbs =sent.getVerbList();
+			  if(fsVerbs != null){
+			    
+			    
+			  }
 
 				SolrInputDocument solrInpDoc = this.wrapper
 						.buildSolrDocument(indexMap);

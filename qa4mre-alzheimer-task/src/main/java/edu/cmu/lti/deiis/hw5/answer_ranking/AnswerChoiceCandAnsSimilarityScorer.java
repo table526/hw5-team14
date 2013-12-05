@@ -118,7 +118,6 @@ public class AnswerChoiceCandAnsSimilarityScorer extends JCasAnnotator_ImplBase 
 					candAnswer.setChoiceIndex(j);
 					candAnswer.setSimilarityScore(nnMatch);
 					candAnsList.add(candAnswer);
-					System.out.println("!!Answer: " + answer.getText() + " Similarity Score: " + nnMatch);
 				}
 
 				FSList fsCandAnsList = Utils.fromCollectionToFSList(aJCas,

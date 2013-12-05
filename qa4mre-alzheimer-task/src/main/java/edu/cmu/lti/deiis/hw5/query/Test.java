@@ -4,7 +4,7 @@ import java.io.IOException;
 
 public class Test {
 	public static void main(String args[]) throws IOException{
-		String query = "asdfasdf";
+		String query = "tumor";
 		GetSynonymFromInfoplease test = new GetSynonymFromInfoplease();
 		System.out.println(test.getSynonyms(query));
 	}

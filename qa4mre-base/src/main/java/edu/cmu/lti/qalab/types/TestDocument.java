@@ -11,8 +11,8 @@ import org.apache.uima.jcas.cas.FSList;
 
 
 /** 
- * Updated by JCasGen Wed Dec 04 14:51:55 EST 2013
- * XML source: /home/pan/11791/hw5/qa4mre-base/src/main/resources/TypeSystemDescriptor.xml
+ * Updated by JCasGen Mon May 13 14:41:33 EDT 2013
+ * XML source: /media/alkesh/Windows7_OS/Users/alkesh/git/qa4mre-cse/qa4mre-base/src/main/resources/TypeSystemDescriptor.xml
  * @generated */
 public class TestDocument extends SourceDocument {
   /** @generated
@@ -81,16 +81,16 @@ public class TestDocument extends SourceDocument {
    
     
   //*--------------*
-  //* Feature: readingTestId
+  //* Feature: ReadingTestId
 
-  /** getter for readingTestId - gets 
+  /** getter for ReadingTestId - gets 
    * @generated */
   public String getReadingTestId() {
     if (TestDocument_Type.featOkTst && ((TestDocument_Type)jcasType).casFeat_readingTestId == null)
       jcasType.jcas.throwFeatMissing("readingTestId", "edu.cmu.lti.qalab.types.TestDocument");
     return jcasType.ll_cas.ll_getStringValue(addr, ((TestDocument_Type)jcasType).casFeatCode_readingTestId);}
     
-  /** setter for readingTestId - sets  
+  /** setter for ReadingTestId - sets  
    * @generated */
   public void setReadingTestId(String v) {
     if (TestDocument_Type.featOkTst && ((TestDocument_Type)jcasType).casFeat_readingTestId == null)

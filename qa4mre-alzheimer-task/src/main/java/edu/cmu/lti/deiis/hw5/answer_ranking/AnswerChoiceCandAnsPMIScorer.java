@@ -66,14 +66,14 @@ public class AnswerChoiceCandAnsPMIScorer extends JCasAnnotator_ImplBase {
 			ArrayList<Answer> choiceList = Utils.fromFSListToCollection(qaSet
 					.get(i).getAnswerList(), Answer.class);
 /**************************************************************************/	
-			ArrayList<String> choiceSynonym = new ArrayList<String>();
-			for(Answer yy:choiceList){
-        GetSynonymFromInfoplease test = new GetSynonymFromInfoplease();
-        ArrayList<String>choice = test.getSynonyms(yy.getText(),3);
-        for(String x:choice){
-          choiceSynonym.add(x);
-        }
-      }
+//			ArrayList<String> choiceSynonym = new ArrayList<String>();
+//			for(Answer yy:choiceList){
+//        GetSynonymFromInfoplease test = new GetSynonymFromInfoplease();
+//        ArrayList<String>choice = test.getSynonyms(yy.getText(),3);
+//        for(String x:choice){
+//          choiceSynonym.add(x);
+//        }
+//      }
 /******************************************************************************/
 			ArrayList<CandidateSentence> candSentList = Utils
 					.fromFSListToCollection(qaSet.get(i)

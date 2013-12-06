@@ -62,6 +62,7 @@ public class QuestionCandSentSimilarityMatcher  extends JCasAnnotator_ImplBase{
 	public void process(JCas aJCas) throws AnalysisEngineProcessException {
 		TestDocument testDoc=Utils.getTestDocumentFromCAS(aJCas);
 		String testDocId=testDoc.getId();
+		String testDocStr = testDoc.getText();
 		System.out.println(testDocId);
 		ArrayList<Sentence>sentenceList=Utils.getSentenceListFromTestDocCAS(aJCas);
 		ArrayList<QuestionAnswerSet>qaSet=Utils.getQuestionAnswerSetFromTestDocCAS(aJCas);
@@ -111,6 +112,10 @@ public class QuestionCandSentSimilarityMatcher  extends JCasAnnotator_ImplBase{
 					Sentence annSentence=sentenceList.get(idx);
 					
 					String sentence=doc.get("text").toString();
+					if(isQuesSent(sentence)){
+					  sentence = getNextSent(sentence,testDocStr);
+					}
+					//sentence = getNextSent(sentence,testDocStr);
 					/** Error Analysis for Sentence Selection**/
 					String[] ansTok = correct.split(" ");
 					boolean label = false;
@@ -178,6 +183,27 @@ public class QuestionCandSentSimilarityMatcher  extends JCasAnnotator_ImplBase{
 		solrQuery=solrQuery.trim();
 		
 		return solrQuery;
+	}
+	
+	public boolean isQuesSent(String sentence){
+	  boolean flag = false;
+	  if(sentence.toLowerCase().contains("what")||sentence.toLowerCase().contains("why")||
+	          sentence.toLowerCase().contains("how")||sentence.toLowerCase().contains("?")){
+	    flag = true;
+	  }
+	  return flag;
+	}
+	
+	public String getNextSent(String sentence,String doc){
+	  int startIndex = doc.indexOf(sentence)+sentence.length();
+	  if(doc.substring(startIndex).contains(".")){
+	    int endIndex = doc.indexOf(".", startIndex);
+	    return sentence+doc.substring(startIndex, endIndex);
+	  }
+	  else
+	    return sentence;
+	  
+	  
 	}
 
 }

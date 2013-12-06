@@ -62,6 +62,9 @@
     <delegateAnalysisEngine key="AnswerChoiceCandAnsPMIScorer">
       <import name="annotators.AnswerChoiceCandAnsPMIScorer"/>
     </delegateAnalysisEngine>
+    <delegateAnalysisEngine key="AnswerSelectionByKCandAggregation">
+      <import name="annotators.AnswerSelectionByKCandAggregation"/>
+    </delegateAnalysisEngine>
     <!--<delegateAnalysisEngine key="AnswerSelectionByKCandAggregation">
       <import location="annotators/AnswerSelectionByKCandAggregation.xml"/>
     </delegateAnalysisEngine>-->
@@ -72,8 +75,113 @@
     <description/>
     <version>1.0</version>
     <vendor/>
-    <configurationParameters searchStrategy="language_fallback"/>
-    <configurationParameterSettings/>
+    <configurationParameters searchStrategy="language_fallback">
+      <configurationParameter>
+        <name>SOLR_SERVER_URL</name>
+        <description>solr server url</description>
+        <type>String</type>
+        <multiValued>false</multiValued>
+        <mandatory>false</mandatory>
+        <overrides>
+          <parameter>SolrIndexer/SOLR_SERVER_URL</parameter>
+          <parameter>QuestionCandSentSimilarityMatcher/SOLR_SERVER_URL</parameter>
+          <parameter>AnswerChoiceCandAnsPMIScorer/SOLR_SERVER_URL</parameter>
+        </overrides>
+      </configurationParameter>
+      <configurationParameter>
+        <name>SOLR_CORE</name>
+        <description>noise score</description>
+        <type>String</type>
+        <multiValued>false</multiValued>
+        <mandatory>false</mandatory>
+        <overrides>
+          <parameter>SolrIndexer/SOLR_CORE</parameter>
+          <parameter>QuestionCandSentSimilarityMatcher/SOLR_CORE</parameter>
+        </overrides>
+      </configurationParameter>
+      <configurationParameter>
+        <name>SCHEMA_NAME</name>
+        <description>schema name</description>
+        <type>String</type>
+        <multiValued>false</multiValued>
+        <mandatory>false</mandatory>
+        <overrides>
+          <parameter>SolrIndexer/SCHEMA_NAME</parameter>
+          <parameter>QuestionCandSentSimilarityMatcher/SCHEMA_NAME</parameter>
+        </overrides>
+      </configurationParameter>
+      <configurationParameter>
+        <name>TOP_SEARCH_RESULTS</name>
+        <description>top search results</description>
+        <type>Integer</type>
+        <multiValued>false</multiValued>
+        <mandatory>false</mandatory>
+        <overrides>
+          <parameter>SolrIndexer/TOP_SEARCH_RESULTS</parameter>
+          <parameter>QuestionCandSentSimilarityMatcher/TOP_SEARCH_RESULTS</parameter>
+        </overrides>
+      </configurationParameter>
+      <configurationParameter>
+        <name>QUALITY_THRESHOLD</name>
+        <description>quality score threshold</description>
+        <type>Float</type>
+        <multiValued>false</multiValued>
+        <mandatory>false</mandatory>
+        <overrides>
+          <parameter>NoiseFilter/QUALITY_THRESHOLD</parameter>
+        </overrides>
+      </configurationParameter>
+      <configurationParameter>
+        <name>MIN_WORDS</name>
+        <description>minimum words to consider</description>
+        <type>Integer</type>
+        <multiValued>false</multiValued>
+        <mandatory>false</mandatory>
+        <overrides>
+          <parameter>NoiseFilter/MIN_WORDS</parameter>
+        </overrides>
+      </configurationParameter>
+      <configurationParameter>
+        <name>MIN_LENGTH</name>
+        <description>minimum sentence length to consider</description>
+        <type>Integer</type>
+        <multiValued>false</multiValued>
+        <mandatory>false</mandatory>
+        <overrides>
+          <parameter>NoiseFilter/MIN_LENGTH</parameter>
+        </overrides>
+      </configurationParameter>
+      <configurationParameter>
+        <name>NOISE_THRESHOLD</name>
+        <description>noise score</description>
+        <type>Float</type>
+        <multiValued>false</multiValued>
+        <mandatory>false</mandatory>
+        <overrides>
+          <parameter>TextSegmenter/NOISE_THRESHOLD</parameter>
+          <parameter>StanfordSentenceAnnotator/NOISE_THRESHOLD</parameter>
+        </overrides>
+      </configurationParameter>
+      <configurationParameter>
+        <name>K_CANDIDATES</name>
+        <description>K candidates</description>
+        <type>Integer</type>
+        <multiValued>false</multiValued>
+        <mandatory>false</mandatory>
+        <overrides>
+          <parameter>AnswerChoiceCandAnsSimilarityScorer/K_CANDIDATES</parameter>
+          <parameter>AnswerChoiceCandAnsPMIScorer/K_CANDIDATES</parameter>
+        </overrides>
+      </configurationParameter>
+    </configurationParameters>
+    <configurationParameterSettings>
+      <nameValuePair>
+        <name>K_CANDIDATES</name>
+        <value>
+          <integer>7</integer>
+        </value>
+      </nameValuePair>
+    </configurationParameterSettings>
     <flowConstraints>
       <fixedFlow>
         <node>TextSegmenter</node>

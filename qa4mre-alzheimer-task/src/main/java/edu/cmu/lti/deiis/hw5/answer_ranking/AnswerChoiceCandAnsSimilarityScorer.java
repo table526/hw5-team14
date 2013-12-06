@@ -74,19 +74,20 @@ public class AnswerChoiceCandAnsSimilarityScorer extends JCasAnnotator_ImplBase 
 					
 					for(NER xx:choiceNERs){
 					  GetSynonymFromInfoplease test = new GetSynonymFromInfoplease();
-					  ArrayList<String> choice = test.getSynonyms(xx.getText(),3);
+					  ArrayList<String> choice = test.getSynonyms(xx.getText(),4);
 		        for(String x:choice){
 		          choiceSynonymNer.add(x);
 		        }
 					}
 					for(NounPhrase yy:choiceNouns){
             GetSynonymFromInfoplease test = new GetSynonymFromInfoplease();
-            ArrayList<String> choice = test.getSynonyms(yy.getText(),3);
+            ArrayList<String> choice = test.getSynonyms(yy.getText(),4);
             for(String x:choice){
               choiceSynonymNone.add(x);
             }
           }
-
+					//System.out.println("choiNEr\t"+choiceSynonymNer);
+					//System.out.println("choiNone\t"+choiceSynonymNone);
 					int nnMatch = 0;
 					for (int k = 0; k < candSentNouns.size(); k++) {
 //						for (int l = 0; l < choiceNERs.size(); l++) {
@@ -105,12 +106,16 @@ public class AnswerChoiceCandAnsSimilarityScorer extends JCasAnnotator_ImplBase 
               if (candSentNouns.get(k).getText()
                   .contains(choiceSynonymNer.get(l))) {
                 nnMatch++;
+               System.out.println("cho:"+choiceSynonymNer.get(l)+"\tcandSent  "
+                +candSentNouns.get(k).getText()); 
               }
             }
             for (int l = 0; l < choiceSynonymNone.size(); l++) {
               if (candSentNouns.get(k).getText()
                   .contains(choiceSynonymNone.get(l))) {
                 nnMatch++;
+                System.out.println("cho:"+choiceSynonymNone.get(l)+"\tcandSent  "
+                        +candSentNouns.get(k).getText());   
               }
             }
 					}
@@ -132,12 +137,16 @@ public class AnswerChoiceCandAnsSimilarityScorer extends JCasAnnotator_ImplBase 
               if (candSentNouns.get(k).getText()
                   .contains(choiceSynonymNer.get(l))) {
                 nnMatch++;
+                System.out.println("cho:"+choiceSynonymNer.get(l)+"\tcandSent  "
+                        +candSentNers.get(k).getText());  
               }
             }
             for (int l = 0; l < choiceSynonymNone.size(); l++) {
               if (candSentNouns.get(k).getText()
                   .contains(choiceSynonymNone.get(l))) {
                 nnMatch++;
+                System.out.println("cho:"+choiceSynonymNone.get(l)+"\tcandSent  "
+                        +candSentNers.get(k).getText());  
               }
             }
 					}

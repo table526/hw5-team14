@@ -1,0 +1,41 @@
+		10		c@1		15		c@1
+qichen		2		0.2		5		0.36
+qihui		2		0.22		7		0.47
+jiacong		4		0.4		4		0.27		
+haodong		2		0.2		7		0.47
+average c@1	0.32
+		
+		10		c@1		15		c@1
+qichen		3		0.3		5		0.36
+qihui		3		0.33		8		0.53
+jiacong		6		0.60		4		0.28		
+haodong		3		0.30		7		0.47
+average c@1	0.396
+		
+		10		c@1		15		c@1
+qichen		3		0.3		5		0.36
+qihui		3		0.30		7		0.47
+jiacong		4		0.44		4		0.40		
+haodong		4		0.40		6		0.40
+average c@1	0.384
+		
+		10		c@1		15		c@1
+qichen		3		0.3		4		0.27
+qihui		2		0.20		8		0.57
+jiacong		3		0.30		4		0.27		
+haodong		5		0.50		7		0.47
+average c@1	0.367
+		
+		10		c@1		15		c@1
+qichen		3		0.3		6		0.4
+qihui		4		0.40		7		0.50
+jiacong		5		0.50		4		0.27		
+haodong		5		0.50		6		0.4
+average c@1	0.409
+		
+		10		c@1		15		c@1
+qichen		2		0.2		6		0.4
+qihui		3		0.30		6		0.40
+jiacong		6		0.60		5		0.33		
+haodong		5		0.50		8		0.53
+average c@1	0.409

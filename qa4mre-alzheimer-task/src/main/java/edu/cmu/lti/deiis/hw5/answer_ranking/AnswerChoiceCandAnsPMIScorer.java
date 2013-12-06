@@ -23,6 +23,7 @@ import edu.cmu.lti.qalab.types.NounPhrase;
 import edu.cmu.lti.qalab.types.Question;
 import edu.cmu.lti.qalab.types.QuestionAnswerSet;
 import edu.cmu.lti.qalab.types.TestDocument;
+import edu.cmu.lti.qalab.types.Verb;
 import edu.cmu.lti.qalab.utils.Utils;
 
 public class AnswerChoiceCandAnsPMIScorer extends JCasAnnotator_ImplBase {
@@ -38,7 +39,7 @@ public class AnswerChoiceCandAnsPMIScorer extends JCasAnnotator_ImplBase {
 		String serverUrl = (String) context
 				.getConfigParameterValue("SOLR_SERVER_URL");
 		K_CANDIDATES=(Integer)context.getConfigParameterValue("K_CANDIDATES");
-		
+		System.out.println(serverUrl);
 		try {
 			this.solrWrapper = new SolrWrapper(serverUrl);
 			System.out.println("");
@@ -79,6 +80,8 @@ public class AnswerChoiceCandAnsPMIScorer extends JCasAnnotator_ImplBase {
 								.getPhraseList(), NounPhrase.class);
 				ArrayList<NER> candSentNers = Utils.fromFSListToCollection(
 						candSent.getSentence().getNerList(), NER.class);
+        ArrayList<Verb> candSentVerbs = Utils.fromFSListToCollection(
+                candSent.getSentence().getVerbList(), Verb.class);
 
 				ArrayList<CandidateAnswer>candAnsList=new ArrayList<CandidateAnswer>();
 				for (int j = 0; j < choiceList.size(); j++) {
@@ -88,8 +91,7 @@ public class AnswerChoiceCandAnsPMIScorer extends JCasAnnotator_ImplBase {
 					for (int k = 0; k < candSentNouns.size(); k++) {
 						try {
 						  System.out.println("cand:"+candSentNouns.get(k).getText()+"\tchoi"+ choiceList.get(j));
-						  
-							score1 += scoreCoOccurInSameDoc(candSentNouns
+						  score1 += scoreCoOccurInSameDoc(candSentNouns
 									.get(k).getText(), choiceList.get(j));
 
 						} catch (Exception e) {
@@ -107,9 +109,20 @@ public class AnswerChoiceCandAnsPMIScorer extends JCasAnnotator_ImplBase {
 						}
 
 					}
+					
+         for (int k = 0; k < candSentVerbs.size(); k++) {
 
-					System.out.println(choiceList.get(j).getText() + "\t"
-							+ score1 + "\t" + ((score1)));
+            try {
+              score1 += scoreCoOccurInSameDoc(candSentVerbs.get(k)
+                  .getText(), choiceList.get(j));
+            } catch (Exception e) {
+              e.printStackTrace();
+            }
+
+          }
+          score1 = score1 / 3.0;
+					System.out.println("$$ Answer:" + choiceList.get(j).getText() + "Score PMI: "
+							+ score1 );
 
 					CandidateAnswer candAnswer=null;
 					if(candSent.getCandAnswerList()==null){
@@ -157,6 +170,7 @@ public class AnswerChoiceCandAnsPMIScorer extends JCasAnnotator_ImplBase {
 			}
 
 			String query = question + " AND " + choiceNounPhrase;
+			System.out.println("QUERY:" + query );
 			// System.out.println(query);
 			HashMap<String, String> params = new HashMap<String, String>();
 			params.put("q", query);
@@ -167,7 +181,7 @@ public class AnswerChoiceCandAnsPMIScorer extends JCasAnnotator_ImplBase {
 			try {
 			  //Solrserver so = solrWrapper.getServer()
 
-        System.out.println(solrWrapper.getServer());
+//        System.out.println(solrWrapper.getServer());
 			  rsp = solrWrapper.getServer().query(solrParams);
 				
 				combinedHits = rsp.getResults().getNumFound();

@@ -26,6 +26,7 @@ import edu.cmu.lti.qalab.utils.Utils;
 import edu.stanford.nlp.ling.CoreAnnotations.NamedEntityTagAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.PartOfSpeechAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.SentencesAnnotation;
+import edu.stanford.nlp.ling.CoreAnnotations.StemAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.TokensAnnotation;
 import edu.stanford.nlp.ling.CoreLabel;
 import edu.stanford.nlp.pipeline.Annotation;
@@ -106,15 +107,19 @@ public class StanfordNLPAnnotator extends JCasAnnotator_ImplBase {
 					String pos = token.get(PartOfSpeechAnnotation.class);
 					// this is the NER label of the token
 					String ne = token.get(NamedEntityTagAnnotation.class);
+				//this is the stem label of teh token
+          String stem = token.lemma();
 					Token annToken = new Token(jCas);
 					annToken.setBegin(begin);
 					annToken.setEnd(end);
 					annToken.setText(orgText);
 					annToken.setPos(pos);
 					annToken.setNer(ne);
+					if(!stem.isEmpty()) annToken.setStem(stem);
+          else annToken.setStem(orgText);
 					annToken.addToIndexes();
           if(annToken.getPos().startsWith("V"))
-           if(!stopV.contains(token.lemma())) 
+           if(!stopV.contains(stem)) 
            {
           // set sentence verblist
              String vString = token.lemma();

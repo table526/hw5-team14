@@ -1,6 +1,7 @@
 package edu.cmu.lti.deiis.hw5.candidate_sentence;
 
 //import java.lang.reflect.Array;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashSet;
@@ -16,11 +17,12 @@ import org.apache.uima.jcas.JCas;
 import org.apache.uima.jcas.cas.FSList;
 import org.apache.uima.resource.ResourceInitializationException;
 
-import edu.cmu.lti.oaqa.bio.umls_wrapper.UmlsTermsDAO;
+
+
+import edu.cmu.lti.deiis.hw5.query.GetSynonymFromInfoplease;
 import edu.cmu.lti.oaqa.core.provider.solr.SolrWrapper;
 import edu.cmu.lti.qalab.types.Answer;
 import edu.cmu.lti.qalab.types.CandidateSentence;
-import edu.cmu.lti.qalab.types.Dependency;
 import edu.cmu.lti.qalab.types.NER;
 import edu.cmu.lti.qalab.types.NounPhrase;
 import edu.cmu.lti.qalab.types.Question;
@@ -28,6 +30,7 @@ import edu.cmu.lti.qalab.types.QuestionAnswerSet;
 import edu.cmu.lti.qalab.types.Sentence;
 import edu.cmu.lti.qalab.types.TestDocument;
 import edu.cmu.lti.qalab.types.Verb;
+import edu.cmu.lti.qalab.types.Token;
 import edu.cmu.lti.qalab.utils.Utils;
 //import edu.umass.cs.mallet.base.util.Arrays;
 
@@ -39,11 +42,11 @@ public class QuestionCandSentSimilarityMatcher  extends JCasAnnotator_ImplBase{
 	String coreName;
 	String schemaName;
 	int TOP_SEARCH_RESULTS=10;
-  public static String[] correctAnsString1 ={"immunofluorescence experiments","ER Golgi apparatus","CLU2","rs11136000T","rs11136000","CLU2","androgen","activation","valproate","449"};
-  public static String[] correctAnsString2 ={"somatostatin","somatostatin","BV-2","RealTime PCR","somatostatin","microglia","extracellular","octreotide","SSTR-1 SSTR-2 SSTR-4","siRNA"};
-  public static String[] correctAnsString3 ={"astrocytes","choroid plexus","more than 10 million","gelsolin","age","gelsolin","amyloid-beta","APP Ps mice","synaptic terminals","before amyloid-beta accumulation"};
-  public static String[] correctAnsString4 ={"APP-CTF accumulation","longer","PSEN1","affinity chromatography","AICD","aspartate","EM","Semagacestat","P436Q","185"};
-	public static String[] stopwordsStrings = {"and", "the","before","they","of","none","the","above","with","through"};
+  //public static String[] correctAnsString1 ={"immunofluorescence experiments","ER Golgi apparatus","CLU2","rs11136000T","rs11136000","CLU2","androgen","activation","valproate","449"};
+  //public static String[] correctAnsString2 ={"somatostatin","somatostatin","BV-2","RealTime PCR","somatostatin","microglia","extracellular","octreotide","SSTR-1 SSTR-2 SSTR-4","siRNA"};
+  //public static String[] correctAnsString3 ={"astrocytes","choroid plexus","more than 10 million","gelsolin","age","gelsolin","amyloid-beta","APP Ps mice","synaptic terminals","before amyloid-beta accumulation"};
+  //public static String[] correctAnsString4 ={"APP-CTF accumulation","longer","PSEN1","affinity chromatography","AICD","aspartate","EM","Semagacestat","P436Q","185"};
+	public static String[] stopwordsStrings = {"a", "about", "above", "after", "again", "against", "all", "am", "an", "and", "any", "are", "aren't", "as", "at", "be", "because", "been", "before", "being", "below", "between", "both", "but", "by", "can't", "cannot", "could", "couldn't", "did", "didn't", "do", "does", "doesn't", "doing", "don't", "down", "during", "each", "few", "for", "from", "further", "had", "hadn't", "has", "hasn't", "have", "haven't", "having", "he", "he'd", "he'll", "he's", "her", "here", "here's", "hers", "herself", "him", "himself", "his", "how", "how's", "i", "i'd", "i'll", "i'm", "i've", "if", "in", "into", "is", "isn't", "it", "it's", "its", "itself", "let's", "me", "more", "most", "mustn't", "my", "myself", "no", "none", "nor", "not", "of", "off", "on", "once", "only", "or", "other", "ought", "our", "ours", "ourselves", "out", "over", "own", "same", "shan't", "she", "she'd", "she'll", "she's", "should", "shouldn't", "so", "some", "such", "than", "that", "that's", "the", "their", "theirs", "them", "themselves", "then", "there", "there's", "these", "they", "they'd", "they'll", "they're", "they've", "this", "those", "through", "to", "too", "under", "until", "up", "very", "was", "wasn't", "we", "we'd", "we'll", "we're", "we've", "were", "weren't", "what", "what's", "when", "when's", "where", "where's", "which", "while", "who", "who's", "whom", "why", "why's", "with", "won't", "would", "wouldn't", "you", "you'd", "you'll", "you're", "you've", "your", "yours", "yourself", "yourselves"};
   @Override
 	public void initialize(UimaContext context)
 			throws ResourceInitializationException {
@@ -84,13 +87,6 @@ public class QuestionCandSentSimilarityMatcher  extends JCasAnnotator_ImplBase{
           break;
         }
       }
-//      UmlsTermsDAO umls = new UmlsTermsDAO();
-//      try {
-//        umls.getTermSynonyms("abc");
-//      } catch (Exception e1) {
-//        // TODO Auto-generated catch block
-//        e1.printStackTrace();
-//      }
 			Question question=qaSet.get(i).getQuestion();
 			System.out.println("========================================================");
 			System.out.println("Question: "+question.getText());
@@ -105,7 +101,6 @@ public class QuestionCandSentSimilarityMatcher  extends JCasAnnotator_ImplBase{
 			SolrQuery solrQuery=new SolrQuery();
 			solrQuery.add("fq", "docid:"+testDocId);
 			solrQuery.add("q",searchQuery);
-			System.out.println("SearchQuery:"+searchQuery);
 			solrQuery.add("rows",String.valueOf(TOP_SEARCH_RESULTS));
 			solrQuery.setFields("*", "score");
 			try {
@@ -176,32 +171,61 @@ public class QuestionCandSentSimilarityMatcher  extends JCasAnnotator_ImplBase{
 	public String formSolrQuery(Question question){
 		String solrQuery="";
 		
-
 		ArrayList<NounPhrase>nounPhrases=Utils.fromFSListToCollection(question.getNounList(), NounPhrase.class);
-	//	ArrayList<Verb> veList = new ArrayList<Verb>();
+		
 		for(int i=0;i<nounPhrases.size();i++){
-			solrQuery+="nounphrases:\""+nounPhrases.get(i).getText()+"\" ";	
-//			int npbegin = nounPhrases.get(i).getBegin();
-//			int npend= nounPhrases.get(i).getEnd();
+			//solrQuery+="nounphrases:\""+nounPhrases.get(i).getText()+"\" ";
+			//stem of tokens in nounPhrases for solr query
+      ArrayList<Token> Ptoks =Utils.getTokenListFromNounPhrase(nounPhrases.get(i)); 
+			ArrayList<String> nPstem = new ArrayList<String>();
+			//System.out.println("stem size:"+Ptoks.size());
+      for(int m = 0; m < Ptoks.size();m++){
+			  //solrQuery+="nounphrases:\""+Ptoks.get(m).getStem()+"\" ";
+			  nPstem.add(Ptoks.get(m).getStem());
+			  System.out.println("stem"+m+": "+Ptoks.get(m).getStem());
+			}
+      GetSynonymFromInfoplease GetSyn = new GetSynonymFromInfoplease();
+      ArrayList<String> Synonyms = new ArrayList<String>();
+//      System.out.println(i);
+//      System.out.println(nounPhrases.get(i).getText());
+      Synonyms = GetSyn.getSynonyms(nounPhrases.get(i).getText(), 2, "Noun");
+      for(int y = 0; y < nPstem.size(); y++)
+      Synonyms.addAll(GetSyn.getSynonyms(nPstem.get(y), 2, "Noun"));
+      if(Synonyms == null) continue;
+      for(int j = 0; j < Synonyms.size(); j++)
+      {
+        solrQuery+="nounphrases:\""+Synonyms.get(j)+"\" ";
+     //   System.out.println(Synonyms.get(j));
+      }
 		}
 		
 		ArrayList<NER>neList=Utils.fromFSListToCollection(question.getNerList(), NER.class);
 		for(int i=0;i<neList.size();i++){
-			solrQuery+="namedentities:\""+neList.get(i).getText()+"\" ";
+			//solrQuery+="namedentities:\""+neList.get(i).getText()+"\" ";
+			GetSynonymFromInfoplease GetSyn = new GetSynonymFromInfoplease();
+	    ArrayList<String> Synonyms = new ArrayList<String>();
+	    Synonyms = GetSyn.getSynonyms(neList.get(i).getText(), 2,"Noun");
+     
+	    for(int j = 0; j < Synonyms.size(); j++)
+	    {
+	      solrQuery+="namedentities:\""+Synonyms.get(j)+"\" ";
+	    }
 		}
-		
 		ArrayList<Verb> veList =Utils.fromFSListToCollection(question.getVerbList(), Verb.class);
-		for(int h=0;h<veList.size();h++){
-      solrQuery+="verbs:\""+veList.get(h).getText()+"\" ";
+    for(int h=0;h<veList.size();h++){
+      //solrQuery+="verbs:\""+veList.get(h).getText()+"\" ";
+      GetSynonymFromInfoplease GetSyn = new GetSynonymFromInfoplease();
+      ArrayList<String> Synonyms = new ArrayList<String>();
+      Synonyms = GetSyn.getSynonyms(veList.get(h).getText(), 3, "Verb", 5);
+     
+      for(int j = 0; j < Synonyms.size(); j++)
+      {
+        solrQuery+="verbs:\""+Synonyms.get(j)+"\" ";
+      }
+
     }
-//		ArrayList<Dependency> dependencies = Utils.fromFSListToCollection(question.getDependencies(),
-//                    Dependency.class);
-//		for(int i=0;i<dependencies.size();i++){
-//      solrQuery+="dependencies:\""+dependencies.get(i).getRelation()+"\" ";
-//    }
-//		solrQuery=solrQuery.trim();
-		
-		
+		solrQuery=solrQuery.trim();
+		System.out.println(solrQuery);
 		return solrQuery;
 	}
 

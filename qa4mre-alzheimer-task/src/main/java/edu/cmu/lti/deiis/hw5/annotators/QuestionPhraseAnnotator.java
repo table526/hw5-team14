@@ -85,6 +85,7 @@ public class QuestionPhraseAnnotator extends JCasAnnotator_ImplBase{
 		
 		ArrayList<NounPhrase>nounPhraseList=new ArrayList<NounPhrase>();
 		String nounPhrase="";
+		 ArrayList<Token> Ptoks = new ArrayList<Token>();
 		for(int i=0;i<tokenList.size();i++){
 			Token token=tokenList.get(i);
 			String word=token.getText();
@@ -92,15 +93,25 @@ public class QuestionPhraseAnnotator extends JCasAnnotator_ImplBase{
 			//System.out.println("Token: "+word+"/"+pos);
 			if(pos.startsWith("NN") || pos.startsWith("JJ") || pos.startsWith("CD")){
 				nounPhrase+=word+" ";
+				 Ptoks.add(token);
 			}else{
 				nounPhrase=nounPhrase.trim();
 				if(!nounPhrase.equals("")){
 					NounPhrase nn=new NounPhrase(jCas);
 					nounPhrase=nounPhrase.trim();
 					nn.setText(nounPhrase);
+					if(Ptoks.size() != 0){
+            FSList fsPTokenList = Utils.createTokenList(jCas, Ptoks);
+          fsPTokenList.addToIndexes();
+          nn.setTokens(fsPTokenList);
+          nn.addToIndexes();
+//          ArrayList<Token> Pt =Utils.getTokenListFromNounPhrase(nn); 
+//          System.out.println("Pt stem size:"+Pt.size());
+          }
 					nounPhraseList.add(nn);
 					//System.out.println("Noun Phrase: "+nounPhrase);
 					nounPhrase="";
+					Ptoks.clear();
 				}
 			}
 					
@@ -109,6 +120,12 @@ public class QuestionPhraseAnnotator extends JCasAnnotator_ImplBase{
 		if(!nounPhrase.equals("")){
 			NounPhrase nn=new NounPhrase(jCas);
 			nn.setText(nounPhrase);
+			if(Ptoks.size() != 0){
+        FSList fsPTokenList =Utils.createTokenList(jCas, Ptoks);
+        fsPTokenList.addToIndexes();
+        nn.setTokens(fsPTokenList);
+        nn.addToIndexes();
+        }
 			nounPhraseList.add(nn);
 		}
 		

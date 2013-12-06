@@ -23,13 +23,14 @@ import edu.cmu.lti.qalab.utils.Utils;
 public class AnswerSelectionByKCandVoting extends JCasAnnotator_ImplBase {
 
   int K_CANDIDATES = 5;
+  double NoneThreshold = 2.1;
 
   @Override
-	public void initialize(UimaContext context)
-			throws ResourceInitializationException {
-		super.initialize(context);
+  public void initialize(UimaContext context)
+      throws ResourceInitializationException {
+    super.initialize(context);
     K_CANDIDATES = (Integer) context.getConfigParameterValue("K_CANDIDATES");
-	}
+  }
 
   @Override
   public void process(JCas aJCas) throws AnalysisEngineProcessException {
@@ -39,7 +40,6 @@ public class AnswerSelectionByKCandVoting extends JCasAnnotator_ImplBase {
     int matched = 0;
     int total = 0;
     int unanswered = 0;
-
     for (int i = 0; i < qaSet.size(); i++) {
 
       Question question = qaSet.get(i).getQuestion();
@@ -50,6 +50,7 @@ public class AnswerSelectionByKCandVoting extends JCasAnnotator_ImplBase {
               .getCandidateSentenceList(), CandidateSentence.class);
 
       int topK = Math.min(K_CANDIDATES, candSentList.size());
+
       String correct = "";
 
       for (int j = 0; j < choiceList.size(); j++) {
@@ -74,22 +75,43 @@ public class AnswerSelectionByKCandVoting extends JCasAnnotator_ImplBase {
 
           CandidateAnswer candAns = candAnswerList.get(j);
           String answer = candAns.getText();
-
+          
+          if(answer.contains("None of"))
+          {
+            hshAnswer.put(answer, 0.0);
+            continue;
+          }
           double totalScore = candAns.getSimilarityScore() + candAns.getSynonymScore()
                   + candAns.getPMIScore();
-
+          System.out.println("Answer: " + candAns.getText() + "\tSim: " + candAns.getSimilarityScore() + "\tPMI: " + candAns.getPMIScore());
           if (totalScore > maxScore) {
             maxScore = totalScore;
             selectedAnswer = answer;
           }
         }
+        System.out.println("MAX! "+ maxScore + "ANSWER: " + selectedAnswer);
+
         Double existingVal = hshAnswer.get(selectedAnswer);
         if (existingVal == null) {
           existingVal = new Double(0.0);
         }
-        hshAnswer.put(selectedAnswer, existingVal + 1.0);
+        hshAnswer.put(selectedAnswer, existingVal + maxScore);
       }
-
+       // Regularization
+    /*  double sumScore = 0.0;
+      Iterator<String> it = hshAnswer.keySet().iterator();
+      while (it.hasNext()) {
+        String key = it.next();
+        Double val = hshAnswer.get(key);
+        sumScore += val;
+      }
+      it = hshAnswer.keySet().iterator();
+      while (it.hasNext()) {
+        String key = it.next();
+        Double val = hshAnswer.get(key);
+        hshAnswer.put(key, val / sumScore);
+      }
+      */
       String bestChoice = null;
       try {
         bestChoice = findBestChoice(hshAnswer);
@@ -147,6 +169,22 @@ public class AnswerSelectionByKCandVoting extends JCasAnnotator_ImplBase {
       }
 
     }
+    System.out.println("Ture_MAX: "+maxScore+"\tAnswer: " + bestAns);
+    if (maxScore <= NoneThreshold)
+    {
+      it = hshAnswer.keySet().iterator();
+      while (it.hasNext()) 
+      {
+        String key = it.next();
+        if(key.contains("None of"))
+        {
+          bestAns = key;
+          break;
+        }
+      }
+    }
+
+    System.out.println("Again Ture_MAX: "+maxScore+"\tAnswer: " + bestAns);
 
     return bestAns;
   }

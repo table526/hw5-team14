@@ -43,6 +43,7 @@ public class NEAnnotator extends JCasAnnotator_ImplBase{
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
+			
 			FSList fsNERList=Utils.createNERList(jCas, abnerList);
 			sentence.setNerList(fsNERList);
 			sentence.addToIndexes();

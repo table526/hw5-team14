@@ -55,6 +55,10 @@
       <import location="annotators/AnswerChoiceCandAnsSimilarityScorer.xml"/>
     </delegateAnalysisEngine>
     
+     <delegateAnalysisEngine key="AnswerChoiceCandAnsPMIScorer">
+      <import location="annotators/AnswerChoiceCandAnsPMIScorer.xml"/>
+    </delegateAnalysisEngine>
+    
     <delegateAnalysisEngine key="AnswerSelectionByKCandVoting">
       <import location="annotators/AnswerSelectionByKCandVoting.xml"/>
     </delegateAnalysisEngine>

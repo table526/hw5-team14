@@ -23,14 +23,14 @@ import edu.cmu.lti.qalab.utils.Utils;
 public class AnswerSelectionByKCandVoting extends JCasAnnotator_ImplBase {
 
   int K_CANDIDATES = 5;
-  double NoneThreshold = 2.0;
+  double NoneThreshold = 2.1;
 
   @Override
-	public void initialize(UimaContext context)
-			throws ResourceInitializationException {
-		super.initialize(context);
+  public void initialize(UimaContext context)
+      throws ResourceInitializationException {
+    super.initialize(context);
     K_CANDIDATES = (Integer) context.getConfigParameterValue("K_CANDIDATES");
-	}
+  }
 
   @Override
   public void process(JCas aJCas) throws AnalysisEngineProcessException {

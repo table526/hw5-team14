@@ -76,14 +76,14 @@ public class AnswerChoiceCandAnsSimilarityScorer extends JCasAnnotator_ImplBase 
 					
 					for(NER xx:choiceNERs){
 					  GetSynonymFromInfoplease test = new GetSynonymFromInfoplease();
-					  ArrayList<String> choice = test.getSynonyms(xx.getText(),3, "Noun");
+					  ArrayList<String> choice = test.getSynonyms(xx.getText(),2, "Noun");
 		        for(String x:choice){
 		          choiceSynonymNer.add(x);
 		        }
 					}
 					for(NounPhrase yy:choiceNouns){
             GetSynonymFromInfoplease test = new GetSynonymFromInfoplease();
-            ArrayList<String> choice = test.getSynonyms(yy.getText(),3, "Noun");
+            ArrayList<String> choice = test.getSynonyms(yy.getText(),2, "Noun");
             for(String x:choice){
               choiceSynonymNoun.add(x);
             }

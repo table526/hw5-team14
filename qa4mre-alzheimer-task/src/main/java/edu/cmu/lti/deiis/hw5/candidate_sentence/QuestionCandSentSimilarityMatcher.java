@@ -178,7 +178,7 @@ public class QuestionCandSentSimilarityMatcher  extends JCasAnnotator_ImplBase{
       ArrayList<String> Synonyms = new ArrayList<String>();
       //System.out.println(i);
       //System.out.println(nounPhrases.get(i).getText());
-      Synonyms = GetSyn.getSynonyms(nounPhrases.get(i).getText(), 3, "Noun");
+      Synonyms = GetSyn.getSynonyms(nounPhrases.get(i).getText(), 2, "Noun");
       if(Synonyms == null) continue;
       for(int j = 0; j < Synonyms.size(); j++)
       {
@@ -191,7 +191,7 @@ public class QuestionCandSentSimilarityMatcher  extends JCasAnnotator_ImplBase{
 			//solrQuery+="namedentities:\""+neList.get(i).getText()+"\" ";
 			GetSynonymFromInfoplease GetSyn = new GetSynonymFromInfoplease();
 	    ArrayList<String> Synonyms = new ArrayList<String>();
-	    Synonyms = GetSyn.getSynonyms(neList.get(i).getText(), 3, "Noun");
+	    Synonyms = GetSyn.getSynonyms(neList.get(i).getText(), 2, "Noun");
      
 	    for(int j = 0; j < Synonyms.size(); j++)
 	    {
@@ -203,7 +203,7 @@ public class QuestionCandSentSimilarityMatcher  extends JCasAnnotator_ImplBase{
       //solrQuery+="verbs:\""+veList.get(h).getText()+"\" ";
       GetSynonymFromInfoplease GetSyn = new GetSynonymFromInfoplease();
       ArrayList<String> Synonyms = new ArrayList<String>();
-      Synonyms = GetSyn.getSynonyms(veList.get(h).getText(), 3, "Verb");
+      Synonyms = GetSyn.getSynonyms(veList.get(h).getText(), 3, "Verb", 5);
      
       for(int j = 0; j < Synonyms.size(); j++)
       {

@@ -110,7 +110,7 @@ public class AnswerChoiceCandAnsPMIScorer extends JCasAnnotator_ImplBase {
 
 					}
 					
-          for (int k = 0; k < candSentVerbs.size(); k++) {
+         for (int k = 0; k < candSentVerbs.size(); k++) {
 
             try {
               score1 += scoreCoOccurInSameDoc(candSentVerbs.get(k)

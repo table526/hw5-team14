@@ -181,7 +181,10 @@ public class AnswerSelectionByKCandVoting extends JCasAnnotator_ImplBase {
           bestAns = key;
           break;
         }
-      }
+      }/*else
+      {
+        
+      }*/
     }
 
     System.out.println("Again Ture_MAX: "+maxScore+"\tAnswer: " + bestAns);

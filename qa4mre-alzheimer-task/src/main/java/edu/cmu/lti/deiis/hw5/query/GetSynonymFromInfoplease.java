@@ -22,7 +22,7 @@ public class GetSynonymFromInfoplease {
 			if(status == 404)
 			{
 			  ArrayList<String> errorList = new ArrayList<String>();
-			  errorList.add(query);
+			//  errorList.add(query);
 			  return errorList;
 			}
 			//System.out.println(status);
@@ -44,7 +44,7 @@ public class GetSynonymFromInfoplease {
 		  if(source.indexOf("<h3>Noun</h3>")<0) 
 		  {
         ArrayList<String> errorList = new ArrayList<String>();
-        errorList.add(query);
+      //  errorList.add(query);
         return errorList;
       }
 		  int start = source.indexOf("<h3>Noun</h3>");
@@ -54,7 +54,7 @@ public class GetSynonymFromInfoplease {
       if(source.indexOf("<h3>Verb</h3>")<0)
       {
         ArrayList<String> errorList = new ArrayList<String>();
-        errorList.add(query);
+      //  errorList.add(query);
         return errorList;
       }
       int start = source.indexOf("<h3>Verb</h3>");
@@ -64,7 +64,7 @@ public class GetSynonymFromInfoplease {
 		if(source.indexOf("<dl><dt>")<0) 
     {
       ArrayList<String> errorList = new ArrayList<String>();
-      errorList.add(query);
+   //  errorList.add(query);
       return errorList;
     }
 		int start = source.indexOf("<dl><dt>") + 11;

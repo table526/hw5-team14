@@ -216,7 +216,7 @@ public class QuestionCandSentSimilarityMatcher  extends JCasAnnotator_ImplBase{
       //solrQuery+="verbs:\""+veList.get(h).getText()+"\" ";
       GetSynonymFromInfoplease GetSyn = new GetSynonymFromInfoplease();
       ArrayList<String> Synonyms = new ArrayList<String>();
-      Synonyms = GetSyn.getSynonyms(veList.get(h).getText(), 3, "Verb", 5);
+      Synonyms = GetSyn.getSynonyms(veList.get(h).getText(), 3, "Verb", 7);
      
       for(int j = 0; j < Synonyms.size(); j++)
       {

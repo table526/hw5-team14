@@ -22,7 +22,7 @@ import edu.cmu.lti.qalab.utils.Utils;
 
 public class AnswerSelectionByKCandAggregation extends JCasAnnotator_ImplBase {
 
-  int K_CANDIDATES = 5;
+  int K_CANDIDATES = 7;
   double NoneThreshold = 2.1;
 
   @Override

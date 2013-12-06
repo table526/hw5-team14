@@ -11,8 +11,8 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** 
- * Updated by JCasGen Wed Dec 04 14:51:55 EST 2013
- * XML source: /home/pan/11791/hw5/qa4mre-base/src/main/resources/TypeSystemDescriptor.xml
+ * Updated by JCasGen Thu Dec 05 15:27:52 EST 2013
+ * XML source: /Users/liqihui/Documents/workspace/hw5-team14/qa4mre-base/src/main/resources/TypeSystemDescriptor.xml
  * @generated */
 public class Token extends Annotation {
   /** @generated
@@ -114,6 +114,24 @@ public class Token extends Annotation {
     if (Token_Type.featOkTst && ((Token_Type)jcasType).casFeat_ner == null)
       jcasType.jcas.throwFeatMissing("ner", "edu.cmu.lti.qalab.types.Token");
     jcasType.ll_cas.ll_setStringValue(addr, ((Token_Type)jcasType).casFeatCode_ner, v);}    
+   
+    
+  //*--------------*
+  //* Feature: stem
+
+  /** getter for stem - gets 
+   * @generated */
+  public String getStem() {
+    if (Token_Type.featOkTst && ((Token_Type)jcasType).casFeat_stem == null)
+      jcasType.jcas.throwFeatMissing("stem", "edu.cmu.lti.qalab.types.Token");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Token_Type)jcasType).casFeatCode_stem);}
+    
+  /** setter for stem - sets  
+   * @generated */
+  public void setStem(String v) {
+    if (Token_Type.featOkTst && ((Token_Type)jcasType).casFeat_stem == null)
+      jcasType.jcas.throwFeatMissing("stem", "edu.cmu.lti.qalab.types.Token");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Token_Type)jcasType).casFeatCode_stem, v);}    
   }
 
     

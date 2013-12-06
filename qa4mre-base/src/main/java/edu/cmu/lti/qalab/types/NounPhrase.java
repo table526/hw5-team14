@@ -12,8 +12,8 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** 
- * Updated by JCasGen Wed Dec 04 14:51:55 EST 2013
- * XML source: /home/pan/11791/hw5/qa4mre-base/src/main/resources/TypeSystemDescriptor.xml
+ * Updated by JCasGen Thu Dec 05 15:27:51 EST 2013
+ * XML source: /Users/liqihui/Documents/workspace/hw5-team14/qa4mre-base/src/main/resources/TypeSystemDescriptor.xml
  * @generated */
 public class NounPhrase extends Annotation {
   /** @generated
@@ -115,6 +115,24 @@ public class NounPhrase extends Annotation {
     if (NounPhrase_Type.featOkTst && ((NounPhrase_Type)jcasType).casFeat_synonyms == null)
       jcasType.jcas.throwFeatMissing("synonyms", "edu.cmu.lti.qalab.types.NounPhrase");
     jcasType.ll_cas.ll_setRefValue(addr, ((NounPhrase_Type)jcasType).casFeatCode_synonyms, jcasType.ll_cas.ll_getFSRef(v));}    
+   
+    
+  //*--------------*
+  //* Feature: tokens
+
+  /** getter for tokens - gets 
+   * @generated */
+  public FSList getTokens() {
+    if (NounPhrase_Type.featOkTst && ((NounPhrase_Type)jcasType).casFeat_tokens == null)
+      jcasType.jcas.throwFeatMissing("tokens", "edu.cmu.lti.qalab.types.NounPhrase");
+    return (FSList)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((NounPhrase_Type)jcasType).casFeatCode_tokens)));}
+    
+  /** setter for tokens - sets  
+   * @generated */
+  public void setTokens(FSList v) {
+    if (NounPhrase_Type.featOkTst && ((NounPhrase_Type)jcasType).casFeat_tokens == null)
+      jcasType.jcas.throwFeatMissing("tokens", "edu.cmu.lti.qalab.types.NounPhrase");
+    jcasType.ll_cas.ll_setRefValue(addr, ((NounPhrase_Type)jcasType).casFeatCode_tokens, jcasType.ll_cas.ll_getFSRef(v));}    
   }
 
     

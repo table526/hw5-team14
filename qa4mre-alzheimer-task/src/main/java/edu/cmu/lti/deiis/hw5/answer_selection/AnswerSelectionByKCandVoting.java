@@ -22,7 +22,7 @@ import edu.cmu.lti.qalab.utils.Utils;
 
 public class AnswerSelectionByKCandVoting extends JCasAnnotator_ImplBase {
 
-  int K_CANDIDATES = 5;
+  int K_CANDIDATES = 7;
   double NoneThreshold = 2.1;
 
   @Override
@@ -50,7 +50,7 @@ public class AnswerSelectionByKCandVoting extends JCasAnnotator_ImplBase {
               .getCandidateSentenceList(), CandidateSentence.class);
 
       int topK = Math.min(K_CANDIDATES, candSentList.size());
-
+      System.out.println("ERROR: topK: " + topK + "\tSize" + candSentList.size() +"\tKcand: "+K_CANDIDATES);
       String correct = "";
 
       for (int j = 0; j < choiceList.size(); j++) {

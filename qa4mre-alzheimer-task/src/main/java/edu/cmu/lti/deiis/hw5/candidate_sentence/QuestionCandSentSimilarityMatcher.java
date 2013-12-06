@@ -17,6 +17,8 @@ import org.apache.uima.jcas.JCas;
 import org.apache.uima.jcas.cas.FSList;
 import org.apache.uima.resource.ResourceInitializationException;
 
+
+
 import edu.cmu.lti.deiis.hw5.query.GetSynonymFromInfoplease;
 import edu.cmu.lti.oaqa.core.provider.solr.SolrWrapper;
 import edu.cmu.lti.qalab.types.Answer;
@@ -28,6 +30,7 @@ import edu.cmu.lti.qalab.types.QuestionAnswerSet;
 import edu.cmu.lti.qalab.types.Sentence;
 import edu.cmu.lti.qalab.types.TestDocument;
 import edu.cmu.lti.qalab.types.Verb;
+import edu.cmu.lti.qalab.types.Token;
 import edu.cmu.lti.qalab.utils.Utils;
 //import edu.umass.cs.mallet.base.util.Arrays;
 
@@ -38,8 +41,6 @@ public class QuestionCandSentSimilarityMatcher  extends JCasAnnotator_ImplBase{
 	//IndexSchema indexSchema;
 	String coreName;
 	String schemaName;
-	int VERB_SYN = 3;
-	int NOUN_SYN = 2;
 	int TOP_SEARCH_RESULTS=10;
   //public static String[] correctAnsString1 ={"immunofluorescence experiments","ER Golgi apparatus","CLU2","rs11136000T","rs11136000","CLU2","androgen","activation","valproate","449"};
   //public static String[] correctAnsString2 ={"somatostatin","somatostatin","BV-2","RealTime PCR","somatostatin","microglia","extracellular","octreotide","SSTR-1 SSTR-2 SSTR-4","siRNA"};
@@ -173,16 +174,28 @@ public class QuestionCandSentSimilarityMatcher  extends JCasAnnotator_ImplBase{
 		ArrayList<NounPhrase>nounPhrases=Utils.fromFSListToCollection(question.getNounList(), NounPhrase.class);
 		
 		for(int i=0;i<nounPhrases.size();i++){
-			//solrQuery+="nounphrases:\""+nounPhrases.get(i).getText()+"\" ";		
-			GetSynonymFromInfoplease GetSyn = new GetSynonymFromInfoplease();
+			//solrQuery+="nounphrases:\""+nounPhrases.get(i).getText()+"\" ";
+			//stem of tokens in nounPhrases for solr query
+      ArrayList<Token> Ptoks =Utils.getTokenListFromNounPhrase(nounPhrases.get(i)); 
+			ArrayList<String> nPstem = new ArrayList<String>();
+			//System.out.println("stem size:"+Ptoks.size());
+      for(int m = 0; m < Ptoks.size();m++){
+			  //solrQuery+="nounphrases:\""+Ptoks.get(m).getStem()+"\" ";
+			  nPstem.add(Ptoks.get(m).getStem());
+			  System.out.println("stem"+m+": "+Ptoks.get(m).getStem());
+			}
+      GetSynonymFromInfoplease GetSyn = new GetSynonymFromInfoplease();
       ArrayList<String> Synonyms = new ArrayList<String>();
-      //System.out.println(i);
-      //System.out.println(nounPhrases.get(i).getText());
+//      System.out.println(i);
+//      System.out.println(nounPhrases.get(i).getText());
       Synonyms = GetSyn.getSynonyms(nounPhrases.get(i).getText(), 2, "Noun");
+      for(int y = 0; y < nPstem.size(); y++)
+      Synonyms.addAll(GetSyn.getSynonyms(nPstem.get(y), 2, "Noun"));
       if(Synonyms == null) continue;
       for(int j = 0; j < Synonyms.size(); j++)
       {
         solrQuery+="nounphrases:\""+Synonyms.get(j)+"\" ";
+     //   System.out.println(Synonyms.get(j));
       }
 		}
 		
@@ -191,7 +204,7 @@ public class QuestionCandSentSimilarityMatcher  extends JCasAnnotator_ImplBase{
 			//solrQuery+="namedentities:\""+neList.get(i).getText()+"\" ";
 			GetSynonymFromInfoplease GetSyn = new GetSynonymFromInfoplease();
 	    ArrayList<String> Synonyms = new ArrayList<String>();
-	    Synonyms = GetSyn.getSynonyms(neList.get(i).getText(), 2, "Noun");
+	    Synonyms = GetSyn.getSynonyms(neList.get(i).getText(), 2,"Noun");
      
 	    for(int j = 0; j < Synonyms.size(); j++)
 	    {
@@ -209,6 +222,7 @@ public class QuestionCandSentSimilarityMatcher  extends JCasAnnotator_ImplBase{
       {
         solrQuery+="verbs:\""+Synonyms.get(j)+"\" ";
       }
+
     }
 		solrQuery=solrQuery.trim();
 		System.out.println(solrQuery);

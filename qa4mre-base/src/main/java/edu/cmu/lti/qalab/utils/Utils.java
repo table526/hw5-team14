@@ -466,6 +466,25 @@ public class Utils {
 		return tokenList;
 	}
 
+	public static ArrayList<Token> getTokenListFromNounPhrase(NounPhrase nounPhrase) {
+
+    FSList fsTokenList=nounPhrase.getTokens();
+    ArrayList<Token> tokenList = new ArrayList<Token>();
+    int i = 0;
+    while (true) {
+
+      Token token = null;
+      try {
+        token = (Token) fsTokenList.getNthElement(i);
+      } catch (Exception e) {
+        break;
+      }
+      tokenList.add(token);
+      i++;
+    }
+
+    return tokenList;
+  }
 	public static ArrayList<Token> getTokenListFromAnswer(Answer answer) {
 
 		FSList fsTokenList=answer.getTokenList();

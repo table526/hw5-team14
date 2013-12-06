@@ -23,7 +23,7 @@ import edu.cmu.lti.qalab.utils.Utils;
 
 public class AnswerChoiceCandAnsSimilarityScorer extends JCasAnnotator_ImplBase {
 
-	int K_CANDIDATES = 5;
+	int K_CANDIDATES = 7;
 
 	@Override
 	public void initialize(UimaContext context)

@@ -12,6 +12,7 @@ import org.apache.uima.analysis_engine.AnalysisEngineProcessException;
 import org.apache.uima.jcas.JCas;
 import org.apache.uima.resource.ResourceInitializationException;
 
+import sun.tools.jar.resources.jar;
 import edu.cmu.lti.qalab.types.Answer;
 import edu.cmu.lti.qalab.types.CandidateAnswer;
 import edu.cmu.lti.qalab.types.CandidateSentence;
@@ -23,7 +24,7 @@ import edu.cmu.lti.qalab.utils.Utils;
 public class AnswerSelectionByKCandVoting extends JCasAnnotator_ImplBase {
 
   int K_CANDIDATES = 7;
-  double NoneThreshold = 2.1;
+  double NoneThreshold = 1.5;
 
   @Override
   public void initialize(UimaContext context)
@@ -124,6 +125,15 @@ public class AnswerSelectionByKCandVoting extends JCasAnnotator_ImplBase {
 
       if (bestChoice == null) {
         unanswered++;
+      }
+      
+      for(int j = 0; j < choiceList.size(); j++)
+      {
+        if(choiceList.get(j).getText().equals(bestChoice))
+        {
+          choiceList.get(j).setIsSelected(true);
+          break;
+        }
       }
       if (bestChoice != null && correct.equals(bestChoice)) {
         matched++;

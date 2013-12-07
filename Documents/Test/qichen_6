@@ -1,3 +1,0 @@
-
-(process:25589): Gtk-WARNING **: Locale not supported by C library.
-	Using the fallback 'C' locale.

@@ -1,3 +1,0 @@
-1. update stopwords.
-2. add verb.
-3. add synonyms.

@@ -14,7 +14,7 @@ import org.apache.uima.cas.Feature;
 import org.apache.uima.jcas.tcas.Annotation_Type;
 
 /** 
- * Updated by JCasGen Wed Dec 04 14:51:55 EST 2013
+ * Updated by JCasGen Thu Dec 05 15:27:51 EST 2013
  * @generated */
 public class NounPhrase_Type extends Annotation_Type {
   /** @generated */
@@ -97,6 +97,24 @@ public class NounPhrase_Type extends Annotation_Type {
     ll_cas.ll_setRefValue(addr, casFeatCode_synonyms, v);}
     
   
+ 
+  /** @generated */
+  final Feature casFeat_tokens;
+  /** @generated */
+  final int     casFeatCode_tokens;
+  /** @generated */ 
+  public int getTokens(int addr) {
+        if (featOkTst && casFeat_tokens == null)
+      jcas.throwFeatMissing("tokens", "edu.cmu.lti.qalab.types.NounPhrase");
+    return ll_cas.ll_getRefValue(addr, casFeatCode_tokens);
+  }
+  /** @generated */    
+  public void setTokens(int addr, int v) {
+        if (featOkTst && casFeat_tokens == null)
+      jcas.throwFeatMissing("tokens", "edu.cmu.lti.qalab.types.NounPhrase");
+    ll_cas.ll_setRefValue(addr, casFeatCode_tokens, v);}
+    
+  
 
 
 
@@ -117,6 +135,10 @@ public class NounPhrase_Type extends Annotation_Type {
  
     casFeat_synonyms = jcas.getRequiredFeatureDE(casType, "synonyms", "uima.cas.FSList", featOkTst);
     casFeatCode_synonyms  = (null == casFeat_synonyms) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_synonyms).getCode();
+
+ 
+    casFeat_tokens = jcas.getRequiredFeatureDE(casType, "tokens", "uima.cas.FSList", featOkTst);
+    casFeatCode_tokens  = (null == casFeat_tokens) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_tokens).getCode();
 
   }
 }

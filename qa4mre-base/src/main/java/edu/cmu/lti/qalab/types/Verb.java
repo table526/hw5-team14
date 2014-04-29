@@ -1,4 +1,4 @@
-
+//check commit
 
 /* First created by JCasGen Wed Dec 04 14:09:18 EST 2013 */
 package edu.cmu.lti.qalab.types;
